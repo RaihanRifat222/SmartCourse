@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["curriculum"],
+  "properties": {
+    "curriculum": {
+      "type": "object",
+      "required": ["modules"],
+      "properties": {
+        "modules": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "module_id",
+              "title",
+              "duration_minutes",
+              "learning_objectives",
+              "key_concepts"
+            ],
+            "properties": {
+              "module_id": { "type": "string" },
+              "title": { "type": "string" },
+              "duration_minutes": { "type": "number", "minimum": 5 },
+              "learning_objectives": {
+                "type": "array",
+                "minItems": 1,
+                "items": { "type": "string" }
+              },
+              "key_concepts": {
+                "type": "array",
+                "minItems": 1,
+                "items": { "type": "string" }
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
