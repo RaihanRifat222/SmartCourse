@@ -24,7 +24,7 @@
     },
     "constraints": {
       "type": "object",
-      "required": ["duration_hours", "depth"],
+      "required": [ "depth"],
       "properties": {
         "duration_hours": { "type": "number", "minimum": 0.5 },
         "depth": { "type": "string" },

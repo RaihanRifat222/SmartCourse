@@ -1,0 +1,110 @@
+{
+  "curriculum": {
+    "modules": [
+      {
+        "module_id": "module_1",
+        "title": "Introduction to Python",
+        "learning_objectives": [
+          "Understand what Python is and its applications",
+          "Install Python and set up the development environment"
+        ],
+        "key_concepts": [
+          "Python overview",
+          "Installation",
+          "Development environment setup"
+        ]
+      },
+      {
+        "module_id": "module_2",
+        "title": "Basic Python Syntax",
+        "learning_objectives": [
+          "Learn basic Python syntax",
+          "Understand data types and variables"
+        ],
+        "key_concepts": [
+          "Syntax rules",
+          "Data types",
+          "Variables"
+        ]
+      },
+      {
+        "module_id": "module_3",
+        "title": "Control Structures in Python",
+        "learning_objectives": [
+          "Understand and use conditional statements",
+          "Learn about loops in Python"
+        ],
+        "key_concepts": [
+          "If statements",
+          "For loops",
+          "While loops"
+        ]
+      },
+      {
+        "module_id": "module_4",
+        "title": "Functions in Python",
+        "learning_objectives": [
+          "Define and call functions",
+          "Understand function parameters and return values"
+        ],
+        "key_concepts": [
+          "Function definition",
+          "Parameters",
+          "Return values"
+        ]
+      },
+      {
+        "module_id": "module_5",
+        "title": "Writing Basic Python Scripts",
+        "learning_objectives": [
+          "Write simple Python scripts using learned concepts",
+          "Debug and run Python scripts"
+        ],
+        "key_concepts": [
+          "Script structure",
+          "Debugging techniques",
+          "Execution of scripts"
+        ]
+      },
+      {
+        "module_id": "module_6",
+        "title": "Introduction to Data Manipulation",
+        "learning_objectives": [
+          "Understand data manipulation concepts",
+          "Learn about lists and dictionaries"
+        ],
+        "key_concepts": [
+          "Data manipulation",
+          "Lists",
+          "Dictionaries"
+        ]
+      },
+      {
+        "module_id": "module_7",
+        "title": "Data Manipulation with Python",
+        "learning_objectives": [
+          "Perform basic data manipulation using lists and dictionaries",
+          "Use loops and functions for data processing"
+        ],
+        "key_concepts": [
+          "Data processing",
+          "Looping through data",
+          "Function application"
+        ]
+      },
+      {
+        "module_id": "module_8",
+        "title": "Practical Applications of Python",
+        "learning_objectives": [
+          "Apply Python for simple data analysis tasks",
+          "Use libraries for data manipulation"
+        ],
+        "key_concepts": [
+          "Data analysis",
+          "Python libraries",
+          "Practical examples"
+        ]
+      }
+    ]
+  }
+}

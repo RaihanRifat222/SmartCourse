@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["module_content"],
+  "properties": {
+    "module_content": {
+      "type": "object",
+      "required": ["module_id", "sections"],
+      "properties": {
+        "module_id": {
+          "type": "string"
+        },
+        "sections": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "section_id",
+              "title",
+              "conceptual_explanation",
+              "applied_explanation",
+              "example",
+              "practice_questions"
+            ],
+            "properties": {
+              "section_id": { "type": "string" },
+              "title": { "type": "string" },
+              "conceptual_explanation": {
+                "type": "string",
+                "minLength": 100
+              },
+              "applied_explanation": {
+                "type": "string",
+                "minLength": 100
+              },
+              "example": {
+                "type": "string",
+                "minLength": 50
+              },
+              "practice_questions": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "required": ["question", "type"],
+                  "properties": {
+                    "question": { "type": "string" },
+                    "type": {
+                      "type": "string",
+                      "enum": ["short_answer","detailed_answer", "mcq", "scenario"]
+                    },
+                    "options": {
+                      "type": "array",
+                      "items": { "type": "string" }
+                    },
+                    "correct_answer": {
+                      "type": "string"
+                    },
+                    "explanation": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
