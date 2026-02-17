@@ -1,0 +1,28 @@
+{
+  "module_content": {
+    "module_id": "8",
+    "sections": [
+      {
+        "section_id": "1",
+        "title": "Rendering Lists and Understanding Keys",
+        "conceptual_explanation": "In React, rendering lists of data is a common task that allows you to display multiple items dynamically. This concept exists because applications often need to show collections of data, such as user profiles, product listings, or messages. A mental model to understand this is to think of a list as a collection of items in a grocery store. Just as you can have multiple apples, oranges, or bananas, in programming, you can have multiple components that represent similar data. You have already learned about components in React, and rendering lists is simply a way to create multiple instances of a component based on an array of data. This is crucial for building interactive applications that can handle dynamic data efficiently.",
+        "applied_explanation": "To render a list in React, you typically use the JavaScript `map()` function, which allows you to iterate over an array and return a new array of elements. For example, if you have an array of user names, you can map over this array to create a list of `<li>` elements. It\u2019s important to pay attention to the unique 'key' prop that you need to assign to each element in the list. This key helps React identify which items have changed, are added, or are removed, which optimizes rendering performance. A common beginner mistake is to use the index of the array as the key, which can lead to issues when the list changes. Instead, use a unique identifier from the data itself whenever possible.",
+        "example": "Let's say you have an array of fruits: `const fruits = ['Apple', 'Banana', 'Cherry'];`. To render this list in a React component, you would use the `map()` function like this: `const fruitList = fruits.map((fruit, index) => <li key={index}>{fruit}</li>);`. Here, we are creating a list item for each fruit. The `key` prop is set to `index`, which is not ideal, but for simplicity, we are using it here. In a real application, you would want to use a unique identifier for each fruit if available. Finally, you would return this list in your component's render method: `return <ul>{fruitList}</ul>;`. This will display an unordered list of fruits on the webpage.",
+        "practice_questions": [
+          {
+            "question": "What is the purpose of using keys in a list in React?",
+            "type": "short_answer"
+          },
+          {
+            "question": "How do you render a list of items in React?",
+            "type": "short_answer"
+          },
+          {
+            "question": "Imagine you have an array of user names. Write a simple React component that renders this array as a list. What key would you use and why?",
+            "type": "scenario"
+          }
+        ]
+      }
+    ]
+  }
+}

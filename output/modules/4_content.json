@@ -1,0 +1,49 @@
+{
+  "module_content": {
+    "module_id": "4",
+    "sections": [
+      {
+        "section_id": "1",
+        "title": "Understanding Components",
+        "conceptual_explanation": "In React, a component is a reusable piece of code that represents a part of the user interface. Think of components as building blocks for your application. They exist to help you break down complex UIs into smaller, manageable pieces. This modular approach allows developers to create applications that are easier to maintain and scale. You can think of a component like a function in Python: just as a function takes inputs and produces outputs, a component takes props (inputs) and returns a UI (output). You\u2019ve already learned about functions in Python, so this concept should feel familiar. Components can be functional or class-based, but we will focus on functional components in this module, as they are simpler and more commonly used in modern React development.",
+        "applied_explanation": "When you create a component in React, you define a function that returns JSX, which is a syntax extension that looks similar to HTML. This function can accept props as arguments, allowing you to customize the component's output based on the data passed to it. For example, if you have a component that displays a greeting, you can pass a name as a prop to personalize the message. Pay attention to how you structure your components and ensure they are reusable. A common mistake beginners make is to create components that are too specific or tightly coupled to a single use case, which reduces their reusability. Instead, aim to create components that can be used in multiple places with different props.",
+        "example": "Let's create a simple functional component called Greeting. This component will accept a prop called 'name' and display a greeting message. Here\u2019s how it looks:\n\nfunction Greeting(props) {\n  return <h1>Hello, {props.name}!</h1>;\n}\n\nIn this example, 'Greeting' is a function that takes 'props' as an argument. Inside the function, we return a JSX element, which is an <h1> tag that displays 'Hello,' followed by the value of 'props.name'. When you use this component in your app, you can pass different names to it, like this:\n\n<Greeting name='Alice' />\n\nThis will render 'Hello, Alice!'. If you use <Greeting name='Bob' />, it will render 'Hello, Bob!'. This demonstrates how components can be reused with different data.",
+        "practice_questions": [
+          {
+            "question": "What is a component in React?",
+            "type": "short_answer"
+          },
+          {
+            "question": "How do you create a functional component in React?",
+            "type": "short_answer"
+          },
+          {
+            "question": "You are tasked with creating a component that displays a user's profile. What props might you consider passing to this component to make it reusable?",
+            "type": "scenario"
+          }
+        ]
+      },
+      {
+        "section_id": "2",
+        "title": "Understanding Props",
+        "conceptual_explanation": "Props, short for properties, are a way to pass data from one component to another in React. They allow you to customize components and make them dynamic. Think of props as the parameters you pass to a function in Python. Just like you can pass different arguments to a function to get different results, you can pass different props to a component to change its output. Props exist to promote reusability and flexibility in your components. By using props, you can create a single component that can display different data based on what is passed to it. This is similar to how you might use variables in Python to change the output of a function based on input values.",
+        "applied_explanation": "When using props, you define them in the parent component and pass them down to the child component. For example, if you have a parent component that renders a Greeting component, you can pass a name prop to it. The child component can then access this prop and use it in its rendering logic. It\u2019s important to remember that props are read-only; a child component cannot modify the props it receives. A common mistake is to try to change props directly within a component, which can lead to unexpected behavior. Instead, if you need to change data, you should lift the state up to the parent component and pass down new props.",
+        "example": "Let\u2019s enhance our previous example by creating a parent component that uses the Greeting component. Here\u2019s how it looks:\n\nfunction App() {\n  return (\n    <div>\n      <Greeting name='Alice' />\n      <Greeting name='Bob' />\n    </div>\n  );\n}\n\nIn this example, 'App' is the parent component that renders two instances of the 'Greeting' component. Each instance receives a different name prop. When you run this code, it will display:\n\nHello, Alice!\nHello, Bob!\n\nThis shows how props allow you to pass different data to the same component, making it reusable and dynamic.",
+        "practice_questions": [
+          {
+            "question": "What are props in React?",
+            "type": "short_answer"
+          },
+          {
+            "question": "How do you pass props from a parent component to a child component?",
+            "type": "short_answer"
+          },
+          {
+            "question": "Imagine you have a component that displays a list of items. How would you use props to make this component reusable for different lists?",
+            "type": "scenario"
+          }
+        ]
+      }
+    ]
+  }
+}

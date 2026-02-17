@@ -1,0 +1,29 @@
+{
+  "module_content": {
+    "module_id": "11",
+    "sections": [
+      {
+        "section_id": "1",
+        "title": "Introduction to React Router",
+        "conceptual_explanation": "React Router is a library that enables navigation among different components in a React application. It exists to help developers create single-page applications (SPAs) that can change views without reloading the entire page. Think of it like a GPS for your app; just as a GPS helps you navigate from one location to another without leaving the car, React Router allows users to move between different parts of your app seamlessly. You may have learned about functions and how they help organize code in Python; similarly, React Router organizes the different views of your app, making it easier to manage and navigate. Understanding React Router is crucial because it enhances user experience by providing a smooth and fast navigation experience, which is essential in modern web applications.",
+        "applied_explanation": "In practice, using React Router involves setting up routes that define which component should be displayed based on the URL. First, you need to install React Router in your project using npm or yarn. After installation, you will import the necessary components, such as BrowserRouter, Route, and Link. The BrowserRouter wraps your entire application, allowing it to use routing features. Each Route component specifies a path and the component that should render when that path is accessed. The Link component is used to create navigational links that users can click to change the route. Pay attention to the paths you define; they should match the URLs you want to navigate to. A common beginner mistake is forgetting to wrap your routes in BrowserRouter, which will lead to routing not functioning correctly.",
+        "example": "Let's say you have a simple React app with two components: Home and About. First, you would install React Router by running 'npm install react-router-dom'. Then, in your main App.js file, you would import BrowserRouter, Route, and Link from 'react-router-dom'. You would wrap your application in BrowserRouter like this: <BrowserRouter>. Inside it, you would define your routes: <Route path='/' component={Home} /> for the Home component and <Route path='/about' component={About} /> for the About component. To navigate, you would use the Link component: <Link to='/about'>Go to About</Link>. This setup allows users to click the link and see the About component without reloading the page.",
+        "practice_questions": [
+          {
+            "question": "What is the purpose of React Router?",
+            "type": "short_answer"
+          },
+          {
+            "question": "What components do you need to import to use React Router in your app?",
+            "type": "short_answer"
+          },
+          {
+            "question": "Imagine you have a React app with a Home and a Contact page. Write a simple routing setup using React Router.",
+            "type": "scenario",
+            "explanation": "This question tests your understanding of how to implement routing in a React app. You should demonstrate the use of BrowserRouter, Route, and Link components."
+          }
+        ]
+      }
+    ]
+  }
+}

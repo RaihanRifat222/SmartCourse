@@ -1,0 +1,28 @@
+{
+  "module_content": {
+    "module_id": "10",
+    "sections": [
+      {
+        "section_id": "1",
+        "title": "Lifting State Up",
+        "conceptual_explanation": "Lifting state up is a fundamental concept in React that allows you to manage shared state between components. In React, each component can maintain its own state, but sometimes you need to share that state with other components. This is where lifting state up comes into play. It involves moving the state from a child component to a common ancestor component, allowing multiple child components to access and modify the same state. This concept exists to promote better data flow and component communication, ensuring that your application remains organized and predictable. Think of it like a family where the parents (the common ancestor) hold important information that the children (the child components) need to know. By lifting state up, you create a single source of truth for your data, which is crucial for maintaining consistency across your application. This builds on your previous knowledge of components and state in React, as it emphasizes the importance of managing state effectively.",
+        "applied_explanation": "In practice, lifting state up involves a few clear steps. First, identify the state that needs to be shared between components. Next, move this state to the nearest common ancestor component. This ancestor will then pass the state down to the child components as props. When a child component needs to update the state, it will call a function passed down from the ancestor, which will update the state in the ancestor and trigger a re-render of the affected components. Pay attention to how props are passed down and how state is updated, as this is crucial for ensuring that all components reflect the latest state. A common beginner mistake is to try to manage shared state directly in child components instead of lifting it up, which can lead to inconsistent data and difficult-to-maintain code. Remember, the goal is to keep your state management centralized and organized.",
+        "example": "Let's say we have two components: a 'TemperatureInput' that allows users to input a temperature in Celsius and a 'TemperatureDisplay' that shows the temperature in Fahrenheit. Instead of each component managing its own state, we can lift the temperature state up to a 'TemperatureConverter' component. In the 'TemperatureConverter', we define a state variable 'temperature' and a function 'handleTemperatureChange' to update it. We pass 'temperature' and 'handleTemperatureChange' as props to both 'TemperatureInput' and 'TemperatureDisplay'. When the user inputs a temperature in 'TemperatureInput', it calls 'handleTemperatureChange', updating the state in 'TemperatureConverter'. This change triggers a re-render, and 'TemperatureDisplay' receives the updated temperature, converting it to Fahrenheit. This way, both components share the same state, ensuring consistency. Here\u2019s a simplified code snippet: \n\nfunction TemperatureConverter() {\n  const [temperature, setTemperature] = useState(0);\n\n  const handleTemperatureChange = (newTemperature) => {\n    setTemperature(newTemperature);\n  };\n\n  return (\n    <div>\n      <TemperatureInput temperature={temperature} onTemperatureChange={handleTemperatureChange} />\n      <TemperatureDisplay temperature={temperature} />\n    </div>\n  );\n}\n\nIn this example, 'TemperatureInput' and 'TemperatureDisplay' both rely on the state managed in 'TemperatureConverter'.",
+        "practice_questions": [
+          {
+            "question": "What does lifting state up in React allow you to do?",
+            "type": "short_answer"
+          },
+          {
+            "question": "In the context of lifting state up, what is a common mistake beginners make?",
+            "type": "short_answer"
+          },
+          {
+            "question": "Imagine you have a form with multiple input fields that need to share the same state. Describe how you would lift the state up to manage this effectively.",
+            "type": "scenario"
+          }
+        ]
+      }
+    ]
+  }
+}

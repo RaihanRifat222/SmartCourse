@@ -1,0 +1,29 @@
+{
+  "module_content": {
+    "module_id": "7",
+    "sections": [
+      {
+        "section_id": "1",
+        "title": "Conditional Rendering in React",
+        "conceptual_explanation": "Conditional rendering in React is a way to display different components or elements based on certain conditions. It exists because in real-world applications, we often need to show or hide parts of the UI depending on user interactions or application state. Think of it like a light switch: when the switch is on, the light (or component) is visible; when it's off, the light is hidden. This concept connects to what you've learned about basic programming logic, where conditions determine the flow of execution. In React, we use conditional statements and ternary operators to control what gets rendered, making our applications dynamic and responsive to user input.",
+        "applied_explanation": "In practice, conditional rendering works by using JavaScript expressions within JSX. You can use if statements, logical operators, or ternary operators to decide which component to render. For example, if you want to show a login button when a user is not logged in and a logout button when they are, you would check the user's authentication status. Pay attention to the syntax of JSX, as it can be tricky to mix JavaScript logic with HTML-like code. A common beginner mistake is forgetting to wrap JavaScript expressions in curly braces within JSX, which can lead to errors or unexpected behavior. Always ensure your conditions are correctly set up to avoid rendering issues.",
+        "example": "Let's say we want to display a welcome message if a user is logged in and a login prompt if they are not. We can use a ternary operator for this. Here\u2019s how it looks in code: \n\nconst isLoggedIn = true; // This variable represents the user's login status\nconst message = isLoggedIn ? <h1>Welcome back!</h1> : <h1>Please log in.</h1>; \n\nIn this example, we declare a variable 'isLoggedIn' that holds a boolean value. The ternary operator checks if 'isLoggedIn' is true. If it is, it renders the welcome message; if not, it renders the login prompt. This allows us to conditionally render different components based on the user's state, making our application interactive and user-friendly.",
+        "practice_questions": [
+          {
+            "question": "What is conditional rendering in React?",
+            "type": "short_answer"
+          },
+          {
+            "question": "How does a ternary operator work in JSX?",
+            "type": "short_answer"
+          },
+          {
+            "question": "Imagine you are building a dashboard. You want to show a loading spinner while data is being fetched and the actual data once it is ready. How would you implement this using conditional rendering?",
+            "type": "scenario",
+            "explanation": "In this scenario, you would use a state variable to track whether the data is still loading. You could then use a conditional statement to render the spinner when loading is true and the data when loading is false."
+          }
+        ]
+      }
+    ]
+  }
+}

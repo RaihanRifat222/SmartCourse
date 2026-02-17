@@ -2,107 +2,161 @@
   "curriculum": {
     "modules": [
       {
-        "module_id": "module_1",
-        "title": "Introduction to Python",
+        "module_id": "1",
+        "title": "Introduction to React",
         "learning_objectives": [
-          "Understand what Python is and its applications",
-          "Install Python and set up the development environment"
+          "Understand what React is",
+          "Learn about the benefits of using React"
         ],
         "key_concepts": [
-          "Python overview",
-          "Installation",
-          "Development environment setup"
+          "JavaScript library",
+          "Component-based architecture"
         ]
       },
       {
-        "module_id": "module_2",
-        "title": "Basic Python Syntax",
+        "module_id": "2",
+        "title": "Setting Up the Development Environment",
         "learning_objectives": [
-          "Learn basic Python syntax",
-          "Understand data types and variables"
+          "Install Node.js and npm",
+          "Set up a new React project using Create React App"
         ],
         "key_concepts": [
-          "Syntax rules",
-          "Data types",
-          "Variables"
+          "Node.js",
+          "npm",
+          "Create React App"
         ]
       },
       {
-        "module_id": "module_3",
-        "title": "Control Structures in Python",
+        "module_id": "3",
+        "title": "Understanding JSX",
         "learning_objectives": [
-          "Understand and use conditional statements",
-          "Learn about loops in Python"
+          "Learn what JSX is",
+          "Write simple JSX code"
         ],
         "key_concepts": [
-          "If statements",
-          "For loops",
-          "While loops"
+          "JSX syntax",
+          "Embedding expressions"
         ]
       },
       {
-        "module_id": "module_4",
-        "title": "Functions in Python",
+        "module_id": "4",
+        "title": "Components and Props",
         "learning_objectives": [
-          "Define and call functions",
-          "Understand function parameters and return values"
+          "Understand the concept of components",
+          "Learn how to pass data using props"
         ],
         "key_concepts": [
-          "Function definition",
-          "Parameters",
-          "Return values"
+          "Functional components",
+          "Props"
         ]
       },
       {
-        "module_id": "module_5",
-        "title": "Writing Basic Python Scripts",
+        "module_id": "5",
+        "title": "State and Lifecycle",
         "learning_objectives": [
-          "Write simple Python scripts using learned concepts",
-          "Debug and run Python scripts"
+          "Learn about state in React",
+          "Understand component lifecycle methods"
         ],
         "key_concepts": [
-          "Script structure",
-          "Debugging techniques",
-          "Execution of scripts"
+          "State",
+          "Lifecycle methods"
         ]
       },
       {
-        "module_id": "module_6",
-        "title": "Introduction to Data Manipulation",
+        "module_id": "6",
+        "title": "Handling Events",
         "learning_objectives": [
-          "Understand data manipulation concepts",
-          "Learn about lists and dictionaries"
+          "Learn how to handle events in React",
+          "Create interactive components"
         ],
         "key_concepts": [
-          "Data manipulation",
-          "Lists",
-          "Dictionaries"
+          "Event handling",
+          "Synthetic events"
         ]
       },
       {
-        "module_id": "module_7",
-        "title": "Data Manipulation with Python",
+        "module_id": "7",
+        "title": "Conditional Rendering",
         "learning_objectives": [
-          "Perform basic data manipulation using lists and dictionaries",
-          "Use loops and functions for data processing"
+          "Understand how to render components conditionally",
+          "Implement conditional logic in JSX"
         ],
         "key_concepts": [
-          "Data processing",
-          "Looping through data",
-          "Function application"
+          "Conditional statements",
+          "Ternary operators"
         ]
       },
       {
-        "module_id": "module_8",
-        "title": "Practical Applications of Python",
+        "module_id": "8",
+        "title": "Lists and Keys",
         "learning_objectives": [
-          "Apply Python for simple data analysis tasks",
-          "Use libraries for data manipulation"
+          "Learn how to render lists of data",
+          "Understand the importance of keys in lists"
         ],
         "key_concepts": [
-          "Data analysis",
-          "Python libraries",
-          "Practical examples"
+          "Mapping arrays",
+          "Keys in React"
+        ]
+      },
+      {
+        "module_id": "9",
+        "title": "Forms in React",
+        "learning_objectives": [
+          "Understand controlled components",
+          "Handle form submissions"
+        ],
+        "key_concepts": [
+          "Controlled vs uncontrolled components",
+          "Form handling"
+        ]
+      },
+      {
+        "module_id": "10",
+        "title": "Lifting State Up",
+        "learning_objectives": [
+          "Learn how to lift state up to a common ancestor",
+          "Share state between components"
+        ],
+        "key_concepts": [
+          "Lifting state",
+          "Shared state"
+        ]
+      },
+      {
+        "module_id": "11",
+        "title": "React Router Basics",
+        "learning_objectives": [
+          "Understand the purpose of React Router",
+          "Implement basic routing in a React app"
+        ],
+        "key_concepts": [
+          "React Router",
+          "Route and Link components"
+        ]
+      },
+      {
+        "module_id": "12",
+        "title": "Introduction to Hooks",
+        "learning_objectives": [
+          "Learn what hooks are",
+          "Use the useState and useEffect hooks"
+        ],
+        "key_concepts": [
+          "Hooks",
+          "useState",
+          "useEffect"
+        ]
+      },
+      {
+        "module_id": "13",
+        "title": "Building a Simple React App",
+        "learning_objectives": [
+          "Combine all learned concepts to build a simple app",
+          "Deploy the app to a hosting service"
+        ],
+        "key_concepts": [
+          "Project structure",
+          "Deployment"
         ]
       }
     ]
