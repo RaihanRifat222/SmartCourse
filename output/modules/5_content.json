@@ -5,42 +5,35 @@
       {
         "section_id": "1",
         "title": "Understanding State in React",
-        "conceptual_explanation": "In React, 'state' refers to a built-in object that allows components to manage their own data. It exists because components often need to respond to user input or other events, and state provides a way to store and manipulate this dynamic data. Think of state as a container that holds information about the component's current situation, similar to how a variable holds data in Python. For example, if you have a counter app, the current count would be stored in the state. This concept connects to what you've learned in Python about variables, but in React, state is more dynamic and can change over time, triggering re-renders of the component to reflect the new data.",
-        "applied_explanation": "To use state in a React component, you typically start by importing the useState hook from React. This hook allows you to declare a state variable and a function to update it. For instance, you might declare a state variable called 'count' and initialize it to zero. When a user clicks a button, you can call the update function to increase the count. Pay attention to how state updates can cause the component to re-render, which is crucial for keeping the UI in sync with the data. A common beginner mistake is to directly modify the state variable instead of using the update function, which can lead to unexpected behavior and bugs.",
-        "example": "Let's create a simple counter app using React. First, we import React and the useState hook: 'import React, { useState } from 'react';'. Next, we define our functional component: 'function Counter() {'. Inside this component, we declare our state: 'const [count, setCount] = useState(0);'. This line initializes 'count' to 0 and provides 'setCount' to update it. We then return a button and a display: '<button onClick={() => setCount(count + 1)}>Increment</button>' and '<p>Count: {count}</p>'. When the button is clicked, 'setCount' updates 'count', causing the component to re-render and display the new count.",
+        "conceptual_explanation": "In React, 'state' refers to a built-in object that allows components to manage their own data. It exists because components often need to respond to user input or other events, and state provides a way to store and manipulate this dynamic data. Think of state as a container that holds information about the component's current situation, similar to how a variable holds data in Python. For example, if you have a counter app, the current count is stored in the state. This concept connects to what you've learned in Python about variables, but in React, state is more dynamic and can change over time, triggering re-renders of the component to reflect the new data.",
+        "applied_explanation": "To use state in a React component, you typically start by importing the useState hook from React. This hook allows you to declare a state variable and a function to update it. For instance, you might declare a state variable called 'count' and initialize it to zero. When the user clicks a button, you can call the update function to increase the count. Pay attention to how state updates can cause the component to re-render, which is crucial for keeping the UI in sync with the underlying data. A common beginner mistake is to directly modify the state variable instead of using the update function, which can lead to unexpected behavior and bugs.",
+        "example": "Let's create a simple counter app using React. First, we import React and the useState hook: 'import React, { useState } from 'react';'. Next, we define our functional component: 'function Counter() {'. Inside this function, we declare our state variable: 'const [count, setCount] = useState(0);'. This line initializes 'count' to 0 and provides 'setCount' to update it. We then return a button and a display for the count: '<button onClick={() => setCount(count + 1)}>Increment</button>' and '<p>Count: {count}</p>'. When the button is clicked, 'setCount' updates the state, causing the component to re-render and display the new count.",
         "practice_questions": [
           {
-            "question": "What is state in React?",
+            "question": "What is the purpose of state in a React component?",
             "type": "short_answer"
           },
           {
             "question": "How do you update the state in a React component?",
             "type": "short_answer"
-          },
-          {
-            "question": "Imagine you have a button that should increase a score. Describe how you would implement this using state.",
-            "type": "scenario"
           }
         ]
       },
       {
         "section_id": "2",
         "title": "Component Lifecycle Methods",
-        "conceptual_explanation": "Component lifecycle methods are special functions in React that allow you to run code at specific points in a component's life, such as when it is created, updated, or removed from the DOM. They exist to give developers control over the behavior of components during these phases, enabling tasks like fetching data or cleaning up resources. You can think of lifecycle methods as checkpoints in a component's journey, similar to how you might have checkpoints in a program to handle different states. This concept builds on your understanding of functions in Python, where you might execute certain code based on conditions or events.",
-        "applied_explanation": "In class components, lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount are used to perform actions at different stages. For example, componentDidMount runs after the component is first rendered, making it a good place to fetch data. To use these methods, you define them within your class component. Pay attention to the timing of these methods; for instance, if you try to access the DOM before it is rendered, you may encounter errors. A common mistake is to forget to clean up resources in componentWillUnmount, which can lead to memory leaks.",
-        "example": "Let's look at a class component that fetches user data. First, we define our component: 'class UserList extends React.Component {'. In the constructor, we initialize state: 'this.state = { users: [] };'. Then, we implement componentDidMount: 'componentDidMount() { fetch('https://api.example.com/users').then(response => response.json()).then(data => this.setState({ users: data })); }'. This method fetches user data when the component mounts and updates the state with the fetched data. Finally, we render the users: 'render() { return <ul>{this.state.users.map(user => <li key={user.id}>{user.name}</li>)}</ul>; }'. This example shows how lifecycle methods can be used to manage data fetching in a React component.",
+        "conceptual_explanation": "Lifecycle methods are special functions in React components that allow you to run code at specific points in a component's life, such as when it is created, updated, or removed from the DOM. They exist to give developers control over the behavior of components during these phases, enabling tasks like fetching data or cleaning up resources. You can think of lifecycle methods as checkpoints in a component's journey, similar to how you might have checkpoints in a program to handle different states. This concept builds on your understanding of functions in Python, where you might execute certain code based on conditions or events.",
+        "applied_explanation": "In class components, lifecycle methods are defined as part of the component class. For example, 'componentDidMount' is called after the component is first rendered, making it a great place to fetch data. You can also use 'componentDidUpdate' to respond to changes in props or state. It's important to remember that these methods can affect performance, so you should only include necessary logic. A common mistake is to forget to clean up resources in 'componentWillUnmount', which can lead to memory leaks and performance issues. In functional components, you can achieve similar behavior using the useEffect hook, which allows you to run side effects based on state or prop changes.",
+        "example": "Let's look at a class component that fetches data when it mounts. First, we define our component: 'class DataFetcher extends React.Component {'. In the constructor, we initialize state: 'this.state = { data: null };'. Next, we implement 'componentDidMount': 'componentDidMount() { fetch('https://api.example.com/data') .then(response => response.json()) .then(data => this.setState({ data })); }'. This method fetches data from an API and updates the state with the received data. Finally, we render the data: 'return <div>{this.state.data ? this.state.data : 'Loading...'}</div>;'. When the component mounts, it fetches the data and updates the UI accordingly.",
         "practice_questions": [
           {
-            "question": "What is the purpose of lifecycle methods in React?",
+            "question": "What are lifecycle methods in React?",
             "type": "short_answer"
           },
           {
-            "question": "Describe what happens in the componentDidMount method.",
-            "type": "short_answer"
-          },
-          {
-            "question": "You have a component that needs to fetch data when it mounts. How would you implement this using lifecycle methods?",
-            "type": "scenario"
+            "question": "Describe a scenario where you would use componentDidMount.",
+            "type": "scenario",
+            "explanation": "Think about a situation where you need to fetch data from an API when a component is first rendered. This is a perfect use case for componentDidMount, as it allows you to initiate the data fetching process right after the component is added to the DOM."
           }
         ]
       }

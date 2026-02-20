@@ -5,51 +5,42 @@
       {
         "section_id": "1",
         "title": "Understanding Hooks in React",
-        "conceptual_explanation": "Hooks are a feature in React that allow you to use state and other React features without writing a class. They exist to simplify the way we manage state and side effects in functional components, making our code cleaner and easier to understand. Think of hooks as special functions that let you 'hook into' React's state and lifecycle features from function components. Previously, managing state was only possible in class components, which could be more complex and less intuitive. By using hooks, you can keep your components functional and still have the power of state management. This connects to what you've learned about functions in Python, where you can create reusable blocks of code. Hooks allow you to create reusable logic in your React components, similar to how functions work in Python.",
-        "applied_explanation": "In practice, using hooks involves importing them from the React library and calling them within your functional components. The most commonly used hooks are useState and useEffect. The useState hook allows you to add state to your component, while useEffect lets you perform side effects, like fetching data or subscribing to events. To use useState, you call it with an initial state value, and it returns an array with the current state and a function to update it. For useEffect, you call it with a function that contains the code for your side effect and an optional dependency array that tells React when to run the effect. A common beginner mistake is to forget that hooks can only be called at the top level of a component and not inside loops or conditions, as this can lead to unpredictable behavior.",
-        "example": "Let's create a simple counter app using the useState hook. First, we import React and the useState hook: `import React, { useState } from 'react';`. Next, we define our functional component: `function Counter() {`. Inside the component, we call useState to create a state variable: `const [count, setCount] = useState(0);`. This initializes count to 0. We then create a button that, when clicked, will update the count: `<button onClick={() => setCount(count + 1)}>Increment</button>`. The `setCount` function updates the state, and React re-renders the component with the new count. Finally, we display the current count: `<p>Current count: {count}</p>`. This example shows how hooks allow us to manage state in a functional component easily.",
+        "conceptual_explanation": "Hooks are a feature in React that allow you to use state and other React features without writing a class. They exist to simplify the way we manage state and side effects in functional components, making our code cleaner and easier to understand. Think of hooks as special functions that let you 'hook into' React's state and lifecycle features from function components. Before hooks, managing state was primarily done in class components, which could be more complex and less intuitive. By using hooks, you can keep your components functional and still have access to powerful features. This connects to what you've learned about functions in Python, where you can create reusable blocks of code. Hooks allow you to create reusable logic in your React components, similar to how functions work in Python.",
+        "applied_explanation": "In practice, using hooks involves importing them from the React library and calling them within your functional components. The most commonly used hooks are useState and useEffect. The useState hook allows you to add state to your functional components, while useEffect lets you perform side effects, such as fetching data or subscribing to events. When using useState, you declare a state variable and a function to update it. With useEffect, you can specify code that should run after the component renders. Pay attention to the dependencies you provide to useEffect, as they determine when the effect runs. A common mistake beginners make is forgetting to include dependencies, which can lead to unexpected behavior or performance issues. Always ensure you understand when and why your effects are running.",
+        "example": "Let's create a simple counter app using useState. First, we import React and the useState hook: `import React, { useState } from 'react';`. Next, we define our functional component: `function Counter() {`. Inside this component, we call useState to create a state variable: `const [count, setCount] = useState(0);`. Here, `count` is our state variable initialized to 0, and `setCount` is the function we will use to update `count`. We then return some JSX: `<div><p>You clicked {count} times</p><button onClick={() => setCount(count + 1)}>Click me</button></div>`. This button, when clicked, will call `setCount` to increment the count. This example shows how hooks can manage state in a functional component, making it straightforward and intuitive.",
         "practice_questions": [
           {
             "question": "What are hooks in React?",
             "type": "short_answer"
           },
           {
-            "question": "Explain how the useState hook works in a functional component.",
+            "question": "Explain how useState works in a functional component.",
             "type": "short_answer"
           },
           {
-            "question": "You are building a component that needs to fetch data from an API when it mounts. Which hook would you use and why?",
-            "type": "scenario",
-            "explanation": "This question assesses your understanding of when to use useEffect for side effects like data fetching."
+            "question": "You are building a component that fetches user data from an API. How would you use useEffect to handle this? Describe the steps you would take.",
+            "type": "scenario"
           }
         ]
       },
       {
         "section_id": "2",
-        "title": "Using the useEffect Hook",
-        "conceptual_explanation": "The useEffect hook is essential for managing side effects in your React components. Side effects are operations that can affect other components and cannot be done during rendering, such as data fetching, subscriptions, or manually changing the DOM. The useEffect hook exists to handle these operations in a clean and efficient way. You can think of it as a way to tell React, 'Hey, when this component mounts or updates, run this code.' This is similar to how you might use a function in Python to perform an action after a certain condition is met. The useEffect hook connects to your previous knowledge of functions and control flow, as it allows you to execute code based on specific conditions.",
-        "applied_explanation": "To use the useEffect hook, you import it from React and call it inside your functional component. You pass it a function that contains the code for your side effect. For example, if you want to fetch data when the component mounts, you would place your fetch call inside the useEffect function. Additionally, you can provide a dependency array as the second argument to control when the effect runs. If you leave it empty, the effect runs only once when the component mounts. A common mistake is to forget to include dependencies in the array, which can lead to stale data or unnecessary re-renders. Always ensure you understand when your effect should run to avoid performance issues.",
-        "example": "Let's enhance our counter app by adding a useEffect hook to log the current count whenever it changes. We start by importing useEffect: `import React, { useState, useEffect } from 'react';`. Inside our Counter component, we add the useEffect hook: `useEffect(() => { console.log('Count has changed:', count); }, [count]);`. This effect runs every time the count changes, as we specified count in the dependency array. The first argument is a function that logs the count, and the second argument is the array of dependencies. This example illustrates how useEffect can be used to perform actions based on state changes, similar to how you might react to changes in a variable in Python.",
+        "title": "Using useEffect for Side Effects",
+        "conceptual_explanation": "The useEffect hook is designed to handle side effects in your React components. Side effects are operations that can affect other components and cannot be done during rendering, such as data fetching, subscriptions, or manually changing the DOM. useEffect exists to provide a way to perform these operations in a controlled manner. You can think of it as a way to tell React, 'After I render this component, do this additional work.' This is similar to how you might use a callback function in Python to execute code after a certain operation is complete. Understanding useEffect is crucial because it helps you manage the lifecycle of your components, ensuring that side effects are executed at the right time, which is something you may have encountered in your programming experience.",
+        "applied_explanation": "When you use useEffect, you pass it a function that contains the code for your side effect. This function runs after the component renders. You can also provide a dependency array as a second argument, which tells React when to run the effect. If you leave this array empty, the effect runs only once after the initial render. If you include variables in this array, the effect will run whenever those variables change. It's important to manage these dependencies carefully to avoid unnecessary re-renders or infinite loops. A common mistake is to forget to include dependencies, which can lead to stale data or performance issues. Always check what variables your effect relies on and include them in the dependency array.",
+        "example": "Let's enhance our counter app to fetch a random number from an API every time the component mounts. We start by importing useEffect: `import React, { useState, useEffect } from 'react';`. In our Counter component, we add a new state variable for the random number: `const [randomNumber, setRandomNumber] = useState(null);`. Next, we use useEffect to fetch the number: `useEffect(() => { fetch('https://api.randomnumber.com') .then(response => response.json()) .then(data => setRandomNumber(data.number)); }, []);`. This effect runs once when the component mounts, fetching a random number from the API and updating our state. We can then display this number in our JSX: `<p>Random Number: {randomNumber}</p>`. This example illustrates how useEffect can be used to handle side effects like data fetching in a functional component.",
         "practice_questions": [
           {
-            "question": "What is the purpose of the useEffect hook?",
+            "question": "What is the purpose of useEffect in React?",
             "type": "short_answer"
           },
           {
-            "question": "Describe a scenario where you would use useEffect in a React component.",
-            "type": "scenario",
-            "explanation": "This question evaluates your ability to apply useEffect in real-world situations, such as data fetching or subscriptions."
+            "question": "How would you use useEffect to set up a subscription to an event?",
+            "type": "short_answer"
           },
           {
-            "question": "Which of the following is a common mistake when using useEffect? (a) Forgetting to import useEffect, (b) Not including dependencies, (c) Using useEffect in class components.",
-            "type": "mcq",
-            "options": [
-              "a",
-              "b",
-              "c"
-            ],
-            "correct_answer": "b",
-            "explanation": "Not including dependencies can lead to stale data or unnecessary re-renders, which is a common mistake when using useEffect."
+            "question": "Imagine you have a component that needs to fetch data from an API every time a user clicks a button. How would you implement this using useEffect? Describe your approach.",
+            "type": "scenario"
           }
         ]
       }

@@ -82,8 +82,8 @@
           "Implement conditional logic in JSX"
         ],
         "key_concepts": [
-          "Conditional statements",
-          "Ternary operators"
+          "Conditional rendering",
+          "Logical operators"
         ]
       },
       {
@@ -106,7 +106,7 @@
           "Handle form submissions"
         ],
         "key_concepts": [
-          "Controlled vs uncontrolled components",
+          "Controlled components",
           "Form handling"
         ]
       },
@@ -131,7 +131,7 @@
         ],
         "key_concepts": [
           "React Router",
-          "Route and Link components"
+          "Routing"
         ]
       },
       {
@@ -151,11 +151,11 @@
         "module_id": "13",
         "title": "Building a Simple React App",
         "learning_objectives": [
-          "Combine all learned concepts to build a simple app",
+          "Apply all learned concepts to build a simple React app",
           "Deploy the app to a hosting service"
         ],
         "key_concepts": [
-          "Project structure",
+          "Project integration",
           "Deployment"
         ]
       }

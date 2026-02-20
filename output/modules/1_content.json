@@ -5,9 +5,9 @@
       {
         "section_id": "1.1",
         "title": "What is React?",
-        "conceptual_explanation": "React is a JavaScript library created by Facebook for building user interfaces, particularly for single-page applications where you want a smooth user experience. It exists to help developers create large web applications that can change data without reloading the page. Think of React as a set of building blocks for your web applications. Each block, or component, can be reused and combined to create complex user interfaces. This modular approach makes it easier to manage and maintain your code. If you have learned about functions and classes in Python, you can think of React components as similar to those concepts, where each component encapsulates its own logic and presentation. This allows for a more organized and efficient way to build applications, especially as they grow in size and complexity.",
-        "applied_explanation": "In practice, using React involves creating components that represent parts of your user interface. Each component can manage its own state and can be composed together to form a complete application. For example, you might have a 'Header' component, a 'Footer' component, and a 'MainContent' component, each responsible for rendering a specific part of the UI. When you build a React application, you typically start by setting up a development environment using tools like Create React App, which sets up everything you need to get started. Pay attention to how components communicate with each other, often through props (properties) that allow data to flow from parent to child components. A common beginner mistake is to try to manipulate the DOM directly instead of using React's state management, which can lead to unexpected behavior in your application.",
-        "example": "Let's create a simple React component that displays a greeting message. First, we define a function called 'Greeting'. Inside this function, we return a JSX element, which looks like HTML but is actually JavaScript. The code looks like this: \n\nfunction Greeting() { \n  return <h1>Hello, welcome to React!</h1>; \n}\n\nHere, 'Greeting' is our component. When this component is rendered, it will display 'Hello, welcome to React!' on the webpage. The 'h1' tag is a standard HTML tag, and JSX allows us to write HTML-like syntax directly in our JavaScript code. This makes it easy to visualize what our UI will look like. To use this component, we would include it in another component's render method, like so: \n\nfunction App() { \n  return <Greeting />; \n}\n\nIn this example, 'App' is the main component that renders 'Greeting'.",
+        "conceptual_explanation": "React is a JavaScript library developed by Facebook for building user interfaces, particularly for single-page applications where you want a smooth user experience. It exists to simplify the process of creating interactive UIs by allowing developers to build encapsulated components that manage their own state. This means you can create complex UIs from small, reusable pieces of code. Think of React as a set of building blocks; each block (or component) can be put together to create a larger structure (your application). If you have learned about functions in Python, you can think of React components as similar to functions that return a piece of UI instead of a value. This modular approach makes it easier to manage and scale applications as they grow.",
+        "applied_explanation": "In practice, using React involves creating components that represent parts of your user interface. Each component can have its own state and props (properties) that determine how it behaves and what it displays. When you build a React app, you start by creating a component, which is essentially a JavaScript function or class. You then use this component in your main application file, often called 'App.js'. As you develop, you will notice that React updates the UI efficiently when the state of a component changes, thanks to its virtual DOM. A common mistake for beginners is to try to manipulate the DOM directly instead of using React's state management, which can lead to unexpected behavior. Always remember to let React handle the UI updates for you.",
+        "example": "Let's create a simple React component that displays a greeting message. First, we import React from 'react'. Then, we define a function called 'Greeting' that returns a JSX element, which looks like HTML but is actually JavaScript. Inside this function, we can use a variable to hold our message. Finally, we export the component so it can be used in other parts of our application. Here\u2019s the code: \n\nimport React from 'react'; \n\nfunction Greeting() { \n  const message = 'Hello, welcome to React!'; \n  return <h1>{message}</h1>; \n} \n\nexport default Greeting; \n\nIn this example, we created a functional component called 'Greeting'. The 'message' variable holds the text we want to display, and we use JSX to render it inside an <h1> tag. This is a simple yet effective way to create reusable UI elements in React.",
         "practice_questions": [
           {
             "question": "What is React primarily used for?",
@@ -17,46 +17,17 @@
             "question": "Which of the following best describes React's architecture?",
             "type": "mcq",
             "options": [
-              "A monolithic architecture",
-              "A component-based architecture",
-              "A server-side architecture"
+              "Monolithic architecture",
+              "Component-based architecture",
+              "Service-oriented architecture"
             ],
-            "correct_answer": "A component-based architecture",
-            "explanation": "React uses a component-based architecture, allowing developers to build encapsulated components that manage their own state and can be composed to create complex UIs."
+            "correct_answer": "Component-based architecture",
+            "explanation": "React uses a component-based architecture, allowing developers to build encapsulated components that manage their own state."
           },
           {
-            "question": "Imagine you are building a web application with a header, main content area, and footer. How would you structure these using React components?",
+            "question": "Imagine you are building a user profile component in React. What key features would you include to manage user data effectively?",
             "type": "scenario",
-            "explanation": "You would create three separate components: 'Header', 'MainContent', and 'Footer'. Each component would be responsible for rendering its respective part of the UI, and you would use a parent component to include these three components together."
-          }
-        ]
-      },
-      {
-        "section_id": "1.2",
-        "title": "Benefits of Using React",
-        "conceptual_explanation": "React offers several benefits that make it a popular choice among developers. One of the main advantages is its efficiency in updating and rendering the right components when your data changes. This is achieved through a virtual DOM, which is a lightweight copy of the actual DOM. When changes occur, React updates the virtual DOM first, calculates the most efficient way to update the real DOM, and then applies those changes. This results in faster performance and a smoother user experience. Additionally, React's component-based architecture promotes reusability, meaning you can create a component once and use it in multiple places throughout your application. This not only saves time but also helps maintain consistency in your UI. If you think about how you might reuse functions in Python, components in React serve a similar purpose, allowing you to encapsulate functionality and reuse it wherever needed.",
-        "applied_explanation": "When you start using React, you will notice how it simplifies the process of building interactive UIs. For instance, if you want to create a button that updates a counter when clicked, you can create a 'Counter' component that manages its own state. This component will handle the logic for incrementing the counter and re-rendering itself whenever the state changes. As you build more complex applications, you will appreciate how React's ecosystem, including libraries like React Router for navigation and Redux for state management, can help you manage your application's structure and data flow. A common mistake for beginners is to overlook the importance of state management, leading to components that do not update as expected when data changes.",
-        "example": "Consider a simple example where we create a 'Counter' component that increments a number each time a button is clicked. First, we define the component: \n\nimport React, { useState } from 'react';\n\nfunction Counter() { \n  const [count, setCount] = useState(0);\n\n  return (\n    <div>\n      <p>You clicked {count} times</p>\n      <button onClick={() => setCount(count + 1)}>Click me</button>\n    </div>\n  );\n}\n\nIn this code, we import React and the 'useState' hook, which allows us to add state to our functional component. We initialize 'count' to 0. The 'setCount' function updates the state when the button is clicked. The 'onClick' event handler calls 'setCount' with the new value, which triggers a re-render of the component, displaying the updated count. This demonstrates how React efficiently manages state and updates the UI.",
-        "practice_questions": [
-          {
-            "question": "What is one major benefit of using React's virtual DOM?",
-            "type": "short_answer"
-          },
-          {
-            "question": "Which of the following is a common mistake when using React?",
-            "type": "mcq",
-            "options": [
-              "Not using components",
-              "Overusing state",
-              "Ignoring props"
-            ],
-            "correct_answer": "Not using components",
-            "explanation": "A common mistake is to not take advantage of React's component-based architecture, which can lead to less organized and harder-to-maintain code."
-          },
-          {
-            "question": "You are building a simple application that requires a button to increment a counter. Describe how you would implement this using React.",
-            "type": "scenario",
-            "explanation": "You would create a 'Counter' component that uses the 'useState' hook to manage the count state. The component would render a button that, when clicked, calls a function to update the count, causing the component to re-render with the new count value."
+            "explanation": "Consider using state to hold user information and props to pass data to child components. Think about how you would handle updates to the user data."
           }
         ]
       }
