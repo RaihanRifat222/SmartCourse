@@ -1,38 +1,341 @@
-.App {
+.app {
+  min-height: 100vh;
+  color: var(--text);
+  position: relative;
+}
+
+.main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 28px 24px 80px;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 24px 0;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.nav-brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.brand-mark {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #0d0e12;
+  box-shadow: 0 12px 30px rgba(255, 107, 0, 0.25);
+}
+
+.brand-title {
+  font-family: var(--font-display);
+  font-size: 18px;
+  margin: 0;
+}
+
+.brand-subtitle {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-link {
+  padding: 10px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.2s ease, background 0.2s ease;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.nav-link-active {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #0b0c10;
+  box-shadow: 0 10px 24px rgba(255, 107, 0, 0.2);
+}
+
+.hero {
+  background: radial-gradient(
+      circle at top left,
+      rgba(255, 107, 0, 0.25),
+      transparent 60%
+    ),
+    linear-gradient(140deg, rgba(12, 18, 45, 0.9), rgba(11, 5, 20, 0.9));
+  border-radius: 24px;
+  padding: 36px;
+  margin-bottom: 28px;
+  box-shadow: 0 30px 60px rgba(5, 8, 24, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  animation: fade-up 0.6s ease;
+}
+
+.hero h1 {
+  margin: 0 0 8px;
+  font-family: var(--font-display);
+  font-size: clamp(28px, 3vw, 40px);
+}
+
+.hero p {
+  margin: 0;
+  color: var(--muted);
+  max-width: 640px;
+}
+
+.hero-compact {
+  padding: 28px 32px;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card {
+  background: rgba(17, 18, 26, 0.85);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 24px;
+  box-shadow: 0 18px 40px rgba(10, 8, 30, 0.35);
+}
+
+.card-header h2 {
+  margin: 0 0 6px;
+  font-family: var(--font-display);
+}
+
+.card-header p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.form-card {
+  backdrop-filter: blur(8px);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field span {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.field input {
+  background: rgba(8, 10, 16, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 12px 14px;
+  border-radius: 12px;
+  color: var(--text);
+  font-size: 14px;
+}
+
+.field input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(255, 107, 0, 0.2);
+}
+
+.field-wide {
+  grid-column: 1 / -1;
+}
+
+.form-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.primary-button {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #0b0c10;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primary-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.primary-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 30px rgba(255, 107, 0, 0.3);
+}
+
+.lesson-viewer {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.section-header h2 {
+  margin: 0 0 4px;
+}
+
+.section-header p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.module-card h3 {
+  margin-top: 0;
+}
+
+.module-section {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+.section-block {
+  margin-top: 12px;
+}
+
+.section-label {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.code-block {
+  background: #0a0f1f;
+  color: #f7c272;
+  padding: 14px;
+  border-radius: 12px;
+  overflow-x: auto;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.course-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.course-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.course-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.course-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.text-link {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.text-link:hover {
+  color: var(--accent-2);
+}
+
+.stack-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.pill {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.empty-state {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes fade-up {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(12px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 720px) {
+  .nav-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .stack-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .course-row {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
