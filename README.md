@@ -54,7 +54,7 @@ SmartCourse follows a simple pipeline with clear separation between generation, 
    - JSON schemas in `schemas/` ensure consistency.
    - Invalid outputs are rejected and regenerated.
 
-**Data Flow (high level)**
+**Data Flow**
 ```
 Frontend -> FastAPI -> course_engine -> agents -> JSON output -> Frontend
 ```
