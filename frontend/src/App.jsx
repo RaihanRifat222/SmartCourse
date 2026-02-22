@@ -21,6 +21,7 @@ function App() {
   const [courses, setCourses] = useState([]);
   const [loading, setLoading] = useState(false);
   const [loadingCourses, setLoadingCourses] = useState(false);
+  const [latestGenerated, setLatestGenerated] = useState(null);
 
   const handleChange = (e) => {
     setFormData({
@@ -65,6 +66,7 @@ function App() {
 
       const savedCourse = await generateCourse(payload);
       setCourses((prev) => [savedCourse, ...prev]);
+      setLatestGenerated(savedCourse);
     } catch (error) {
       console.error("Error generating course:", error);
     }
@@ -92,7 +94,7 @@ function App() {
                 onGenerate={handleGenerateCourse}
                 loading={loading}
                 loadingCourses={loadingCourses}
-                latestCourse={courses[0]}
+                latestCourse={latestGenerated}
               />
             }
           />

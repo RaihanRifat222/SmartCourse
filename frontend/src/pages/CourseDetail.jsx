@@ -44,7 +44,7 @@ function CourseDetail({ courses, loadingCourses, onRegenerateModule }) {
       <div className="card">
         <div className="detail-actions">
           <Link className="text-link" to="/courses">
-
+            &larr; Back to all courses
           </Link>
           {course && (
             <a
@@ -72,11 +72,17 @@ function CourseDetail({ courses, loadingCourses, onRegenerateModule }) {
         <section className="course-stack">
           <div className="stack-header">
             <div>
-              <h2>{course.id}</h2>
+              <h2>{course.learning_request?.topic || course.id}</h2>
               <p className="muted">{course.created_at}</p>
             </div>
             <span className="pill">Saved course</span>
           </div>
+          {course.learning_request?.custom_request && (
+            <div className="card custom-note">
+              <p className="meta-label">Custom Instructions</p>
+              <p>{course.learning_request.custom_request}</p>
+            </div>
+          )}
           <LessonViewer
             course={course.course}
             courseId={course.id}

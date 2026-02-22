@@ -4,59 +4,23 @@
     "sections": [
       {
         "section_id": "section_1",
-        "title": "Understanding Problem-Solving Strategies",
-        "conceptual_explanation": "Problem-solving strategies are systematic approaches to finding solutions to complex issues. They exist because, in programming and many other fields, problems can often be intricate and multifaceted. By breaking down a problem into smaller, manageable parts, we can tackle each part individually, making the overall problem less daunting. A useful mental model is to think of problem-solving like navigating a maze: instead of trying to find the exit all at once, you explore one path at a time, adjusting your route based on what you discover. This connects to what you've learned about breaking down tasks in everyday life, like planning a trip by first deciding on the destination, then the route, and finally the stops along the way.",
-        "applied_explanation": "In practice, applying problem-solving strategies involves several steps. First, you need to clearly define the problem. Next, brainstorm possible solutions and choose one to implement. After that, you will execute your solution and evaluate its effectiveness. Pay attention to how you define the problem; a common beginner mistake is to jump to solutions without fully understanding the issue. For example, if you're asked to find the largest number in a list, instead of just looking for the biggest number, you should first clarify if the list can be empty or if it contains negative numbers. This thorough approach will lead to more robust solutions.",
-        "example": "Let's say we want to find the largest number in a list of integers using Python. We can start by defining our list: numbers = [3, 5, 1, 8, 2]. To find the largest number, we can use a simple algorithm that iterates through each number in the list. Here\u2019s how the code looks: \n\n1. Initialize a variable called 'largest' to hold the largest number, starting with the first number in the list: largest = numbers[0]. \n2. Use a for loop to go through each number in the list: for number in numbers:. \n3. Inside the loop, check if the current number is greater than 'largest': if number > largest:. \n4. If it is, update 'largest' to this number: largest = number. \n5. After the loop, print the largest number: print(largest). This code will output 8, which is the largest number in the list.",
+        "title": "Understanding Problem Solving in Python",
+        "conceptual_explanation": "Problem solving is the process of identifying a challenge and finding a solution to it. In the context of Python programming, it exists because programming is fundamentally about creating solutions to problems using code. Think of problem solving as a journey: you start at a point (the problem) and need to navigate through various steps to reach your destination (the solution). This journey involves understanding the problem, devising a plan, executing that plan, and then reviewing the results. You can relate this to everyday situations, like planning a trip where you need to decide on a destination, find a route, and then travel. In programming, this structured approach helps you break down complex problems into manageable parts, making it easier to tackle them effectively.",
+        "applied_explanation": "In practice, problem solving in Python involves several steps. First, you need to clearly define the problem you want to solve. Next, you brainstorm possible solutions and choose the best one. After that, you write the code to implement your solution. Finally, you test your code to ensure it works as expected. Pay attention to the clarity of your problem statement; a common beginner mistake is jumping into coding without fully understanding the problem, which can lead to confusion and errors later on. For example, if you are asked to calculate the average of a list of numbers, you should first clarify what 'average' means and how you will gather the numbers before writing any code.",
+        "example": "Let's say we want to solve the problem of calculating the average of a list of numbers in Python. First, we define our problem: we need to find the average of the numbers in a list. We can represent this in Python as follows: numbers = [10, 20, 30, 40]. To calculate the average, we sum the numbers and then divide by the count of numbers. Here\u2019s how the code looks: total = sum(numbers) calculates the total of the list, which is 100. Then, we find the count with count = len(numbers), which gives us 4. Finally, we calculate the average with average = total / count, resulting in 25. This example illustrates how to break down a problem into smaller steps and implement it in Python.",
         "practice_questions": [
           {
-            "question": "What is the first step in a problem-solving strategy?",
+            "question": "What are the main steps in the problem-solving process?",
             "type": "short_answer"
           },
           {
-            "question": "Which of the following is a common mistake when solving problems?",
-            "type": "mcq",
-            "options": [
-              "Jumping to solutions",
-              "Defining the problem",
-              "Evaluating the solution"
-            ],
-            "correct_answer": "Jumping to solutions",
-            "explanation": "Jumping to solutions without fully understanding the problem can lead to ineffective or incorrect solutions."
-          },
-          {
-            "question": "Imagine you have a list of temperatures for a week. How would you find the highest temperature using a problem-solving strategy?",
-            "type": "scenario",
-            "explanation": "You would start by defining the problem clearly, then brainstorm how to iterate through the list, compare each temperature, and keep track of the highest one."
-          }
-        ]
-      },
-      {
-        "section_id": "section_2",
-        "title": "Basic Algorithms for Problem Solving",
-        "conceptual_explanation": "Basic algorithms are step-by-step procedures or formulas for solving problems. They exist because they provide a structured way to approach tasks, ensuring consistency and efficiency. Think of algorithms like recipes in cooking: they guide you through the process of creating a dish, ensuring you don\u2019t miss any steps. This connects to your previous learning about systematic approaches, as algorithms help you break down complex tasks into simpler, repeatable steps, much like following a recipe to bake a cake.",
-        "applied_explanation": "When applying basic algorithms, you typically start by identifying the problem you want to solve. Then, you outline the steps needed to reach a solution. For example, if you want to sort a list of numbers, you might choose a simple algorithm like bubble sort, which repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. Pay attention to the efficiency of your algorithm; a common beginner mistake is to choose a method that works but is not optimal for larger datasets. Understanding the time complexity of your algorithm can help you make better choices.",
-        "example": "Let\u2019s implement a simple bubble sort algorithm in Python to sort a list of numbers. We start with a list: numbers = [5, 2, 9, 1, 5, 6]. The bubble sort algorithm works as follows: \n\n1. We will use a for loop to iterate through the list multiple times: for i in range(len(numbers)):. \n2. Inside this loop, we will compare each pair of adjacent elements: for j in range(0, len(numbers) - i - 1):. \n3. If the current element is greater than the next, we swap them: if numbers[j] > numbers[j + 1]:. \n4. We perform the swap using a temporary variable: temp = numbers[j]; numbers[j] = numbers[j + 1]; numbers[j + 1] = temp. \n5. After all iterations, we print the sorted list: print(numbers). This will output [1, 2, 5, 5, 6, 9], which is the sorted version of the original list.",
-        "practice_questions": [
-          {
-            "question": "What is a basic algorithm?",
+            "question": "If you need to find the maximum number in a list, what steps would you take to solve this problem using Python?",
             "type": "short_answer"
           },
           {
-            "question": "What is the purpose of a bubble sort algorithm?",
-            "type": "mcq",
-            "options": [
-              "To find the largest number",
-              "To sort a list of numbers",
-              "To calculate the average"
-            ],
-            "correct_answer": "To sort a list of numbers",
-            "explanation": "Bubble sort is specifically designed to arrange elements in a list in a specified order, such as ascending or descending."
-          },
-          {
-            "question": "You have a list of names that you want to sort alphabetically. Describe how you would use a basic algorithm to achieve this.",
+            "question": "You are given a list of temperatures for a week: [70, 75, 80, 85, 90, 95, 100]. Write a Python function to calculate the average temperature. What would be your approach?",
             "type": "scenario",
-            "explanation": "You would choose a sorting algorithm, like bubble sort or another efficient method, and apply it to the list of names, comparing each name and rearranging them until the entire list is sorted."
+            "explanation": "Explain how you would define the problem, plan your solution, and implement it in Python."
           }
         ]
       }

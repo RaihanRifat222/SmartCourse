@@ -4,45 +4,45 @@
     "sections": [
       {
         "section_id": "section_1",
-        "title": "Understanding Functions in Python",
-        "conceptual_explanation": "A function in Python is a reusable block of code that performs a specific task. Functions exist to help organize code into manageable sections, making it easier to read, maintain, and debug. Think of a function like a recipe: it has a name, a set of ingredients (parameters), and it produces a dish (return value). This concept connects to what you\u2019ve learned about code structure, as functions allow you to break down complex problems into smaller, more manageable parts. By using functions, you can avoid repetition in your code, which is crucial for efficient programming. For example, if you need to calculate the area of a rectangle multiple times, you can create a function that does this calculation for you, rather than writing the same code over and over again.",
-        "applied_explanation": "To use a function in practice, you first define it using the 'def' keyword, followed by the function name and parentheses that may include parameters. After defining the function, you can call it by using its name followed by parentheses. For instance, if you define a function to add two numbers, you would call it with the numbers you want to add as arguments. Pay attention to the parameters you define; they must match the arguments you pass when calling the function. A common beginner mistake is to forget to include the parentheses when calling a function, which will result in an error. Additionally, ensure that the return statement is used if you want to send a value back from the function to where it was called.",
-        "example": "Let's create a simple function that calculates the square of a number. First, we define the function using 'def square(num):'. Here, 'square' is the name of the function, and 'num' is the parameter that will hold the number we want to square. Inside the function, we write 'return num * num', which means we are returning the result of 'num' multiplied by itself. To use this function, we can call it with a number, like 'result = square(4)'. This will store the value 16 in 'result' because 4 squared is 16. The complete code looks like this: \ndef square(num):\n    return num * num\nresult = square(4)\nprint(result)  # This will output 16.",
+        "title": "Understanding Functions",
+        "conceptual_explanation": "A function in Python is a reusable block of code that performs a specific task. Functions exist to help organize code into manageable sections, making it easier to read, maintain, and debug. Think of a function like a recipe: it has a name, a list of ingredients (inputs), and a set of instructions (code) that produce a dish (output). You\u2019ve already learned about variables and data types, which are the building blocks of functions. Functions take these building blocks and allow you to create more complex operations without rewriting code. This modular approach is essential in programming as it promotes code reuse and reduces errors.",
+        "applied_explanation": "To use a function, you first need to define it using the 'def' keyword, followed by the function name and parentheses. Inside the parentheses, you can specify parameters, which are inputs the function can accept. After defining the function, you can call it by using its name followed by parentheses. For example, if you define a function called 'greet', you can call it simply by writing 'greet()'. Pay attention to the indentation in Python, as it indicates the block of code that belongs to the function. A common beginner mistake is forgetting to include parentheses when calling a function, which will result in an error.",
+        "example": "Let's create a simple function that adds two numbers. First, we define the function: 'def add_numbers(a, b):'. Here, 'add_numbers' is the function name, and 'a' and 'b' are parameters. Inside the function, we write 'return a + b', which means the function will output the sum of 'a' and 'b'. To use this function, we can call it with specific numbers: 'result = add_numbers(5, 3)'. This line calls the function with 5 and 3 as inputs, and stores the result (which is 8) in the variable 'result'. This example shows how functions can simplify tasks by encapsulating code.",
         "practice_questions": [
           {
-            "question": "What keyword is used to define a function in Python?",
+            "question": "What is a function in Python?",
             "type": "short_answer"
           },
           {
-            "question": "If you have a function defined as 'def add(a, b): return a + b', how would you call this function with the numbers 5 and 3?",
+            "question": "How do you call a function named 'calculate'?",
             "type": "short_answer"
           },
           {
-            "question": "Imagine you need to create a function that checks if a number is even. Describe how you would define this function and what parameters it would take.",
+            "question": "You defined a function but forgot to include parentheses when calling it. What error might you encounter?",
             "type": "scenario",
-            "explanation": "In your response, you should include the function name, the parameter it takes (the number to check), and the logic you would use to determine if the number is even."
+            "explanation": "Forgetting parentheses will lead to a TypeError, as Python will treat the function name as a variable instead of executing the function."
           }
         ]
       },
       {
         "section_id": "section_2",
-        "title": "Function Parameters and Return Values",
-        "conceptual_explanation": "Parameters are variables that allow you to pass information into functions. They act as placeholders for the values you provide when calling the function. This is important because it allows functions to be flexible and reusable with different inputs. Think of parameters as the ingredients you need to make a dish; without them, you can't create the final product. Return values are what a function sends back to the caller after execution. This is crucial for getting results from your functions. For example, if you create a function to calculate the area of a rectangle, the parameters would be the length and width, and the return value would be the calculated area. This concept builds on your understanding of variables and data types, as parameters can be of any data type.",
-        "applied_explanation": "When defining a function, you can specify multiple parameters by separating them with commas inside the parentheses. When you call the function, you must provide the same number of arguments as there are parameters. For example, if you have a function 'def multiply(x, y): return x * y', you need to call it with two numbers, like 'multiply(2, 3)'. Pay attention to the order of parameters; the first argument corresponds to the first parameter, and so on. A common mistake is to provide the wrong number of arguments, which will lead to an error. Additionally, if you forget to include a return statement, the function will return 'None' by default, which may not be what you want.",
-        "example": "Let's create a function that calculates the area of a rectangle. We define it as 'def area(length, width):'. Here, 'length' and 'width' are parameters. Inside the function, we write 'return length * width', which calculates the area. To use this function, we can call it with specific values, like 'result = area(5, 3)'. This will store the value 15 in 'result' because 5 multiplied by 3 is 15. The complete code looks like this: \ndef area(length, width):\n    return length * width\nresult = area(5, 3)\nprint(result)  # This will output 15.",
+        "title": "Using Modules",
+        "conceptual_explanation": "Modules in Python are files containing Python code that can define functions, classes, and variables. They exist to promote code organization and reuse across different programs. Imagine modules as toolboxes: each toolbox contains specific tools (functions and classes) that you can use in your projects. You\u2019ve learned about functions, which can be thought of as individual tools, but modules allow you to group related tools together. This is especially useful when working on larger projects or when you want to use code written by others. By importing modules, you can access a wide range of functionalities without having to write everything from scratch.",
+        "applied_explanation": "To use a module, you need to import it into your Python script using the 'import' statement. For example, if you want to use the math module, you would write 'import math'. After importing, you can access its functions by prefixing them with the module name, like 'math.sqrt(16)', which calculates the square root of 16. Pay attention to the module's documentation to understand what functions are available and how to use them. A common beginner mistake is not importing the module before trying to use its functions, which will result in a NameError.",
+        "example": "Let's say we want to calculate the square root of a number using the math module. First, we import the module with 'import math'. Then, we can use the function 'math.sqrt()' to find the square root. For instance, 'result = math.sqrt(25)' will calculate the square root of 25 and store it in 'result'. This example illustrates how modules can extend the capabilities of Python by providing pre-built functions that save time and effort.",
         "practice_questions": [
           {
-            "question": "What are parameters in a function?",
+            "question": "What is a module in Python?",
             "type": "short_answer"
           },
           {
-            "question": "How would you define a function that takes two numbers and returns their sum?",
+            "question": "How do you import the math module in Python?",
             "type": "short_answer"
           },
           {
-            "question": "You have a function 'def divide(a, b): return a / b'. What will happen if you call it with 'divide(10)'? Explain.",
+            "question": "If you try to use a function from a module without importing it first, what will happen?",
             "type": "scenario",
-            "explanation": "In your response, you should explain that calling the function with only one argument will result in an error because it expects two parameters."
+            "explanation": "You will encounter a NameError, indicating that the function is not defined because the module was not imported."
           }
         ]
       }

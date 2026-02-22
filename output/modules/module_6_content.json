@@ -4,45 +4,34 @@
     "sections": [
       {
         "section_id": "section_1",
-        "title": "Understanding Dictionaries",
-        "conceptual_explanation": "A dictionary in Python is a collection of key-value pairs. Each key is unique and is used to access its corresponding value. Dictionaries exist because they allow for efficient data retrieval, making it easy to store and manage data that is related. Think of a dictionary like a real-life dictionary where you look up a word (the key) to find its definition (the value). This concept connects to what you may already know about lists, which are ordered collections. Unlike lists, dictionaries are unordered and indexed by keys rather than numbers, which allows for faster lookups. Understanding dictionaries is crucial for data manipulation and retrieval in programming, especially when dealing with complex data structures.",
-        "applied_explanation": "In practice, using a dictionary involves creating it, adding key-value pairs, and retrieving values using their keys. To create a dictionary, you can use curly braces or the dict() function. For example, you might create a dictionary to store student grades, where the student's name is the key and their grade is the value. When you want to access a student's grade, you simply use their name as the key. Pay attention to the uniqueness of keys; if you try to add a key that already exists, it will overwrite the existing value. A common beginner mistake is forgetting to use the correct key when trying to access a value, which can lead to errors or unexpected results.",
-        "example": "Let's create a simple dictionary to store the ages of three people. We will define the dictionary as follows: ages = {'Alice': 25, 'Bob': 30, 'Charlie': 35}. Here, 'Alice', 'Bob', and 'Charlie' are the keys, and their corresponding ages are the values. To access Bob's age, we would write: print(ages['Bob']). This line of code retrieves the value associated with the key 'Bob', which is 30, and prints it to the console. If we wanted to add a new person, say 'David', with an age of 40, we would do this: ages['David'] = 40. Now, the dictionary has been updated to include David's age.",
+        "title": "File Operations and Modes",
+        "conceptual_explanation": "File handling in Python is a way to interact with files stored on your computer. It allows you to read data from files and write data to them. This is important because many applications need to store information persistently, such as user data, logs, or configuration settings. Think of file handling like a library: just as you can borrow books (read files) or return books (write files), you can do the same with files on your computer. You have already learned about variables and data types, which are essential when working with the data you read from or write to files. Understanding file operations will help you manage data effectively in your programs.",
+        "applied_explanation": "In practice, file handling involves opening a file, performing operations (like reading or writing), and then closing the file. To open a file, you use the `open()` function, which requires the file name and the mode (like 'r' for reading or 'w' for writing). After opening the file, you can read its contents or write new data to it. It's crucial to remember to close the file after you're done to free up system resources. A common mistake beginners make is forgetting to close the file, which can lead to memory leaks or data not being saved properly. Always ensure you close the file using the `close()` method or use a `with` statement to handle it automatically.",
+        "example": "Let's say you want to create a text file called 'example.txt' and write some data into it. You would start by opening the file in write mode. Here's how you do it:\n\n```python\nfile = open('example.txt', 'w')  # Open the file in write mode\nfile.write('Hello, World!\\n')  # Write a line of text to the file\nfile.write('This is a file handling example.\\n')  # Write another line\nfile.close()  # Close the file\n```\n\nIn this example, `open('example.txt', 'w')` creates a new file named 'example.txt' or overwrites it if it already exists. The `write()` method adds text to the file, and `\\n` is used to create a new line. Finally, `file.close()` ensures that the file is properly closed after writing.",
         "practice_questions": [
           {
-            "question": "What is a dictionary in Python?",
+            "question": "What is the purpose of file handling in Python?",
             "type": "short_answer"
           },
           {
-            "question": "How would you access the value associated with a key in a dictionary?",
+            "question": "What happens if you forget to close a file after opening it?",
             "type": "short_answer"
           },
           {
-            "question": "You have a dictionary called 'fruits' with keys 'apple', 'banana', and 'orange'. If you want to add 'grape' with a value of 2, how would you do it?",
+            "question": "You need to read data from a file named 'data.txt'. What mode should you use when opening the file?",
+            "type": "mcq",
+            "options": [
+              "r",
+              "w",
+              "a"
+            ],
+            "correct_answer": "r",
+            "explanation": "The 'r' mode is used for reading files. The 'w' mode is for writing, and 'a' is for appending data."
+          },
+          {
+            "question": "Imagine you are writing a program that logs user activity to a file. Describe how you would handle the file operations.",
             "type": "scenario",
-            "explanation": "Explain how you would update the dictionary to include the new key-value pair."
-          }
-        ]
-      },
-      {
-        "section_id": "section_2",
-        "title": "Understanding Sets",
-        "conceptual_explanation": "A set in Python is an unordered collection of unique elements. Sets exist to provide a way to store multiple items in a single variable while ensuring that there are no duplicates. Think of a set like a bag of marbles where each marble represents a unique item; if you try to add a duplicate marble, it simply won't fit in the bag. This concept is different from lists and dictionaries, where duplicates are allowed. Sets are particularly useful for operations that involve membership testing, removing duplicates from a collection, or performing mathematical set operations like unions and intersections. Understanding sets is essential for efficient data handling and manipulation in programming.",
-        "applied_explanation": "To work with sets, you can create them using curly braces or the set() function. For example, you might create a set of unique colors: colors = {'red', 'green', 'blue'}. You can add new elements using the add() method, and check for membership using the 'in' keyword. A common beginner mistake is trying to add a duplicate item to a set, which will not raise an error but will simply be ignored. Pay attention to the fact that sets do not maintain order, so the items may not appear in the order you added them. This can be confusing if you're expecting a specific sequence.",
-        "example": "Let's create a set of favorite fruits: favorite_fruits = {'apple', 'banana', 'cherry'}. To add a new fruit, say 'orange', we would use: favorite_fruits.add('orange'). This line adds 'orange' to the set. If we try to add 'apple' again, like this: favorite_fruits.add('apple'), it won't change the set because 'apple' is already present. To check if 'banana' is in our set, we can use: print('banana' in favorite_fruits). This will return True, indicating that 'banana' is indeed a member of the set.",
-        "practice_questions": [
-          {
-            "question": "What is a set in Python?",
-            "type": "short_answer"
-          },
-          {
-            "question": "How do you add an element to a set?",
-            "type": "short_answer"
-          },
-          {
-            "question": "You have a set called 'numbers' containing {1, 2, 3}. If you try to add 2 again, what will happen?",
-            "type": "scenario",
-            "explanation": "Explain the behavior of sets when adding duplicate elements."
+            "explanation": "You would open the log file in append mode ('a') to ensure that new log entries are added without deleting existing ones. After writing the log entry, you would close the file to save changes."
           }
         ]
       }

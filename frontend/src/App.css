@@ -306,6 +306,37 @@
   gap: 16px;
 }
 
+.course-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.meta-label {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 11px;
+  color: var(--muted);
+  margin: 0 0 4px;
+}
+
+.custom-note {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.custom-note p {
+  margin: 0;
+}
+
 .course-actions {
   display: flex;
   align-items: center;
@@ -397,6 +428,51 @@
   text-align: center;
 }
 
+.empty-illustration {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 16px;
+  border-radius: 30px;
+  background: radial-gradient(circle at top, rgba(255, 209, 102, 0.7), transparent 60%),
+    linear-gradient(135deg, rgba(255, 107, 0, 0.5), rgba(123, 97, 255, 0.4));
+  box-shadow: 0 20px 40px rgba(8, 10, 24, 0.35);
+  position: relative;
+}
+
+.empty-illustration::after {
+  content: "";
+  position: absolute;
+  inset: 22px;
+  border-radius: 20px;
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+}
+
+.skeleton-card {
+  display: grid;
+  gap: 10px;
+}
+
+.skeleton-line {
+  height: 14px;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(255, 255, 255, 0.18) 50%,
+    rgba(255, 255, 255, 0.08) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.6s infinite;
+}
+
+.skeleton-line.wide {
+  height: 20px;
+}
+
+.skeleton-line.short {
+  width: 50%;
+}
+
 @keyframes fade-up {
   from {
     opacity: 0;
@@ -405,6 +481,15 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
   }
 }
 

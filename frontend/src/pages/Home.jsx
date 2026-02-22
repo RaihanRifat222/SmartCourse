@@ -40,6 +40,12 @@ function Home({
             </div>
             <span className="pill">{latestCourse.id}</span>
           </div>
+          {latestCourse.learning_request?.custom_request && (
+            <div className="card custom-note">
+              <p className="meta-label">Custom Instructions</p>
+              <p>{latestCourse.learning_request.custom_request}</p>
+            </div>
+          )}
           <LessonViewer course={latestCourse.course} />
         </section>
       )}

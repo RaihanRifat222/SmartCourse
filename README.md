@@ -25,6 +25,40 @@ SmartCourse is a full-stack project that generates structured course curricula a
 - `output/`: Generated curricula and per-course JSON files.
 - `frontend/`: React UI with routing and a colorful design system.
 
+## Architecture Overview
+SmartCourse follows a simple pipeline with clear separation between generation, validation, storage, and presentation.
+
+1. **Frontend (React)**
+   - Collects learning request + optional custom instructions.
+   - Sends requests to the FastAPI backend.
+   - Renders courses, modules, and regeneration actions.
+
+2. **API Layer (FastAPI)**
+   - `POST /generate_course` triggers full course generation.
+   - `GET /courses` lists all saved courses.
+   - `POST /courses/{id}/modules/{module_id}/regenerate` regenerates a single module.
+   - `GET /courses/{id}/export?format=pdf` exports to PDF.
+
+3. **Generation Engine (`course_engine.py`)**
+   - Builds a curriculum with the `curriculum_architect`.
+   - Validates structure with the `curriculum_validator`.
+   - Generates per-module content with `module_content_author`.
+   - Applies global custom instructions to every module.
+
+4. **Storage (File-based)**
+   - Full courses stored in `output/courses/{topic_id}.json`.
+   - Per-module outputs stored in `output/modules/{module_id}_content.json`.
+   - No SQL server required.
+
+5. **Schemas and Validation**
+   - JSON schemas in `schemas/` ensure consistency.
+   - Invalid outputs are rejected and regenerated.
+
+**Data Flow (high level)**
+```
+Frontend -> FastAPI -> course_engine -> agents -> JSON output -> Frontend
+```
+
 ## How To Run (Local)
 
 Backend:
