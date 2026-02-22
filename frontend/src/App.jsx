@@ -4,7 +4,7 @@ import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import Courses from "./pages/Courses";
 import CourseDetail from "./pages/CourseDetail";
-import { generateCourse, listCourses } from "./services/api";
+import { generateCourse, listCourses, regenerateModule } from "./services/api";
 import "./App.css";
 function App() {
 
@@ -16,6 +16,7 @@ function App() {
     learningGoals: "",
     depth: "",
     tone: "",
+    customRequest: "",
   });
   const [courses, setCourses] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -59,6 +60,7 @@ function App() {
           depth: formData.depth,
           tone: formData.tone,
         },
+        custom_request: formData.customRequest,
       };
 
       const savedCourse = await generateCourse(payload);
@@ -67,6 +69,14 @@ function App() {
       console.error("Error generating course:", error);
     }
     setLoading(false);
+  };
+
+  const handleRegenerateModule = async (courseId, moduleId, customRequest) => {
+    const updatedCourse = await regenerateModule(courseId, moduleId, customRequest);
+    setCourses((prev) =>
+      prev.map((course) => (course.id === courseId ? updatedCourse : course))
+    );
+    return updatedCourse;
   };
   return (
     <div className="app">
@@ -101,6 +111,7 @@ function App() {
               <CourseDetail
                 courses={courses}
                 loadingCourses={loadingCourses}
+                onRegenerateModule={handleRegenerateModule}
               />
             }
           />

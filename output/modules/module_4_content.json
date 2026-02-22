@@ -1,0 +1,51 @@
+{
+  "module_content": {
+    "module_id": "module_4",
+    "sections": [
+      {
+        "section_id": "section_1",
+        "title": "Understanding Functions in Python",
+        "conceptual_explanation": "A function in Python is a reusable block of code that performs a specific task. Functions exist to help organize code into manageable sections, making it easier to read, maintain, and debug. Think of a function like a recipe: it has a name, a set of ingredients (parameters), and it produces a dish (return value). This concept connects to what you\u2019ve learned about code structure, as functions allow you to break down complex problems into smaller, more manageable parts. By using functions, you can avoid repetition in your code, which is crucial for efficient programming. For example, if you need to calculate the area of a rectangle multiple times, you can create a function that does this calculation for you, rather than writing the same code over and over again.",
+        "applied_explanation": "To use a function in practice, you first define it using the 'def' keyword, followed by the function name and parentheses that may include parameters. After defining the function, you can call it by using its name followed by parentheses. For instance, if you define a function to add two numbers, you would call it with the numbers you want to add as arguments. Pay attention to the parameters you define; they must match the arguments you pass when calling the function. A common beginner mistake is to forget to include the parentheses when calling a function, which will result in an error. Additionally, ensure that the return statement is used if you want to send a value back from the function to where it was called.",
+        "example": "Let's create a simple function that calculates the square of a number. First, we define the function using 'def square(num):'. Here, 'square' is the name of the function, and 'num' is the parameter that will hold the number we want to square. Inside the function, we write 'return num * num', which means we are returning the result of 'num' multiplied by itself. To use this function, we can call it with a number, like 'result = square(4)'. This will store the value 16 in 'result' because 4 squared is 16. The complete code looks like this: \ndef square(num):\n    return num * num\nresult = square(4)\nprint(result)  # This will output 16.",
+        "practice_questions": [
+          {
+            "question": "What keyword is used to define a function in Python?",
+            "type": "short_answer"
+          },
+          {
+            "question": "If you have a function defined as 'def add(a, b): return a + b', how would you call this function with the numbers 5 and 3?",
+            "type": "short_answer"
+          },
+          {
+            "question": "Imagine you need to create a function that checks if a number is even. Describe how you would define this function and what parameters it would take.",
+            "type": "scenario",
+            "explanation": "In your response, you should include the function name, the parameter it takes (the number to check), and the logic you would use to determine if the number is even."
+          }
+        ]
+      },
+      {
+        "section_id": "section_2",
+        "title": "Function Parameters and Return Values",
+        "conceptual_explanation": "Parameters are variables that allow you to pass information into functions. They act as placeholders for the values you provide when calling the function. This is important because it allows functions to be flexible and reusable with different inputs. Think of parameters as the ingredients you need to make a dish; without them, you can't create the final product. Return values are what a function sends back to the caller after execution. This is crucial for getting results from your functions. For example, if you create a function to calculate the area of a rectangle, the parameters would be the length and width, and the return value would be the calculated area. This concept builds on your understanding of variables and data types, as parameters can be of any data type.",
+        "applied_explanation": "When defining a function, you can specify multiple parameters by separating them with commas inside the parentheses. When you call the function, you must provide the same number of arguments as there are parameters. For example, if you have a function 'def multiply(x, y): return x * y', you need to call it with two numbers, like 'multiply(2, 3)'. Pay attention to the order of parameters; the first argument corresponds to the first parameter, and so on. A common mistake is to provide the wrong number of arguments, which will lead to an error. Additionally, if you forget to include a return statement, the function will return 'None' by default, which may not be what you want.",
+        "example": "Let's create a function that calculates the area of a rectangle. We define it as 'def area(length, width):'. Here, 'length' and 'width' are parameters. Inside the function, we write 'return length * width', which calculates the area. To use this function, we can call it with specific values, like 'result = area(5, 3)'. This will store the value 15 in 'result' because 5 multiplied by 3 is 15. The complete code looks like this: \ndef area(length, width):\n    return length * width\nresult = area(5, 3)\nprint(result)  # This will output 15.",
+        "practice_questions": [
+          {
+            "question": "What are parameters in a function?",
+            "type": "short_answer"
+          },
+          {
+            "question": "How would you define a function that takes two numbers and returns their sum?",
+            "type": "short_answer"
+          },
+          {
+            "question": "You have a function 'def divide(a, b): return a / b'. What will happen if you call it with 'divide(10)'? Explain.",
+            "type": "scenario",
+            "explanation": "In your response, you should explain that calling the function with only one argument will result in an error because it expects two parameters."
+          }
+        ]
+      }
+    ]
+  }
+}

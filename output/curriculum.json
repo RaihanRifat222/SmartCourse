@@ -2,136 +2,147 @@
   "curriculum": {
     "modules": [
       {
-        "module_id": "1",
-        "title": "Introduction to Spanish Sounds",
+        "module_id": "module_1",
+        "title": "Introduction to Python",
         "learning_objectives": [
-          "Identify and pronounce basic Spanish vowels and consonants",
-          "Differentiate between English and Spanish pronunciation"
+          "Understand what Python is and its applications",
+          "Set up a Python development environment"
         ],
         "key_concepts": [
-          "Spanish alphabet",
-          "Vowel sounds",
-          "Consonant sounds"
+          "Python syntax",
+          "Installation of Python and IDEs"
         ]
       },
       {
-        "module_id": "2",
-        "title": "Basic Greetings and Introductions",
+        "module_id": "module_2",
+        "title": "Basic Python Syntax",
         "learning_objectives": [
-          "Use common greetings in Spanish",
-          "Introduce oneself and ask for someone's name"
+          "Learn about variables and data types",
+          "Write simple Python statements"
         ],
         "key_concepts": [
-          "Greetings",
-          "Self-introduction phrases"
+          "Variables",
+          "Data types (integers, strings, floats)"
         ]
       },
       {
-        "module_id": "3",
-        "title": "Numbers and Basic Counting",
+        "module_id": "module_3",
+        "title": "Control Structures",
         "learning_objectives": [
-          "Count from 1 to 20 in Spanish",
-          "Use numbers in simple conversations"
+          "Understand and use conditional statements",
+          "Implement loops in Python"
         ],
         "key_concepts": [
-          "Numbers 1-20",
-          "Basic counting phrases"
+          "If statements",
+          "For and while loops"
         ]
       },
       {
-        "module_id": "4",
-        "title": "Everyday Vocabulary: Family and Friends",
+        "module_id": "module_4",
+        "title": "Functions in Python",
         "learning_objectives": [
-          "Identify family members and friends in Spanish",
-          "Describe relationships using simple sentences"
+          "Define and call functions",
+          "Understand function parameters and return values"
         ],
         "key_concepts": [
-          "Family vocabulary",
-          "Descriptive phrases"
+          "Function definition",
+          "Parameters and return statements"
         ]
       },
       {
-        "module_id": "5",
-        "title": "Basic Verbs and Simple Sentences",
+        "module_id": "module_5",
+        "title": "Data Structures: Lists and Tuples",
         "learning_objectives": [
-          "Use common verbs in the present tense",
-          "Construct simple sentences"
+          "Learn how to use lists and tuples",
+          "Manipulate data using list methods"
         ],
         "key_concepts": [
-          "Common verbs",
-          "Sentence structure"
+          "Lists",
+          "Tuples"
         ]
       },
       {
-        "module_id": "6",
-        "title": "Asking Questions in Spanish",
+        "module_id": "module_6",
+        "title": "Data Structures: Dictionaries and Sets",
         "learning_objectives": [
-          "Formulate basic questions",
-          "Practice asking and answering questions"
+          "Understand dictionaries and sets",
+          "Perform operations on dictionaries and sets"
         ],
         "key_concepts": [
-          "Question words",
-          "Question formation"
+          "Dictionaries",
+          "Sets"
         ]
       },
       {
-        "module_id": "7",
-        "title": "Describing Daily Activities",
+        "module_id": "module_7",
+        "title": "Introduction to Problem Solving",
         "learning_objectives": [
-          "Talk about daily routines using verbs",
-          "Use time expressions in sentences"
+          "Learn problem-solving techniques",
+          "Apply Python to solve simple problems"
         ],
         "key_concepts": [
-          "Daily activities vocabulary",
-          "Time expressions"
+          "Problem-solving strategies",
+          "Basic algorithms"
         ]
       },
       {
-        "module_id": "8",
-        "title": "Food and Drink Vocabulary",
+        "module_id": "module_8",
+        "title": "Competitive Programming Basics",
         "learning_objectives": [
-          "Identify common foods and drinks in Spanish",
-          "Order food and drinks in a restaurant setting"
+          "Understand the basics of competitive programming",
+          "Write Python code to solve competitive programming problems"
         ],
         "key_concepts": [
-          "Food vocabulary",
-          "Restaurant phrases"
+          "Input and output handling",
+          "Basic problem-solving in competitions"
         ]
       },
       {
-        "module_id": "9",
-        "title": "Expressing Likes and Dislikes",
+        "module_id": "module_9",
+        "title": "Introduction to Data Analysis",
         "learning_objectives": [
-          "Use phrases to express preferences",
-          "Discuss favorite foods and activities"
+          "Understand the importance of data analysis",
+          "Learn to use libraries like Pandas"
         ],
         "key_concepts": [
-          "Likes and dislikes vocabulary",
-          "Preference expressions"
+          "Data analysis concepts",
+          "Pandas library basics"
         ]
       },
       {
-        "module_id": "10",
-        "title": "Travel Vocabulary and Directions",
+        "module_id": "module_10",
+        "title": "Data Manipulation with Pandas",
         "learning_objectives": [
-          "Identify key travel vocabulary",
-          "Ask for and give directions"
+          "Perform data manipulation using Pandas",
+          "Analyze datasets with basic operations"
         ],
         "key_concepts": [
-          "Travel vocabulary",
-          "Directional phrases"
+          "DataFrames",
+          "Data manipulation techniques"
         ]
       },
       {
-        "module_id": "11",
-        "title": "Review and Conversational Practice",
+        "module_id": "module_11",
+        "title": "Introduction to Artificial Intelligence",
         "learning_objectives": [
-          "Review key vocabulary and phrases from previous modules",
-          "Engage in simple conversations using learned material"
+          "Understand what artificial intelligence is",
+          "Learn about its applications in Python"
         ],
         "key_concepts": [
-          "Conversation practice",
-          "Role-play scenarios"
+          "AI concepts",
+          "Python libraries for AI"
+        ]
+      },
+      {
+        "module_id": "module_12",
+        "title": "Basic Machine Learning Concepts",
+        "learning_objectives": [
+          "Learn the fundamentals of machine learning",
+          "Implement a simple machine learning model in Python"
+        ],
+        "key_concepts": [
+          "Supervised vs unsupervised learning",
+          "Basic model implementation"
         ]
       }
     ]

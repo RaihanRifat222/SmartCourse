@@ -78,6 +78,18 @@ function CourseForm({ formData, onChange, onSubmit, loading }) {
             value={formData.tone}
           />
         </label>
+
+        <label className="field field-wide">
+          <span>Custom Instructions (optional)</span>
+          <textarea
+            className="form-textarea"
+            name="customRequest"
+            placeholder="E.g. include more real-world examples, use a conversational tone, add role-play exercises..."
+            onChange={onChange}
+            value={formData.customRequest}
+            rows={4}
+          />
+        </label>
       </div>
 
       <div className="form-actions">

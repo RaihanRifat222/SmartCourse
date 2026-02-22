@@ -11,6 +11,7 @@ from utils.json_cleaner import extract_json
 def generate_course(learning_request: dict):
     learning_request = copy.deepcopy(learning_request)
     _normalize_learning_request(learning_request)
+    custom_request = str(learning_request.get("custom_request", "")).strip()
 
     MAX_RETRIES = 3
     
@@ -26,6 +27,11 @@ def generate_course(learning_request: dict):
                 "\nImportant: include explicit speaking practice. "
                 "Add dedicated speaking-focused modules or activities in each module "
                 "(dialogues, role-play, pronunciation drills).\n"
+            )
+        if custom_request:
+            architect_prompt += (
+                "\nCustom request from user (apply throughout the curriculum):\n"
+                f"{custom_request}\n"
             )
 
         if issues:
@@ -92,6 +98,8 @@ def generate_course(learning_request: dict):
 
         Remember to follow instructions and return ONLY the JSON matching the schema.
         """
+        if custom_request:
+            module_prompt += f"\nCustom request from user:\n{custom_request}\n"
 
         user_proxy.initiate_chat(
             module_content_author,

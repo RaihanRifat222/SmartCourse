@@ -162,7 +162,24 @@
   font-size: 14px;
 }
 
+.form-textarea {
+  background: rgba(8, 10, 16, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 12px 14px;
+  border-radius: 12px;
+  color: var(--text);
+  font-size: 14px;
+  font-family: var(--font-body);
+  resize: vertical;
+}
+
 .field input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(255, 107, 0, 0.2);
+}
+
+.form-textarea:focus {
   outline: none;
   border-color: var(--accent);
   box-shadow: 0 0 0 3px rgba(255, 107, 0, 0.2);
@@ -199,6 +216,21 @@
   box-shadow: 0 14px 30px rgba(255, 107, 0, 0.3);
 }
 
+.secondary-button {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.secondary-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 .lesson-viewer {
   display: flex;
   flex-direction: column;
@@ -217,6 +249,14 @@
 
 .module-card h3 {
   margin-top: 0;
+}
+
+.module-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 .module-section {
@@ -286,6 +326,51 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 12px;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 6, 10, 0.7);
+  display: grid;
+  place-items: center;
+  z-index: 50;
+  padding: 20px;
+}
+
+.modal-card {
+  width: min(560px, 92vw);
+  background: rgba(17, 18, 26, 0.95);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 24px;
+  box-shadow: 0 25px 60px rgba(10, 8, 30, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.modal-textarea {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(8, 10, 16, 0.9);
+  color: var(--text);
+  padding: 12px;
+  font-family: var(--font-body);
+  font-size: 14px;
+}
+
+.modal-textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(255, 107, 0, 0.2);
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
   gap: 12px;
 }
 

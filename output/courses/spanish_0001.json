@@ -164,51 +164,66 @@
             {
               "section_id": "1.1",
               "title": "Understanding the Spanish Alphabet",
-              "conceptual_explanation": "The Spanish alphabet consists of 27 letters, which include the same 26 letters as the English alphabet plus the letter '\u00f1'. This alphabet is the foundation of the Spanish language, and it exists to provide a consistent way to represent sounds in writing. Think of the alphabet as a toolkit; just as a carpenter needs specific tools to build a house, you need the letters of the alphabet to build words in Spanish. You may already be familiar with the English alphabet, so consider how each letter corresponds to a sound. For example, the letter 'a' in both languages is pronounced differently, which is crucial for proper pronunciation in Spanish. Understanding the alphabet is the first step in mastering the sounds of the language.",
-              "applied_explanation": "To use the Spanish alphabet in practice, start by familiarizing yourself with each letter and its corresponding sound. For instance, the letter 'a' is pronounced like 'ah', 'e' like 'eh', and 'i' like 'ee'. When you see a word, break it down letter by letter, pronouncing each sound as you go. Pay attention to the unique letters like '\u00f1', which sounds like 'ny' in 'canyon'. A common beginner mistake is to apply English pronunciation rules to Spanish letters, which can lead to misunderstandings. For example, the letter 'c' can sound like 's' or 'k' depending on the vowels that follow it. Practice saying the alphabet out loud, and try to spell simple words to reinforce your learning.",
-              "example": "Let's take the word 'casa', which means 'house' in Spanish. The first letter 'c' is pronounced like 'k' because it is followed by the vowel 'a'. The next letter 'a' is pronounced 'ah'. So, when you say 'casa', you break it down like this: 'ka' + 'sah'. The 's' is pronounced like the English 's', and the final 'a' is again 'ah'. Therefore, 'casa' is pronounced 'kah-sah'. This example shows how understanding the sounds of the letters helps you pronounce the word correctly.",
+              "conceptual_explanation": "The Spanish alphabet consists of 27 letters, which include the same 26 letters as the English alphabet plus the letter '\u00f1'. This letter is unique to Spanish and represents a distinct sound. The reason the Spanish alphabet exists is to provide a standardized way to represent the sounds of the Spanish language, making it easier for speakers to communicate. A helpful mental model is to think of the alphabet as a toolbox; each letter is a tool that helps you build words. You already know the English alphabet, so think of the Spanish alphabet as a slightly different toolbox with an extra tool. This will help you recognize that while many letters are the same, some sounds will be different, which is crucial for proper pronunciation.",
+              "applied_explanation": "In practice, to use the Spanish alphabet, you will start by familiarizing yourself with each letter and its corresponding sound. For example, the letter 'a' is pronounced like 'ah', 'e' like 'eh', and 'i' like 'ee'. When you see a word, you will break it down letter by letter, pronouncing each sound as you go. Pay attention to the unique sounds that some letters make, such as '\u00f1', which sounds like 'ny' in 'canyon'. A common beginner mistake is to pronounce Spanish letters exactly as they are in English, which can lead to miscommunication. Instead, practice saying each letter out loud, focusing on the distinct sounds.",
+              "example": "Let's take the word 'casa', which means 'house' in Spanish. The letters are broken down as follows: 'c' is pronounced like 'k', 'a' like 'ah', 's' like 's', and the final 'a' again like 'ah'. So, when you say 'casa', it sounds like 'kah-sah'. Notice how the 'c' in 'casa' is pronounced differently than in the English word 'cat'. This is a great example of how understanding the Spanish alphabet helps you pronounce words correctly. Practice saying 'casa' a few times, focusing on the sounds of each letter.",
               "practice_questions": [
                 {
                   "question": "What is the additional letter in the Spanish alphabet that is not found in the English alphabet?",
                   "type": "short_answer"
                 },
                 {
-                  "question": "Which letter in Spanish can sound like 's' or 'k' depending on the following vowel?",
+                  "question": "Which letter in Spanish is pronounced like 'ny' in 'canyon'?",
                   "type": "short_answer"
+                },
+                {
+                  "question": "Imagine you see the word 'ni\u00f1o'. Break it down into its sounds and pronounce it.",
+                  "type": "scenario",
+                  "explanation": "In this scenario, you should identify the sounds of each letter: 'n' (n), 'i' (ee), '\u00f1' (ny), and 'o' (oh). The correct pronunciation would be 'neen-yo'."
                 }
               ]
             },
             {
               "section_id": "1.2",
-              "title": "Spanish Vowel Sounds",
-              "conceptual_explanation": "Spanish has five vowel sounds: 'a', 'e', 'i', 'o', and 'u'. Each vowel has a consistent pronunciation, which is different from English where vowels can have multiple sounds. This consistency exists to make pronunciation easier and more predictable for learners. Imagine vowels as the building blocks of words; just like how a strong foundation is essential for a building, clear vowel sounds are crucial for clear communication in Spanish. Since you already know some English vowels, think of how they differ in sound. For example, the Spanish 'e' is always pronounced like the 'e' in 'met', not like the 'ee' in 'see'.",
-              "applied_explanation": "To practice Spanish vowel sounds, start by pronouncing each vowel clearly and consistently. For example, say 'a' as 'ah', 'e' as 'eh', 'i' as 'ee', 'o' as 'oh', and 'u' as 'oo'. When you encounter a word, identify the vowels and pronounce them according to these rules. A common mistake is to mix up the sounds with English vowels, leading to mispronunciations. For instance, saying 'e' like 'ee' can change the meaning of a word. Focus on listening to native speakers and mimicking their vowel sounds to improve your pronunciation.",
-              "example": "Consider the word 'mesa', which means 'table'. The first vowel 'e' is pronounced 'eh', and the second vowel 'a' is pronounced 'ah'. So, when you break it down, you say 'meh' + 'sah'. The 'm' is pronounced like in English, and the 's' is also the same. Therefore, 'mesa' is pronounced 'meh-sah'. This example illustrates how mastering vowel sounds can help you pronounce words accurately.",
+              "title": "Exploring Spanish Vowel Sounds",
+              "conceptual_explanation": "Spanish has five vowel sounds: 'a', 'e', 'i', 'o', and 'u'. Each vowel has a consistent pronunciation, which is different from English where vowels can have multiple sounds. This consistency is important because it makes learning to read and pronounce Spanish much easier. Think of Spanish vowels as the building blocks of words; they are stable and reliable. Since you are familiar with English vowels, you can think of Spanish vowels as having a more straightforward sound. For example, the letter 'a' in Spanish is always pronounced like 'ah', unlike in English where it can sound like 'ay' or 'ah'.",
+              "applied_explanation": "To practice Spanish vowel sounds, start by pronouncing each vowel clearly. For instance, say 'a' as 'ah', 'e' as 'eh', 'i' as 'ee', 'o' as 'oh', and 'u' as 'oo'. When you encounter a word, identify the vowels and pronounce them according to their Spanish sounds. Pay attention to how these vowels can change the meaning of words. A common mistake is to mix up the vowel sounds with their English counterparts, which can lead to mispronunciation. Focus on practicing each vowel sound until you feel comfortable with them.",
+              "example": "Consider the words 'mesa' (table) and 'misa' (mass). The first vowel in 'mesa' is 'e', pronounced 'eh', while in 'misa', the first vowel is 'i', pronounced 'ee'. When you say 'mesa', it sounds like 'meh-sah', and for 'misa', it sounds like 'mee-sah'. Notice how the different vowel sounds change the meaning of the words. Practice saying both words, emphasizing the vowel sounds to get used to the differences.",
               "practice_questions": [
                 {
                   "question": "How many vowel sounds are there in Spanish?",
                   "type": "short_answer"
                 },
                 {
-                  "question": "What is the correct pronunciation of the Spanish vowel 'o'?",
+                  "question": "What is the Spanish pronunciation of the vowel 'e'?",
                   "type": "short_answer"
+                },
+                {
+                  "question": "You see the words 'pico' and 'paco'. Break down the vowel sounds and pronounce each word.",
+                  "type": "scenario",
+                  "explanation": "In this scenario, identify the sounds: 'pico' has 'i' (ee) and 'o' (oh), pronounced 'pee-koh', while 'paco' has 'a' (ah) and 'o' (oh), pronounced 'pah-koh'."
                 }
               ]
             },
             {
               "section_id": "1.3",
-              "title": "Spanish Consonant Sounds",
-              "conceptual_explanation": "Spanish consonants can be similar to English consonants, but many have distinct pronunciations. For example, the letter 'j' in Spanish is pronounced like the English 'h', while 'v' is often pronounced like 'b'. This variation exists to create a unique sound system that distinguishes Spanish from other languages. Think of consonants as the framework of a house; they provide structure to words. Since you are familiar with English consonants, you can relate to how they function in Spanish, but be mindful of their different sounds. For instance, the letter 'r' is rolled in Spanish, which is a key feature of the language.",
-              "applied_explanation": "To practice Spanish consonant sounds, start by pronouncing each consonant clearly, paying attention to those that differ from English. For example, practice saying 'r' by rolling your tongue, and 'j' by producing a sound similar to 'h'. When you read a word, focus on the consonants and how they interact with the vowels. A common beginner mistake is to pronounce consonants as they are in English, which can lead to misunderstandings. For instance, saying 'v' as 'v' instead of 'b' can change the meaning of a word. Listening to native speakers can help you grasp the correct pronunciation.",
-              "example": "Take the word 'perro', which means 'dog'. The first 'r' is rolled, so you would say 'pe' + 'rro', where the 'rr' is pronounced with a strong roll. The 'e' is pronounced 'eh', and the 'o' is pronounced 'oh'. Therefore, 'perro' is pronounced 'peh-rro'. This example shows how understanding consonant sounds is essential for accurate pronunciation.",
+              "title": "Understanding Spanish Consonant Sounds",
+              "conceptual_explanation": "Spanish consonants can be similar to English consonants, but many have different pronunciations. For example, the letter 'c' can sound like 'k' or 's' depending on the vowels that follow it. This variation exists to create a more melodic and rhythmic sound in the language. Think of consonants as the framework of a house; they provide structure to the words. Since you already know English consonants, you can think of Spanish consonants as having their own unique quirks. For instance, the letter 'g' can be a hard 'g' as in 'go' or a soft 'h' sound as in 'gem'.",
+              "applied_explanation": "To practice Spanish consonants, start by pronouncing each consonant clearly, paying attention to their unique sounds. For example, the letter 'g' in 'gato' (cat) is pronounced as a hard 'g', while in 'gemelo' (twin), it is pronounced softly. When you see a word, break it down into its consonant sounds and pronounce them accordingly. A common beginner mistake is to mispronounce consonants based on their English sounds, which can lead to confusion. Focus on practicing the consonants in different words to get used to their sounds.",
+              "example": "Take the word 'gato'. The 'g' is pronounced as a hard 'g', followed by 'a' (ah), 't' (t), and 'o' (oh). So, 'gato' sounds like 'gah-toh'. Now, consider the word 'gemelo'. Here, the 'g' is soft, pronounced like 'h', followed by 'e' (eh), 'm' (m), 'e' (eh), 'l' (l), and 'o' (oh). So, 'gemelo' sounds like 'heh-meh-loh'. Notice how the pronunciation of 'g' changes the sound of the words. Practice saying both words, focusing on the consonant sounds.",
               "practice_questions": [
                 {
-                  "question": "What is the Spanish pronunciation of the letter 'j'?",
+                  "question": "What sound does the letter 'c' make before 'e' or 'i' in Spanish?",
                   "type": "short_answer"
                 },
                 {
-                  "question": "How is the letter 'r' pronounced in Spanish?",
+                  "question": "How is the letter 'g' pronounced in the word 'gato'?",
                   "type": "short_answer"
+                },
+                {
+                  "question": "You see the words 'casa' and 'cima'. Break down the consonant sounds and pronounce each word.",
+                  "type": "scenario",
+                  "explanation": "In this scenario, 'casa' has 'c' (k), 'a' (ah), 's' (s), 'a' (ah), pronounced 'kah-sah'. 'Cima' has 'c' (s), 'i' (ee), 'm' (m), 'a' (ah), pronounced 'see-mah'."
                 }
               ]
             }
@@ -222,33 +237,33 @@
             {
               "section_id": "1",
               "title": "Common Greetings in Spanish",
-              "conceptual_explanation": "Greetings are the first words we use to connect with others. In Spanish, greetings are essential for starting conversations and showing respect. They exist to create a friendly atmosphere and establish rapport. Think of greetings as the opening lines of a book; they set the tone for what follows. You may already know greetings in English, like 'Hello' or 'Good morning.' In Spanish, similar phrases exist, such as 'Hola' for 'Hello' and 'Buenos d\u00edas' for 'Good morning.' Understanding these phrases will help you engage with Spanish speakers and make a positive impression.",
-              "applied_explanation": "When you greet someone in Spanish, you typically start with a simple phrase. For example, if you meet someone in the morning, you would say 'Buenos d\u00edas.' This means 'Good morning.' Pay attention to the time of day when choosing your greeting. In the afternoon, you would use 'Buenas tardes' (Good afternoon), and in the evening, 'Buenas noches' (Good evening). A common beginner mistake is using 'Hola' at all times, which is fine but may not feel as polite in formal situations. Remember to adjust your greeting based on the context and time of day to show respect and awareness.",
-              "example": "Let's say you walk into a caf\u00e9 in Spain. You see the barista and want to greet them. You would say, '\u00a1Hola!' which means 'Hello!' If it's morning, you could say, '\u00a1Buenos d\u00edas!' This shows that you are aware of the time and are being polite. If you want to be more formal, you might say, '\u00a1Buenas tardes!' if it's afternoon. Each greeting sets a different tone, so it's important to choose the right one. Remember, using these greetings can make your interactions more pleasant and friendly.",
+              "conceptual_explanation": "Greetings are essential in any language as they set the tone for communication. In Spanish, greetings help establish a friendly atmosphere and show respect. They exist because they are a fundamental part of social interaction, allowing people to acknowledge each other. Think of greetings as the opening lines of a conversation, similar to how you might say 'Hello' or 'Hi' in English. You\u2019ve likely learned how to greet someone in English, and now you\u2019ll learn how to do it in Spanish. Common greetings include 'Hola' (Hello), 'Buenos d\u00edas' (Good morning), 'Buenas tardes' (Good afternoon), and 'Buenas noches' (Good evening). Each greeting is used at different times of the day, just like in English.",
+              "applied_explanation": "In practice, using greetings in Spanish involves recognizing the time of day and the appropriate phrase to use. For example, if you meet someone in the morning, you would say 'Buenos d\u00edas'. If it\u2019s afternoon, you would switch to 'Buenas tardes'. When you greet someone, pay attention to their response; they might reply with the same greeting or ask how you are. A common beginner mistake is using 'Hola' at all times, regardless of the time of day. While 'Hola' is universally accepted, using the specific greetings shows cultural awareness and respect. Remember, the key is to match your greeting to the time of day and the context of the conversation.",
+              "example": "Let\u2019s say you walk into a caf\u00e9 in Spain in the morning. You would approach the cashier and say, 'Buenos d\u00edas'. This means 'Good morning'. The cashier might respond with 'Buenos d\u00edas' as well, creating a friendly exchange. If you were to say 'Hola' instead, it would still be understood, but using 'Buenos d\u00edas' is more polite and appropriate for the time. If you were to meet someone in the evening, you would say 'Buenas noches', which means 'Good evening'. This shows that you are aware of the time and are engaging respectfully. Remember, using the right greeting can make a positive impression.",
               "practice_questions": [
                 {
-                  "question": "What does 'Buenos d\u00edas' mean in English?",
+                  "question": "What does 'Buenas tardes' mean?",
                   "type": "short_answer"
                 },
                 {
-                  "question": "Which greeting would you use in the evening?",
+                  "question": "Which greeting would you use in the morning?",
                   "type": "mcq",
                   "options": [
                     "Hola",
-                    "Buenas tardes",
+                    "Buenos d\u00edas",
                     "Buenas noches"
                   ],
-                  "correct_answer": "Buenas noches",
-                  "explanation": "In the evening, 'Buenas noches' is the appropriate greeting, while 'Hola' is more casual and 'Buenas tardes' is for the afternoon."
+                  "correct_answer": "Buenos d\u00edas",
+                  "explanation": "'Buenos d\u00edas' means 'Good morning' and is the appropriate greeting to use in the morning."
                 }
               ]
             },
             {
               "section_id": "2",
-              "title": "Self-Introduction Phrases",
-              "conceptual_explanation": "Self-introduction phrases are essential for sharing who you are with others. They help establish your identity and create connections. These phrases exist to facilitate communication and make social interactions smoother. Think of self-introductions as the opening chapter of a story where you present yourself to the reader. In English, you might say, 'My name is...' In Spanish, you would say, 'Me llamo...' followed by your name. This connection to what you already know helps you understand how to introduce yourself in a new language.",
-              "applied_explanation": "To introduce yourself in Spanish, you would typically say, 'Me llamo' followed by your name. For example, if your name is John, you would say, 'Me llamo John.' After introducing yourself, it's polite to ask for the other person's name by saying, '\u00bfY t\u00fa?' which means 'And you?' Pay attention to the tone and context; using a friendly tone makes the interaction more pleasant. A common beginner mistake is forgetting to ask for the other person's name after introducing yourself, which can make the conversation feel one-sided.",
-              "example": "Imagine you are at a language exchange event. You meet someone and want to introduce yourself. You would say, 'Hola, me llamo John.' This means, 'Hello, my name is John.' After that, you can ask, '\u00bfY t\u00fa?' which means 'And you?' This shows that you are interested in the other person. If they respond with 'Me llamo Mar\u00eda,' you now know their name and can continue the conversation. This simple exchange is a great way to start building relationships in Spanish.",
+              "title": "Self-introduction Phrases",
+              "conceptual_explanation": "Self-introduction phrases are crucial for establishing your identity in a conversation. They exist because they help people connect and understand who they are speaking with. Think of these phrases as the building blocks of a conversation, similar to saying 'My name is...' in English. You\u2019ve likely introduced yourself in English, and now you\u2019ll learn how to do it in Spanish. Common phrases include 'Me llamo...' (My name is...) and 'Soy...' (I am...). These phrases allow you to share your name and a bit about yourself, which is essential in social interactions.",
+              "applied_explanation": "When introducing yourself in Spanish, you typically start with 'Me llamo' followed by your name. For example, if your name is John, you would say 'Me llamo John'. After introducing yourself, it\u2019s polite to ask the other person their name by saying '\u00bfY t\u00fa?' (And you?). Pay attention to the other person's response, as they will likely introduce themselves in return. A common beginner mistake is forgetting to ask for the other person's name after introducing oneself. This can make the conversation feel one-sided. Remember, a good introduction is a two-way street, so always follow up with a question.",
+              "example": "Imagine you are at a language exchange event. You meet someone and want to introduce yourself. You would say, 'Me llamo John'. This translates to 'My name is John'. After that, you can ask, '\u00bfY t\u00fa?' which means 'And you?'. If the other person responds with 'Me llamo Mar\u00eda', you now know their name. This simple exchange not only introduces you but also opens the door for further conversation. It\u2019s important to practice these phrases so that they become second nature, allowing you to engage comfortably in Spanish-speaking environments.",
               "practice_questions": [
                 {
                   "question": "What does 'Me llamo' mean?",
@@ -263,12 +278,12 @@
                     "\u00bfQu\u00e9 tal?"
                   ],
                   "correct_answer": "\u00bfY t\u00fa?",
-                  "explanation": "After introducing yourself, '\u00bfY t\u00fa?' is the correct way to ask for the other person's name, while the other options are greetings or inquiries about well-being."
+                  "explanation": "'\u00bfY t\u00fa?' means 'And you?' and is the correct way to ask for someone else's name after introducing yourself."
                 },
                 {
                   "question": "You meet someone named Ana. How would you introduce yourself?",
                   "type": "scenario",
-                  "explanation": "You would say, 'Hola, me llamo [Your Name].' After that, you can ask, '\u00bfY t\u00fa?' to learn her name."
+                  "explanation": "You would say 'Me llamo [Your Name]' and then follow up with '\u00bfY t\u00fa?' to ask for Ana's name."
                 }
               ]
             }
@@ -282,44 +297,44 @@
             {
               "section_id": "1",
               "title": "Counting from 1 to 20 in Spanish",
-              "conceptual_explanation": "In Spanish, just like in English, numbers are fundamental for communication. They allow us to express quantities, tell time, and engage in various everyday conversations. Understanding numbers from 1 to 20 is essential because they form the foundation for counting and using larger numbers. Think of numbers as building blocks; once you know the basics, you can construct more complex ideas. You may already be familiar with some numbers in Spanish, like 'uno' for one or 'dos' for two, but learning the complete set will enhance your ability to communicate effectively. This section will help you recognize and pronounce each number, making it easier to incorporate them into your conversations.",
-              "applied_explanation": "To count from 1 to 20 in Spanish, you will start by learning the individual numbers and their pronunciations. Begin with 'uno' (1), 'dos' (2), 'tres' (3), and continue up to 'veinte' (20). Practice saying each number aloud, paying attention to the pronunciation, as it can differ significantly from English. A common beginner mistake is confusing similar-sounding numbers, such as 'seis' (6) and 'diez' (10). To avoid this, repeat the numbers multiple times and try to associate them with visual aids or objects around you. Once you feel comfortable with the numbers, practice using them in simple sentences, like 'Tengo tres manzanas' (I have three apples). This will help reinforce your learning and build confidence in using numbers in conversation.",
-              "example": "Let's look at how to count from 1 to 20 in Spanish. Here\u2019s the list: 1 - uno, 2 - dos, 3 - tres, 4 - cuatro, 5 - cinco, 6 - seis, 7 - siete, 8 - ocho, 9 - nueve, 10 - diez, 11 - once, 12 - doce, 13 - trece, 14 - catorce, 15 - quince, 16 - diecis\u00e9is, 17 - diecisiete, 18 - dieciocho, 19 - diecinueve, 20 - veinte. For example, if you want to say 'I have five books' in Spanish, you would say 'Tengo cinco libros.' Here, 'Tengo' means 'I have,' 'cinco' is 'five,' and 'libros' means 'books.' Practice saying this sentence out loud, focusing on the pronunciation of 'cinco' to ensure clarity.",
+              "conceptual_explanation": "In Spanish, just like in English, numbers are fundamental for communication. They allow us to express quantities, tell time, and engage in various everyday conversations. Understanding numbers from 1 to 20 is essential because they form the basis for larger numbers and are frequently used in daily interactions. Think of numbers as building blocks; once you know the basics, you can construct more complex ideas. For example, knowing 'uno' (one) through 'veinte' (twenty) will help you in situations like shopping, ordering food, or asking for directions. This foundational knowledge connects to your previous learning of basic greetings and phrases, as numbers often accompany these interactions.",
+              "applied_explanation": "To count from 1 to 20 in Spanish, you will start by learning the individual numbers: uno (1), dos (2), tres (3), and so on, up to veinte (20). Each number has a unique pronunciation, which is crucial for being understood. When practicing, say each number out loud, focusing on the correct pronunciation. Pay attention to the rhythm and flow of the language, as Spanish numbers can sometimes blend together in conversation. A common beginner mistake is mispronouncing numbers or confusing similar-sounding ones, like 'seis' (6) and 'siete' (7). To avoid this, practice repeatedly and listen to native speakers to get a feel for the sounds.",
+              "example": "Let's look at how to count from 1 to 10 in Spanish: 'uno' (1), 'dos' (2), 'tres' (3), 'cuatro' (4), 'cinco' (5), 'seis' (6), 'siete' (7), 'ocho' (8), 'nueve' (9), and 'diez' (10). Each number is pronounced distinctly. For instance, 'uno' is pronounced 'oo-noh', where the 'u' is like the 'oo' in 'food', and 'no' is pronounced like 'no' in English. When you reach 'diez', you can see how the numbers start to form a pattern. After 'diez', you continue with 'once' (11), 'doce' (12), 'trece' (13), 'catorce' (14), 'quince' (15), 'diecis\u00e9is' (16), 'diecisiete' (17), 'dieciocho' (18), 'diecinueve' (19), and 'veinte' (20). Notice how 'dieci' is a prefix for numbers 16-19, which means 'ten'. This pattern helps you remember the numbers more easily.",
               "practice_questions": [
                 {
-                  "question": "What is the Spanish word for the number 10?",
+                  "question": "What is the Spanish word for the number 5?",
                   "type": "short_answer"
                 },
                 {
-                  "question": "Which number comes after 'siete'?",
+                  "question": "Which number comes after 'diez' in Spanish?",
                   "type": "short_answer"
                 },
                 {
-                  "question": "If you have 4 apples, how would you say that in Spanish?",
+                  "question": "If you were to count from 1 to 20 in Spanish, what pattern do you notice in the numbers 16 to 19?",
                   "type": "scenario",
-                  "explanation": "Think about how to structure the sentence using the verb 'tener' (to have) and the number in Spanish."
+                  "explanation": "Explain how the prefix 'dieci' is used in these numbers."
                 }
               ]
             },
             {
               "section_id": "2",
-              "title": "Basic Counting Phrases",
-              "conceptual_explanation": "Basic counting phrases in Spanish are essential for everyday interactions. These phrases help you express quantities, ask questions, and engage in conversations about numbers. For instance, phrases like '\u00bfCu\u00e1ntos hay?' (How many are there?) or 'Tengo cinco' (I have five) are commonly used. Understanding these phrases allows you to participate in discussions about items, prices, and more. Think of these phrases as tools in your communication toolbox; the more you know, the more effectively you can express yourself. You may have already learned some basic phrases in English, and now you will see how they translate into Spanish, making it easier to connect your existing knowledge with new learning.",
-              "applied_explanation": "To use basic counting phrases, start by practicing common questions and statements. For example, when you want to ask someone how many items they have, you can say '\u00bfCu\u00e1ntos tienes?' (How many do you have?). Pay attention to the context in which you use these phrases, as they can vary depending on the situation. A common mistake is forgetting to match the number with the noun in gender and number, such as saying 'tres manzana' instead of 'tres manzanas' (three apples). To avoid this, always remember to use the plural form of the noun when counting more than one. Practice these phrases in different scenarios, like shopping or counting objects around you, to build confidence.",
-              "example": "Here are some basic counting phrases: '\u00bfCu\u00e1ntos libros tienes?' (How many books do you have?), 'Tengo dos gatos' (I have two cats), and 'Hay cinco sillas' (There are five chairs). Let\u2019s break down the phrase 'Tengo dos gatos.' 'Tengo' means 'I have,' 'dos' is 'two,' and 'gatos' means 'cats.' When you say this, you are clearly stating how many cats you possess. Practice saying this phrase out loud, and try to create your own sentences using different numbers and nouns, like 'Tengo tres perros' (I have three dogs). This will help reinforce your understanding of counting in Spanish.",
+              "title": "Using Numbers in Simple Conversations",
+              "conceptual_explanation": "Numbers are not just for counting; they play a crucial role in everyday conversations. Whether you are shopping, making plans, or discussing age, numbers help convey important information. For instance, when you ask someone how old they are, you will need to use numbers. This concept exists because communication often requires quantifying things, and numbers provide a universal way to do that. Think of numbers as a common language that bridges gaps in understanding. This builds on your previous knowledge of greetings and basic phrases, as numbers often accompany these interactions, making them more meaningful.",
+              "applied_explanation": "In practice, using numbers in conversations involves integrating them into questions and statements. For example, you might ask, '\u00bfCu\u00e1ntos a\u00f1os tienes?' (How old are you?) or 'Quiero dos manzanas' (I want two apples). When using numbers, pay attention to the context; the way you phrase your question can change based on what you are asking. A common beginner mistake is forgetting to match the number with the noun in gender and plurality, such as saying 'uno manzana' instead of 'una manzana' for one apple. To avoid this, remember that 'manzana' is feminine, so you need to use 'una' instead of 'uno'.",
+              "example": "Imagine you are at a market in Spain. You want to buy three oranges. You would say, 'Quiero tres naranjas' (I want three oranges). Here, 'tres' is the number three, and 'naranjas' is the plural form of orange. Notice how 'tres' does not change, but 'naranja' becomes 'naranjas' to indicate that you want more than one. If the vendor asks you, '\u00bfCu\u00e1nto cuesta?' (How much does it cost?), you can respond with the price, for example, 'Cuesta cinco euros' (It costs five euros). This interaction shows how numbers are used in real-life situations, making your conversations more dynamic and informative.",
               "practice_questions": [
                 {
-                  "question": "How do you ask 'How many do you have?' in Spanish?",
+                  "question": "How do you say 'two apples' in Spanish?",
                   "type": "short_answer"
                 },
                 {
-                  "question": "Translate 'There are four chairs' into Spanish.",
+                  "question": "What would you say if you want to buy four bananas?",
                   "type": "short_answer"
                 },
                 {
-                  "question": "Imagine you are at a store and want to ask how many apples are available. What would you say?",
+                  "question": "If someone asks you '\u00bfCu\u00e1ntos a\u00f1os tienes?', how would you respond if you are 25 years old?",
                   "type": "scenario",
-                  "explanation": "Think about how to structure your question using the vocabulary you have learned."
+                  "explanation": "Provide the correct response using the number in Spanish."
                 }
               ]
             }

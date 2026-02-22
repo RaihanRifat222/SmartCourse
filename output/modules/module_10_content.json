@@ -1,0 +1,49 @@
+{
+  "module_content": {
+    "module_id": "module_10",
+    "sections": [
+      {
+        "section_id": "section_1",
+        "title": "Introduction to DataFrames",
+        "conceptual_explanation": "A DataFrame is a two-dimensional, size-mutable, and potentially heterogeneous tabular data structure with labeled axes (rows and columns) in Python's Pandas library. Think of it like a spreadsheet or a SQL table, where you can store and manipulate data in a structured way. DataFrames exist because they provide a powerful and flexible way to handle data, making it easier to perform operations like filtering, aggregating, and transforming data. You can visualize a DataFrame as a collection of rows and columns, where each column can hold different types of data (like integers, floats, or strings). This concept connects to what you may already know about lists and dictionaries in Python, as DataFrames can be thought of as a more advanced way to organize and manipulate data compared to these basic structures.",
+        "applied_explanation": "In practice, creating a DataFrame is straightforward. You can create one from a dictionary, a list of lists, or even read data from a CSV file. For example, if you have a dictionary where keys are column names and values are lists of data, you can easily convert it into a DataFrame. Pay attention to the data types of each column, as Pandas will infer them automatically, but you can also specify them if needed. A common beginner mistake is to forget to import the Pandas library before trying to create a DataFrame, which will lead to errors. To create a DataFrame, you typically use the `pd.DataFrame()` function, passing in your data structure as an argument.",
+        "example": "Let's create a simple DataFrame using a dictionary. First, ensure you have Pandas installed and imported: `import pandas as pd`. Now, create a dictionary: `data = {'Name': ['Alice', 'Bob', 'Charlie'], 'Age': [25, 30, 35], 'City': ['New York', 'Los Angeles', 'Chicago']}`. This dictionary has three keys: 'Name', 'Age', and 'City', each associated with a list of values. Next, convert this dictionary into a DataFrame: `df = pd.DataFrame(data)`. This line creates a DataFrame called `df` that organizes the data into a table format. You can view the DataFrame by simply typing `print(df)`, which will display the names, ages, and cities in a structured way.",
+        "practice_questions": [
+          {
+            "question": "What is a DataFrame in Pandas?",
+            "type": "short_answer"
+          },
+          {
+            "question": "How do you create a DataFrame from a dictionary?",
+            "type": "short_answer"
+          },
+          {
+            "question": "You want to create a DataFrame from a list of tuples containing names and ages. Describe the steps you would take.",
+            "type": "scenario"
+          }
+        ]
+      },
+      {
+        "section_id": "section_2",
+        "title": "Data Manipulation Techniques",
+        "conceptual_explanation": "Data manipulation techniques in Pandas allow you to clean, transform, and analyze your data effectively. These techniques include filtering rows, selecting columns, grouping data, and applying functions to your data. They exist to help you derive insights from your datasets, making it easier to perform tasks like data cleaning and preparation for analysis. Imagine you have a large dataset, and you only want to focus on specific information, such as all entries from a particular city. Data manipulation techniques provide the tools to slice and dice your data, similar to how you might cut a cake into pieces to serve. This concept builds on your understanding of lists and dictionaries, as you will be applying similar logic to access and modify data within a DataFrame.",
+        "applied_explanation": "To manipulate data in a DataFrame, you can use various methods. For instance, to filter rows based on a condition, you can use boolean indexing. If you want to select specific columns, you can use the column names. Grouping data is another powerful technique that allows you to aggregate data based on certain criteria, such as calculating the average age of people in each city. Pay attention to the syntax, as it can be easy to make mistakes, such as using the wrong column name or forgetting to use parentheses when calling a function. A common beginner mistake is to forget that the result of filtering or grouping is a new DataFrame, which may lead to confusion if you try to modify the original DataFrame directly.",
+        "example": "Let's say we have the following DataFrame: `df = pd.DataFrame({'Name': ['Alice', 'Bob', 'Charlie'], 'Age': [25, 30, 35], 'City': ['New York', 'Los Angeles', 'Chicago']})`. To filter for people older than 28, you would use: `filtered_df = df[df['Age'] > 28]`. This line creates a new DataFrame called `filtered_df` that only includes rows where the 'Age' column is greater than 28. To group by 'City' and calculate the average age, you would use: `grouped_df = df.groupby('City')['Age'].mean()`. This line groups the original DataFrame by 'City' and calculates the mean age for each city, resulting in a new Series with the average ages.",
+        "practice_questions": [
+          {
+            "question": "What is one technique you can use to filter rows in a DataFrame?",
+            "type": "short_answer"
+          },
+          {
+            "question": "How can you group data in a DataFrame and perform an aggregation?",
+            "type": "short_answer"
+          },
+          {
+            "question": "Imagine you have a DataFrame with sales data. Describe how you would filter for sales greater than $1000 and then group by product type to find the total sales for each type.",
+            "type": "scenario"
+          }
+        ]
+      }
+    ]
+  }
+}

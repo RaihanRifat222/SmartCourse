@@ -1,6 +1,6 @@
 import React from "react";
 
-function LessonViewer({ course }) {
+function LessonViewer({ course, courseId, onRegenerateRequest, regenerating }) {
   if (!course) return null;
 
   const modules = course?.curriculum?.curriculum?.modules || [];
@@ -16,11 +16,21 @@ function LessonViewer({ course }) {
         const content = course.module_contents?.[module.module_id];
 
         return (
-          <div
-            key={module.module_id}
-            className="card module-card"
-          >
-            <h3>{module.title}</h3>
+          <div key={module.module_id} className="card module-card">
+            <div className="module-header">
+              <h3>{module.title}</h3>
+              {onRegenerateRequest && courseId && (
+                <button
+                  className="secondary-button"
+                  onClick={() => onRegenerateRequest(module.module_id)}
+                  disabled={regenerating?.[module.module_id]}
+                >
+                  {regenerating?.[module.module_id]
+                    ? "Regenerating..."
+                    : "Regenerate Module"}
+                </button>
+              )}
+            </div>
 
             <h4>Learning Objectives</h4>
             <ul>

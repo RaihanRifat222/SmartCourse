@@ -5,51 +5,66 @@
       {
         "section_id": "1.1",
         "title": "Understanding the Spanish Alphabet",
-        "conceptual_explanation": "The Spanish alphabet consists of 27 letters, which include the same 26 letters as the English alphabet plus the letter '\u00f1'. This alphabet is the foundation of the Spanish language, and it exists to provide a consistent way to represent sounds in writing. Think of the alphabet as a toolkit; just as a carpenter needs specific tools to build a house, you need the letters of the alphabet to build words in Spanish. You may already be familiar with the English alphabet, so consider how each letter corresponds to a sound. For example, the letter 'a' in both languages is pronounced differently, which is crucial for proper pronunciation in Spanish. Understanding the alphabet is the first step in mastering the sounds of the language.",
-        "applied_explanation": "To use the Spanish alphabet in practice, start by familiarizing yourself with each letter and its corresponding sound. For instance, the letter 'a' is pronounced like 'ah', 'e' like 'eh', and 'i' like 'ee'. When you see a word, break it down letter by letter, pronouncing each sound as you go. Pay attention to the unique letters like '\u00f1', which sounds like 'ny' in 'canyon'. A common beginner mistake is to apply English pronunciation rules to Spanish letters, which can lead to misunderstandings. For example, the letter 'c' can sound like 's' or 'k' depending on the vowels that follow it. Practice saying the alphabet out loud, and try to spell simple words to reinforce your learning.",
-        "example": "Let's take the word 'casa', which means 'house' in Spanish. The first letter 'c' is pronounced like 'k' because it is followed by the vowel 'a'. The next letter 'a' is pronounced 'ah'. So, when you say 'casa', you break it down like this: 'ka' + 'sah'. The 's' is pronounced like the English 's', and the final 'a' is again 'ah'. Therefore, 'casa' is pronounced 'kah-sah'. This example shows how understanding the sounds of the letters helps you pronounce the word correctly.",
+        "conceptual_explanation": "The Spanish alphabet consists of 27 letters, which include the same 26 letters as the English alphabet plus the letter '\u00f1'. This letter is unique to Spanish and represents a distinct sound. The reason the Spanish alphabet exists is to provide a standardized way to represent the sounds of the Spanish language, making it easier for speakers to communicate. A helpful mental model is to think of the alphabet as a toolbox; each letter is a tool that helps you build words. You already know the English alphabet, so think of the Spanish alphabet as a slightly different toolbox with an extra tool. This will help you recognize that while many letters are the same, some sounds will be different, which is crucial for proper pronunciation.",
+        "applied_explanation": "In practice, to use the Spanish alphabet, you will start by familiarizing yourself with each letter and its corresponding sound. For example, the letter 'a' is pronounced like 'ah', 'e' like 'eh', and 'i' like 'ee'. When you see a word, you will break it down letter by letter, pronouncing each sound as you go. Pay attention to the unique sounds that some letters make, such as '\u00f1', which sounds like 'ny' in 'canyon'. A common beginner mistake is to pronounce Spanish letters exactly as they are in English, which can lead to miscommunication. Instead, practice saying each letter out loud, focusing on the distinct sounds.",
+        "example": "Let's take the word 'casa', which means 'house' in Spanish. The letters are broken down as follows: 'c' is pronounced like 'k', 'a' like 'ah', 's' like 's', and the final 'a' again like 'ah'. So, when you say 'casa', it sounds like 'kah-sah'. Notice how the 'c' in 'casa' is pronounced differently than in the English word 'cat'. This is a great example of how understanding the Spanish alphabet helps you pronounce words correctly. Practice saying 'casa' a few times, focusing on the sounds of each letter.",
         "practice_questions": [
           {
             "question": "What is the additional letter in the Spanish alphabet that is not found in the English alphabet?",
             "type": "short_answer"
           },
           {
-            "question": "Which letter in Spanish can sound like 's' or 'k' depending on the following vowel?",
+            "question": "Which letter in Spanish is pronounced like 'ny' in 'canyon'?",
             "type": "short_answer"
+          },
+          {
+            "question": "Imagine you see the word 'ni\u00f1o'. Break it down into its sounds and pronounce it.",
+            "type": "scenario",
+            "explanation": "In this scenario, you should identify the sounds of each letter: 'n' (n), 'i' (ee), '\u00f1' (ny), and 'o' (oh). The correct pronunciation would be 'neen-yo'."
           }
         ]
       },
       {
         "section_id": "1.2",
-        "title": "Spanish Vowel Sounds",
-        "conceptual_explanation": "Spanish has five vowel sounds: 'a', 'e', 'i', 'o', and 'u'. Each vowel has a consistent pronunciation, which is different from English where vowels can have multiple sounds. This consistency exists to make pronunciation easier and more predictable for learners. Imagine vowels as the building blocks of words; just like how a strong foundation is essential for a building, clear vowel sounds are crucial for clear communication in Spanish. Since you already know some English vowels, think of how they differ in sound. For example, the Spanish 'e' is always pronounced like the 'e' in 'met', not like the 'ee' in 'see'.",
-        "applied_explanation": "To practice Spanish vowel sounds, start by pronouncing each vowel clearly and consistently. For example, say 'a' as 'ah', 'e' as 'eh', 'i' as 'ee', 'o' as 'oh', and 'u' as 'oo'. When you encounter a word, identify the vowels and pronounce them according to these rules. A common mistake is to mix up the sounds with English vowels, leading to mispronunciations. For instance, saying 'e' like 'ee' can change the meaning of a word. Focus on listening to native speakers and mimicking their vowel sounds to improve your pronunciation.",
-        "example": "Consider the word 'mesa', which means 'table'. The first vowel 'e' is pronounced 'eh', and the second vowel 'a' is pronounced 'ah'. So, when you break it down, you say 'meh' + 'sah'. The 'm' is pronounced like in English, and the 's' is also the same. Therefore, 'mesa' is pronounced 'meh-sah'. This example illustrates how mastering vowel sounds can help you pronounce words accurately.",
+        "title": "Exploring Spanish Vowel Sounds",
+        "conceptual_explanation": "Spanish has five vowel sounds: 'a', 'e', 'i', 'o', and 'u'. Each vowel has a consistent pronunciation, which is different from English where vowels can have multiple sounds. This consistency is important because it makes learning to read and pronounce Spanish much easier. Think of Spanish vowels as the building blocks of words; they are stable and reliable. Since you are familiar with English vowels, you can think of Spanish vowels as having a more straightforward sound. For example, the letter 'a' in Spanish is always pronounced like 'ah', unlike in English where it can sound like 'ay' or 'ah'.",
+        "applied_explanation": "To practice Spanish vowel sounds, start by pronouncing each vowel clearly. For instance, say 'a' as 'ah', 'e' as 'eh', 'i' as 'ee', 'o' as 'oh', and 'u' as 'oo'. When you encounter a word, identify the vowels and pronounce them according to their Spanish sounds. Pay attention to how these vowels can change the meaning of words. A common mistake is to mix up the vowel sounds with their English counterparts, which can lead to mispronunciation. Focus on practicing each vowel sound until you feel comfortable with them.",
+        "example": "Consider the words 'mesa' (table) and 'misa' (mass). The first vowel in 'mesa' is 'e', pronounced 'eh', while in 'misa', the first vowel is 'i', pronounced 'ee'. When you say 'mesa', it sounds like 'meh-sah', and for 'misa', it sounds like 'mee-sah'. Notice how the different vowel sounds change the meaning of the words. Practice saying both words, emphasizing the vowel sounds to get used to the differences.",
         "practice_questions": [
           {
             "question": "How many vowel sounds are there in Spanish?",
             "type": "short_answer"
           },
           {
-            "question": "What is the correct pronunciation of the Spanish vowel 'o'?",
+            "question": "What is the Spanish pronunciation of the vowel 'e'?",
             "type": "short_answer"
+          },
+          {
+            "question": "You see the words 'pico' and 'paco'. Break down the vowel sounds and pronounce each word.",
+            "type": "scenario",
+            "explanation": "In this scenario, identify the sounds: 'pico' has 'i' (ee) and 'o' (oh), pronounced 'pee-koh', while 'paco' has 'a' (ah) and 'o' (oh), pronounced 'pah-koh'."
           }
         ]
       },
       {
         "section_id": "1.3",
-        "title": "Spanish Consonant Sounds",
-        "conceptual_explanation": "Spanish consonants can be similar to English consonants, but many have distinct pronunciations. For example, the letter 'j' in Spanish is pronounced like the English 'h', while 'v' is often pronounced like 'b'. This variation exists to create a unique sound system that distinguishes Spanish from other languages. Think of consonants as the framework of a house; they provide structure to words. Since you are familiar with English consonants, you can relate to how they function in Spanish, but be mindful of their different sounds. For instance, the letter 'r' is rolled in Spanish, which is a key feature of the language.",
-        "applied_explanation": "To practice Spanish consonant sounds, start by pronouncing each consonant clearly, paying attention to those that differ from English. For example, practice saying 'r' by rolling your tongue, and 'j' by producing a sound similar to 'h'. When you read a word, focus on the consonants and how they interact with the vowels. A common beginner mistake is to pronounce consonants as they are in English, which can lead to misunderstandings. For instance, saying 'v' as 'v' instead of 'b' can change the meaning of a word. Listening to native speakers can help you grasp the correct pronunciation.",
-        "example": "Take the word 'perro', which means 'dog'. The first 'r' is rolled, so you would say 'pe' + 'rro', where the 'rr' is pronounced with a strong roll. The 'e' is pronounced 'eh', and the 'o' is pronounced 'oh'. Therefore, 'perro' is pronounced 'peh-rro'. This example shows how understanding consonant sounds is essential for accurate pronunciation.",
+        "title": "Understanding Spanish Consonant Sounds",
+        "conceptual_explanation": "Spanish consonants can be similar to English consonants, but many have different pronunciations. For example, the letter 'c' can sound like 'k' or 's' depending on the vowels that follow it. This variation exists to create a more melodic and rhythmic sound in the language. Think of consonants as the framework of a house; they provide structure to the words. Since you already know English consonants, you can think of Spanish consonants as having their own unique quirks. For instance, the letter 'g' can be a hard 'g' as in 'go' or a soft 'h' sound as in 'gem'.",
+        "applied_explanation": "To practice Spanish consonants, start by pronouncing each consonant clearly, paying attention to their unique sounds. For example, the letter 'g' in 'gato' (cat) is pronounced as a hard 'g', while in 'gemelo' (twin), it is pronounced softly. When you see a word, break it down into its consonant sounds and pronounce them accordingly. A common beginner mistake is to mispronounce consonants based on their English sounds, which can lead to confusion. Focus on practicing the consonants in different words to get used to their sounds.",
+        "example": "Take the word 'gato'. The 'g' is pronounced as a hard 'g', followed by 'a' (ah), 't' (t), and 'o' (oh). So, 'gato' sounds like 'gah-toh'. Now, consider the word 'gemelo'. Here, the 'g' is soft, pronounced like 'h', followed by 'e' (eh), 'm' (m), 'e' (eh), 'l' (l), and 'o' (oh). So, 'gemelo' sounds like 'heh-meh-loh'. Notice how the pronunciation of 'g' changes the sound of the words. Practice saying both words, focusing on the consonant sounds.",
         "practice_questions": [
           {
-            "question": "What is the Spanish pronunciation of the letter 'j'?",
+            "question": "What sound does the letter 'c' make before 'e' or 'i' in Spanish?",
             "type": "short_answer"
           },
           {
-            "question": "How is the letter 'r' pronounced in Spanish?",
+            "question": "How is the letter 'g' pronounced in the word 'gato'?",
             "type": "short_answer"
+          },
+          {
+            "question": "You see the words 'casa' and 'cima'. Break down the consonant sounds and pronounce each word.",
+            "type": "scenario",
+            "explanation": "In this scenario, 'casa' has 'c' (k), 'a' (ah), 's' (s), 'a' (ah), pronounced 'kah-sah'. 'Cima' has 'c' (s), 'i' (ee), 'm' (m), 'a' (ah), pronounced 'see-mah'."
           }
         ]
       }

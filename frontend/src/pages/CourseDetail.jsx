@@ -1,10 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import LessonViewer from "../components/LessonViewer";
 
-function CourseDetail({ courses, loadingCourses }) {
+function CourseDetail({ courses, loadingCourses, onRegenerateModule }) {
   const { courseId } = useParams();
   const course = courses.find((item) => item.id === courseId);
+  const [regenerating, setRegenerating] = useState({});
+  const [activeModuleId, setActiveModuleId] = useState(null);
+  const [customRequest, setCustomRequest] = useState("");
+
+  const openRegenerateModal = (moduleId) => {
+    setActiveModuleId(moduleId);
+    setCustomRequest("");
+  };
+
+  const closeRegenerateModal = () => {
+    setActiveModuleId(null);
+    setCustomRequest("");
+  };
+
+  const handleConfirmRegenerate = async () => {
+    if (!onRegenerateModule || !course || !activeModuleId) return;
+    setRegenerating((prev) => ({ ...prev, [activeModuleId]: true }));
+    try {
+      await onRegenerateModule(course.id, activeModuleId, customRequest || "");
+      closeRegenerateModal();
+    } catch (error) {
+      console.error("Error regenerating module:", error);
+    } finally {
+      setRegenerating((prev) => ({ ...prev, [activeModuleId]: false }));
+    }
+  };
 
   return (
     <div className="page">
@@ -18,7 +44,7 @@ function CourseDetail({ courses, loadingCourses }) {
       <div className="card">
         <div className="detail-actions">
           <Link className="text-link" to="/courses">
-            ← Back to all courses
+
           </Link>
           {course && (
             <a
@@ -51,8 +77,43 @@ function CourseDetail({ courses, loadingCourses }) {
             </div>
             <span className="pill">Saved course</span>
           </div>
-          <LessonViewer course={course.course} />
+          <LessonViewer
+            course={course.course}
+            courseId={course.id}
+            onRegenerateRequest={openRegenerateModal}
+            regenerating={regenerating}
+          />
         </section>
+      )}
+
+      {activeModuleId && (
+        <div className="modal-backdrop">
+          <div className="modal-card">
+            <h3>Regenerate Module</h3>
+            <p className="muted">
+              Add optional instructions for how you want this module revised.
+            </p>
+            <textarea
+              className="modal-textarea"
+              rows={5}
+              placeholder="E.g. make it more conversational, add a role-play, include more examples..."
+              value={customRequest}
+              onChange={(e) => setCustomRequest(e.target.value)}
+            />
+            <div className="modal-actions">
+              <button className="secondary-button" onClick={closeRegenerateModal}>
+                Cancel
+              </button>
+              <button
+                className="primary-button"
+                onClick={handleConfirmRegenerate}
+                disabled={regenerating?.[activeModuleId]}
+              >
+                {regenerating?.[activeModuleId] ? "Regenerating..." : "Regenerate"}
+              </button>
+            </div>
+          </div>
+        </div>
       )}
     </div>
   );
