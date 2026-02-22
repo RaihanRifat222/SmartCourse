@@ -4,23 +4,54 @@
     "sections": [
       {
         "section_id": "1",
-        "title": "Understanding Conditional Rendering",
-        "conceptual_explanation": "Conditional rendering in React allows you to display different components or elements based on certain conditions. This concept exists because in real-world applications, you often need to show or hide elements based on user interactions or application state. For example, you might want to display a login button if a user is not logged in, and a logout button if they are. Think of it like a traffic light: it changes color based on the conditions of traffic flow. In React, you can use conditional rendering to control what the user sees, making your application dynamic and responsive. This builds on your existing knowledge of programming logic, where you use conditions to determine the flow of your code. In React, this logic is applied directly in the JSX syntax, which is a blend of JavaScript and HTML.",
-        "applied_explanation": "In practice, conditional rendering can be implemented using JavaScript logical operators like 'if', '&&', and the ternary operator. For instance, you can use an 'if' statement to check a condition and return different components based on that condition. Alternatively, you can use the '&&' operator to render a component only if a certain condition is true. When applying this, pay attention to the structure of your JSX; it should remain clean and readable. A common mistake beginners make is trying to use 'if' statements directly inside JSX, which is not allowed. Instead, you should define the condition outside of the return statement and then use the result within your JSX. This ensures that your code remains organized and functional.",
-        "example": "Let's say we want to display a welcome message if a user is logged in. We can create a simple React component for this. First, we define a state variable 'isLoggedIn' to track the user's login status. Then, in the render method, we can use a ternary operator to conditionally render the message. Here's how it looks: \n\nconst WelcomeMessage = () => { \n  const isLoggedIn = true; // This would typically come from your app's state\n  return ( \n    <div> \n      {isLoggedIn ? <h1>Welcome back!</h1> : <h1>Please log in.</h1>} \n    </div> \n  ); \n}; \n\nIn this example, if 'isLoggedIn' is true, the component will render 'Welcome back!'. If false, it will show 'Please log in.' This demonstrates how you can control what the user sees based on their login status.",
+        "title": "Daily Activities Vocabulary",
+        "conceptual_explanation": "Daily activities vocabulary refers to the words and phrases we use to describe what we do every day. This vocabulary exists because it helps us communicate our routines and actions clearly. Imagine your daily life as a series of small stories; each activity is a part of that story. For example, when you wake up, you might brush your teeth, eat breakfast, or go to work. These actions are the building blocks of your daily narrative. By learning these words, you can express yourself better in Spanish, connecting with others about shared experiences. You may already know some English words that are similar to their Spanish counterparts, which can make learning easier. For instance, 'comer' means 'to eat' in Spanish, and it sounds a bit like 'come' in English. This connection can help you remember the vocabulary more easily.",
+        "applied_explanation": "In practice, using daily activities vocabulary involves identifying the actions you perform regularly and learning their Spanish equivalents. Start by listing your daily activities in English, such as 'wake up', 'shower', 'eat breakfast', and 'go to work'. Then, find the Spanish translations: 'despertarse', 'ducharse', 'desayunar', and 'ir al trabajo'. Pay attention to the verbs, as they are crucial for forming sentences. A common beginner mistake is to forget to conjugate the verbs according to the subject. For example, instead of saying 'yo comer' (I eat), you should say 'yo como'. This small change makes your sentences grammatically correct. Practice saying these activities out loud, and try to use them in sentences to describe your routine.",
+        "example": "Let's take the daily activity 'to eat breakfast'. In Spanish, this is 'desayunar'. If you want to say 'I eat breakfast at 8 AM', you would say 'Yo desayuno a las 8 de la ma\u00f1ana'. Here\u2019s the breakdown: 'Yo' means 'I', 'desayuno' is the first-person singular form of 'desayunar', and 'a las 8 de la ma\u00f1ana' means 'at 8 in the morning'. This sentence structure is essential for describing your daily routine. You can replace 'desayuno' with other activities like 'ducho' (I shower) or 'voy al trabajo' (I go to work) to create a full picture of your day.",
         "practice_questions": [
           {
-            "question": "What is conditional rendering in React?",
+            "question": "What does 'desayunar' mean in English?",
             "type": "short_answer"
           },
           {
-            "question": "How can you use the '&&' operator for conditional rendering?",
+            "question": "Which of the following is the correct way to say 'I eat breakfast' in Spanish?",
+            "type": "mcq",
+            "options": [
+              "Yo desayuno",
+              "Yo desayunar",
+              "Yo desayunas"
+            ],
+            "correct_answer": "Yo desayuno",
+            "explanation": "The correct form is 'Yo desayuno' because 'desayuno' is the first-person singular conjugation of the verb 'desayunar'."
+          }
+        ]
+      },
+      {
+        "section_id": "2",
+        "title": "Time Expressions",
+        "conceptual_explanation": "Time expressions are words or phrases that help us indicate when an action takes place. They exist because they provide context to our activities, allowing us to communicate not just what we do, but when we do it. Think of time expressions as the clock of your daily narrative; they help others understand the timing of your actions. For example, saying 'I eat breakfast at 8 AM' gives a clear picture of your routine. You may already be familiar with some time expressions in English, like 'in the morning', 'at noon', or 'in the evening'. In Spanish, these expressions are similar: 'por la ma\u00f1ana', 'al mediod\u00eda', and 'por la tarde'. Learning these will help you create more detailed sentences about your daily life.",
+        "applied_explanation": "To use time expressions in practice, start by learning common phrases that indicate time. For instance, 'por la ma\u00f1ana' means 'in the morning', 'por la tarde' means 'in the afternoon', and 'por la noche' means 'at night'. When you combine these with your daily activities, you can create sentences like 'Yo desayuno por la ma\u00f1ana' (I eat breakfast in the morning). Pay attention to the structure of your sentences; the time expression usually comes before the verb. A common mistake is to place the time expression at the end of the sentence, which can sound awkward in Spanish. Instead, practice placing it correctly to enhance clarity and fluency.",
+        "example": "For example, if you want to say 'I go to work in the afternoon', you would say 'Yo voy al trabajo por la tarde'. Breaking it down: 'Yo' means 'I', 'voy' is the first-person singular form of 'ir' (to go), 'al trabajo' means 'to work', and 'por la tarde' means 'in the afternoon'. This structure helps you convey not just the action but also the timing, making your communication more effective. You can mix and match different activities and time expressions to describe your entire day, such as 'Yo estudio por la ma\u00f1ana' (I study in the morning) or 'Yo ceno por la noche' (I have dinner at night).",
+        "practice_questions": [
+          {
+            "question": "What does 'por la tarde' mean in English?",
             "type": "short_answer"
           },
           {
-            "question": "Imagine you are building a dashboard. You want to show a loading spinner while data is being fetched. How would you implement this using conditional rendering?",
+            "question": "Which of the following is the correct way to say 'I go to work in the morning' in Spanish?",
+            "type": "mcq",
+            "options": [
+              "Yo voy al trabajo por la ma\u00f1ana",
+              "Yo voy al trabajo por la tarde",
+              "Yo voy al trabajo por la noche"
+            ],
+            "correct_answer": "Yo voy al trabajo por la ma\u00f1ana",
+            "explanation": "'Yo voy al trabajo por la ma\u00f1ana' is correct because it specifies the time as 'in the morning'."
+          },
+          {
+            "question": "Create a sentence using 'desayunar' and 'por la ma\u00f1ana'.",
             "type": "scenario",
-            "explanation": "Explain how you would set up a state variable to track the loading status and use conditional rendering to display the spinner or the data."
+            "explanation": "This question encourages you to practice combining a daily activity with a time expression, reinforcing your understanding of both concepts."
           }
         ]
       }

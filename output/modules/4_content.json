@@ -4,45 +4,49 @@
     "sections": [
       {
         "section_id": "1",
-        "title": "Understanding Components",
-        "conceptual_explanation": "In React, a component is a reusable piece of code that represents a part of the user interface. Think of components as building blocks for your application. They exist to help you break down complex UIs into smaller, manageable pieces. This modular approach allows for easier maintenance and reusability. For example, if you have a button that appears in multiple places, you can create a single Button component and use it wherever needed. This concept is similar to functions in Python, where you define a function once and call it multiple times. Components can be either functional or class-based, but functional components are more common in modern React development due to their simplicity and performance benefits. Understanding components is crucial because they form the foundation of any React application, allowing you to create dynamic and interactive user interfaces.",
-        "applied_explanation": "To create a functional component in React, you start by defining a JavaScript function that returns JSX (JavaScript XML). JSX is a syntax extension that looks similar to HTML and allows you to describe what the UI should look like. For instance, you might create a component called 'Greeting' that takes a 'name' as a parameter and displays a welcome message. The steps are as follows: First, import React from 'react'. Then, define your function, e.g., 'function Greeting(props) { return <h1>Hello, {props.name}!</h1>; }'. Finally, you can use this component in your main application file by including it like this: '<Greeting name=\"Alice\" />'. Pay attention to how you pass props to the component, as this is a common area where beginners make mistakes, often forgetting to use 'props' to access the data passed into the component.",
-        "example": "Let's create a simple functional component called 'Welcome'. First, we import React: 'import React from 'react';'. Next, we define our component: 'function Welcome(props) { return <h2>Welcome, {props.user}!</h2>; }'. In this function, 'props' is an object that contains all the properties passed to the component. Here, we are using 'props.user' to access the 'user' property. Finally, we can use this component in our main application file like this: '<Welcome user=\"John\" />'. When rendered, this will display 'Welcome, John!' on the screen. This example illustrates how components can be used to create dynamic content based on the data passed to them.",
+        "title": "Family Vocabulary",
+        "conceptual_explanation": "Family vocabulary in Spanish refers to the words we use to describe our family members. This vocabulary exists because, just like in English, we need specific terms to identify and talk about our relatives. Think of family vocabulary as the building blocks of conversations about your personal life. For example, just as you would say 'mother' or 'brother' in English, in Spanish, you would say 'madre' for mother and 'hermano' for brother. This vocabulary is essential for expressing who is important in your life and helps you connect with others by sharing about your family. You may already know some family terms in English, and learning their Spanish equivalents will help you create meaningful sentences about your loved ones.",
+        "applied_explanation": "In practice, using family vocabulary involves learning the Spanish words for each family member and how to use them in sentences. Start by memorizing the basic terms: 'madre' (mother), 'padre' (father), 'hermano' (brother), and 'hermana' (sister). Once you know these words, you can create simple sentences like 'Mi madre es amable' (My mother is kind). Pay attention to the gender of the words; for instance, 'hermano' is masculine, while 'hermana' is feminine. A common beginner mistake is confusing the gender of family terms, so always remember to match the article (el for masculine, la for feminine) with the noun. Practice saying these words aloud to get comfortable with pronunciation and usage.",
+        "example": "Let's look at a simple example. If you want to introduce your family, you might say: 'Tengo una madre y un padre. Tengo un hermano y una hermana.' This translates to 'I have a mother and a father. I have a brother and a sister.' Here, 'Tengo' means 'I have,' 'una' is the feminine article for 'mother' (madre), and 'un' is the masculine article for 'father' (padre). Notice how the structure is similar to English, but the vocabulary is different. Practicing this sentence will help you remember the family terms and how to use them in context.",
         "practice_questions": [
           {
-            "question": "What is a component in React?",
+            "question": "What is the Spanish word for 'sister'?",
             "type": "short_answer"
           },
           {
-            "question": "Explain how to create a functional component in React.",
-            "type": "short_answer"
-          },
-          {
-            "question": "You are tasked with creating a component that displays a user's profile. What props would you consider passing to this component?",
-            "type": "scenario",
-            "explanation": "Consider what information is essential for displaying a user's profile, such as name, age, and profile picture."
+            "question": "Which of the following is the correct term for 'father' in Spanish?",
+            "type": "mcq",
+            "options": [
+              "madre",
+              "padre",
+              "hermano"
+            ],
+            "correct_answer": "padre",
+            "explanation": "The correct term for 'father' in Spanish is 'padre'. 'Madre' means 'mother' and 'hermano' means 'brother'."
           }
         ]
       },
       {
         "section_id": "2",
-        "title": "Understanding Props",
-        "conceptual_explanation": "Props, short for properties, are a way to pass data from one component to another in React. They allow components to be dynamic and reusable by enabling them to receive data from their parent components. Think of props as the parameters you pass to a function in Python. Just like you can pass different values to a function to get different results, you can pass different props to a component to change its output. This is essential for building interactive applications where components need to respond to user input or other changes in data. Understanding how to use props effectively is key to mastering React, as it allows you to create components that can adapt based on the data they receive.",
-        "applied_explanation": "When using props, you define them in the parent component and pass them down to the child component. For example, if you have a parent component called 'App' and a child component called 'Profile', you can pass a user's name as a prop. In the 'App' component, you would write '<Profile name=\"Alice\" />'. Inside the 'Profile' component, you can access this prop using 'props.name'. It's important to remember that props are read-only; you cannot modify them within the child component. A common mistake beginners make is trying to change props directly, which can lead to unexpected behavior. Instead, if you need to change data, you should manage it in the parent component and pass updated props down to the child.",
-        "example": "Let's create a component called 'UserCard' that displays user information. First, we define the component: 'function UserCard(props) { return <div><h3>{props.name}</h3><p>Age: {props.age}</p></div>; }'. Here, 'UserCard' takes 'name' and 'age' as props. In the parent component, we can use it like this: '<UserCard name=\"Bob\" age={30} />'. This will render a card with Bob's name and age. The key point is that 'props' allows us to pass data into 'UserCard', making it flexible and reusable for different users. If we wanted to display another user, we could simply call '<UserCard name=\"Alice\" age={25} />' without changing the 'UserCard' component itself.",
+        "title": "Descriptive Phrases",
+        "conceptual_explanation": "Descriptive phrases in Spanish are used to provide more information about family members and friends. These phrases exist to help us express our thoughts and feelings about the people we care about. For example, you might want to say 'My brother is tall' or 'My mother is kind.' In Spanish, this would be 'Mi hermano es alto' and 'Mi madre es amable.' Think of descriptive phrases as the way to paint a picture of your relationships. You already know how to describe people in English, and now you will learn how to do it in Spanish, which will enhance your ability to communicate effectively.",
+        "applied_explanation": "To use descriptive phrases, start by learning common adjectives in Spanish, such as 'alto' (tall), 'bajo' (short), 'amable' (kind), and 'inteligente' (smart). Combine these adjectives with the family vocabulary you learned earlier. For instance, you can say 'Mi hermana es inteligente' (My sister is smart). Pay attention to the agreement between the noun and the adjective; if the noun is feminine, the adjective must also be in its feminine form. A common mistake is forgetting to match the gender, so always check if the family member is male or female before choosing the adjective.",
+        "example": "For example, if you want to describe your mother, you could say: 'Mi madre es amable y trabajadora.' This means 'My mother is kind and hardworking.' Here, 'amable' describes her character, and 'trabajadora' means 'hardworking.' Notice how both adjectives follow the verb 'es' (is) and agree with 'madre' in being feminine. Practicing these phrases will help you express your thoughts about your family members clearly and confidently.",
         "practice_questions": [
           {
-            "question": "What are props in React?",
+            "question": "Translate 'My brother is tall' into Spanish.",
             "type": "short_answer"
           },
           {
-            "question": "How do you pass props from a parent component to a child component?",
-            "type": "short_answer"
-          },
-          {
-            "question": "Imagine you have a component that displays a list of products. What props would you pass to this component?",
-            "type": "scenario",
-            "explanation": "Consider passing props like product name, price, and image URL to display relevant product information."
+            "question": "Which of the following describes a kind person in Spanish?",
+            "type": "mcq",
+            "options": [
+              "alto",
+              "amable",
+              "bajo"
+            ],
+            "correct_answer": "amable",
+            "explanation": "'Amable' means 'kind' in Spanish, while 'alto' means 'tall' and 'bajo' means 'short'."
           }
         ]
       }

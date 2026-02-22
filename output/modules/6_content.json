@@ -4,45 +4,57 @@
     "sections": [
       {
         "section_id": "1",
-        "title": "Understanding Event Handling in React",
-        "conceptual_explanation": "Event handling in React is a way to respond to user interactions, such as clicks, key presses, or mouse movements. It exists because web applications need to be interactive, allowing users to engage with the content dynamically. Think of event handling like a conversation: when you say something (an event), the other person (the application) responds in a specific way. In React, events are handled using a special syntax that is slightly different from traditional JavaScript. This is because React uses a concept called 'Synthetic Events', which are cross-browser wrappers around the native events. This means that regardless of the browser, React ensures that the event handling works consistently. You can connect this to your previous knowledge of functions in Python; just like you define a function to perform an action, in React, you define event handlers to respond to user actions.",
-        "applied_explanation": "In practice, handling events in React involves defining functions that will be triggered when specific events occur. For example, if you want to respond to a button click, you would create a function that contains the code you want to execute when the button is clicked. You then attach this function to the button using the onClick attribute. It\u2019s important to remember that in React, you need to bind the event handler to the component\u2019s context, especially if you are using class components. A common mistake beginners make is forgetting to bind the event handler, which can lead to errors where 'this' is undefined. To avoid this, you can use arrow functions or bind the function in the constructor. Pay attention to the event object that is passed to the handler; it contains useful information about the event that occurred.",
-        "example": "Let's create a simple button that, when clicked, will display an alert. First, we define a functional component called 'AlertButton'. Inside this component, we create a function called 'showAlert' that will be triggered on the button click. The function uses 'alert()' to display a message. We then return a button element with an onClick attribute set to 'showAlert'. Here\u2019s the code: \n\nfunction AlertButton() { \n  const showAlert = () => { \n    alert('Button was clicked!'); \n  }; \n  return ( \n    <button onClick={showAlert}>Click Me!</button> \n  ); \n} \n\nIn this example, when the button is clicked, the 'showAlert' function is called, and the alert message appears. This demonstrates how event handling works in React, allowing us to create interactive components.",
+        "title": "Understanding Question Words",
+        "conceptual_explanation": "Question words are essential in any language as they help us gather information. In Spanish, these words include 'qu\u00e9' (what), 'qui\u00e9n' (who), 'd\u00f3nde' (where), 'cu\u00e1ndo' (when), 'por qu\u00e9' (why), and 'c\u00f3mo' (how). They exist because they allow us to ask for specific details rather than making statements. Think of question words as keys that unlock the information you need. For example, if you want to know about someone's favorite food, you would use 'qu\u00e9' to ask, '\u00bfQu\u00e9 te gusta comer?' (What do you like to eat?). This connects to what you already know in English, where we also use question words to seek information. Understanding these words is the first step in formulating questions in Spanish.",
+        "applied_explanation": "To use question words in practice, start by identifying the information you want to know. For instance, if you want to ask someone where they live, you would use 'd\u00f3nde'. The structure of your question will typically follow the format: question word + verb + subject. So, '\u00bfD\u00f3nde vives?' translates to 'Where do you live?'. Pay attention to the verb conjugation that matches the subject. A common beginner mistake is forgetting to conjugate the verb correctly, which can lead to confusion. Always ensure that your question is clear and that the verb agrees with the subject you are asking about.",
+        "example": "Let's say you want to ask someone about their favorite color. You would start with the question word 'qu\u00e9'. The full question would be '\u00bfQu\u00e9 color te gusta?' which means 'What color do you like?'. Here\u2019s the breakdown: '\u00bfQu\u00e9' is the question word, 'color' is the subject, 'te' is the indirect object pronoun meaning 'to you', and 'gusta' is the verb that agrees with the singular noun 'color'. This structure is crucial as it helps you form clear and correct questions in Spanish.",
         "practice_questions": [
           {
-            "question": "What is the purpose of event handling in React?",
+            "question": "What is the Spanish word for 'who'?",
             "type": "short_answer"
           },
           {
-            "question": "Describe how you would create a button that alerts a message when clicked.",
+            "question": "Formulate a question using 'd\u00f3nde'.",
             "type": "short_answer"
           },
           {
-            "question": "You are creating a form with a submit button. What common mistake should you avoid when handling the submit event?",
-            "type": "scenario",
-            "explanation": "Make sure to bind the event handler correctly to avoid 'this' being undefined."
+            "question": "Which of the following is a question word in Spanish?",
+            "type": "mcq",
+            "options": [
+              "casa",
+              "qui\u00e9n",
+              "comer"
+            ],
+            "correct_answer": "qui\u00e9n",
+            "explanation": "'Qui\u00e9n' means 'who' in Spanish, making it a question word. 'Casa' means 'house' and 'comer' means 'to eat', neither of which are question words."
           }
         ]
       },
       {
         "section_id": "2",
-        "title": "Exploring Synthetic Events",
-        "conceptual_explanation": "Synthetic events are a key feature in React that provide a consistent interface for handling events across different browsers. They exist to simplify event handling by normalizing the behavior of events, so developers do not have to worry about the differences in how browsers implement events. Imagine you are using different types of light switches in various rooms; synthetic events act like a universal remote that works with all types of switches, making it easier to control the lights. In React, when an event occurs, it creates a synthetic event object that mimics the native event but is wrapped in a way that ensures compatibility. This concept connects to your understanding of functions in Python, where you might create a function that standardizes input processing regardless of the source.",
-        "applied_explanation": "When you handle events in React, you are actually working with synthetic events. This means that when an event occurs, React creates a synthetic event object that you can use in your event handler. This object contains properties and methods that are similar to the native event but are guaranteed to work the same way across all browsers. For example, if you want to access the value of an input field when a change event occurs, you can use 'event.target.value' from the synthetic event object. A common mistake is to assume that the synthetic event object will persist after the event handler has executed. However, synthetic events are pooled for performance reasons, meaning they are reused for different events. To access the event properties asynchronously, you should store them in a variable or use them immediately within the event handler.",
-        "example": "Consider a simple input field where we want to log the value whenever the user types. We create a functional component called 'TextInput'. Inside, we define a function 'handleChange' that takes the synthetic event as an argument. We log the value of the input using 'event.target.value'. Here\u2019s the code: \n\nfunction TextInput() { \n  const handleChange = (event) => { \n    console.log(event.target.value); \n  }; \n  return ( \n    <input type='text' onChange={handleChange} /> \n  ); \n} \n\nIn this example, every time the user types in the input field, the 'handleChange' function is called, and the current value is logged to the console. This demonstrates how synthetic events work in React, allowing for consistent event handling.",
+        "title": "Formulating Questions in Spanish",
+        "conceptual_explanation": "Formulating questions in Spanish involves understanding the structure of a question. Unlike English, where the word order can change, Spanish questions often maintain a similar structure to statements but with a few key changes. Questions exist to facilitate communication and gather information. Think of it as a conversation starter. For example, if you want to ask someone what they are doing, you would say, '\u00bfQu\u00e9 est\u00e1s haciendo?' (What are you doing?). This structure connects to your previous knowledge of English questions, where you also rearrange words to form a question.",
+        "applied_explanation": "To formulate a question, start with a question word if applicable, followed by the verb and then the subject. For example, '\u00bfQu\u00e9 comes?' (What do you eat?). Here, 'comes' is the verb for 'you eat', and it is conjugated to match the subject 't\u00fa' (you). Pay attention to the verb conjugation, as this is a common area where beginners make mistakes. They might forget to change the verb form according to the subject, leading to incorrect questions. Always double-check your verb forms to ensure clarity.",
+        "example": "Consider you want to ask someone when they are going to the store. You would say, '\u00bfCu\u00e1ndo vas a la tienda?' which translates to 'When are you going to the store?'. Breaking it down: '\u00bfCu\u00e1ndo' is the question word for 'when', 'vas' is the conjugated form of 'ir' (to go) for 'you', and 'a la tienda' means 'to the store'. This structure is important as it helps you create meaningful questions that others can easily understand.",
         "practice_questions": [
           {
-            "question": "What are synthetic events in React?",
+            "question": "What is the correct structure for asking a question in Spanish?",
             "type": "short_answer"
           },
           {
-            "question": "How do you access the value of an input field using a synthetic event?",
+            "question": "Create a question using 'por qu\u00e9'.",
             "type": "short_answer"
           },
           {
-            "question": "Why is it important to store the synthetic event properties if you need to use them asynchronously?",
-            "type": "scenario",
-            "explanation": "Synthetic events are pooled and will not persist after the event handler executes, so you need to store them if you want to use them later."
+            "question": "Which of the following is the correct way to ask 'What do you want?' in Spanish?",
+            "type": "mcq",
+            "options": [
+              "\u00bfQu\u00e9 quieres?",
+              "\u00bfQuieres qu\u00e9?",
+              "\u00bfQuieres?"
+            ],
+            "correct_answer": "\u00bfQu\u00e9 quieres?",
+            "explanation": "'\u00bfQu\u00e9 quieres?' is the correct structure for asking 'What do you want?' in Spanish. The other options do not follow the proper question format."
           }
         ]
       }

@@ -4,45 +4,35 @@
     "sections": [
       {
         "section_id": "1",
-        "title": "Project Integration",
-        "conceptual_explanation": "Project integration in React refers to the process of combining various components, libraries, and tools to create a cohesive application. It exists to ensure that all parts of your app work together seamlessly, allowing for a smooth user experience. Think of it like assembling a puzzle; each piece (or component) must fit together correctly to form a complete picture. You\u2019ve already learned about components in React, which are the building blocks of your app. Now, we will focus on how to integrate these components effectively, manage their states, and ensure they communicate with each other properly. This is crucial because a well-integrated app is easier to maintain and scale as your project grows.",
-        "applied_explanation": "In practice, project integration involves several steps. First, you will create a new React app using a tool like Create React App, which sets up the initial project structure for you. Next, you will add components to your app, such as headers, footers, and main content areas. Pay attention to how you structure your components; they should be reusable and organized logically. A common beginner mistake is to create too many components without a clear hierarchy, which can lead to confusion and difficulty in managing state. After setting up your components, you will need to manage their interactions, often using props to pass data between them. This step is essential for ensuring that your app behaves as expected and provides a good user experience.",
-        "example": "Let\u2019s say you want to build a simple React app that displays a list of tasks. First, you would create a new React app using the command 'npx create-react-app my-tasks-app'. This command sets up a new directory with all the necessary files. Next, you would create a component called 'TaskList' that will hold your tasks. Inside 'TaskList', you might have another component called 'TaskItem' for each individual task. In your 'TaskList' component, you would use the following code: 'const TaskList = () => { const tasks = ['Task 1', 'Task 2', 'Task 3']; return ( <ul> {tasks.map(task => <TaskItem key={task} task={task} />)} </ul> ); };'. Here, you create an array of tasks and map over it to create a list of 'TaskItem' components, passing each task as a prop. This demonstrates how to integrate components effectively.",
+        "title": "Understanding Project Structure",
+        "conceptual_explanation": "In React, the project structure is crucial as it organizes your code and resources in a way that makes it easy to manage and scale. A typical React app is structured with a 'src' folder containing all your components, styles, and assets. This structure exists to promote modularity, allowing developers to work on different parts of the app independently. Think of it like a filing cabinet where each drawer holds related documents. You already know about organizing files in Python; similarly, in React, you will organize components, which are the building blocks of your app. This organization helps in maintaining the code and makes it easier for others to understand your work.",
+        "applied_explanation": "When you start building a React app, you will create a project using a tool like Create React App, which sets up the initial structure for you. The first step is to navigate to your project folder, where you will find the 'src' directory. Inside 'src', you will typically have 'index.js' (the entry point), 'App.js' (the main component), and possibly other folders for components and styles. Pay attention to how components are named and organized; this will help you later when you need to find or modify them. A common mistake beginners make is to place all components in one file or folder, which can lead to confusion as the app grows. Instead, keep components modular and organized.",
+        "example": "Let's say you are building a simple to-do list app. In your 'src' folder, you might have 'index.js' that renders your main 'App' component. Inside 'App.js', you could have a structure like this: 'import React from \"react\"; import TodoList from './components/TodoList'; function App() { return <div><h1>My To-Do List</h1><TodoList /></div>; } export default App;'. Here, 'TodoList' is another component that you would create in a separate file under a 'components' folder. This separation allows you to manage your to-do list logic independently from the main app structure.",
         "practice_questions": [
           {
-            "question": "What is the purpose of project integration in a React app?",
+            "question": "What is the purpose of the 'src' folder in a React project?",
             "type": "short_answer"
           },
           {
-            "question": "Which command do you use to create a new React app?",
+            "question": "Why is it important to keep components modular in a React app?",
             "type": "short_answer"
-          },
-          {
-            "question": "Imagine you have created multiple components for your app. How would you ensure they communicate effectively?",
-            "type": "scenario",
-            "explanation": "Consider how you would pass data between components using props and manage their state to ensure a smooth user experience."
           }
         ]
       },
       {
         "section_id": "2",
-        "title": "Deployment",
-        "conceptual_explanation": "Deployment is the process of making your React app available to users on the internet. It exists because, after building your app, you want others to access and use it. Think of deployment as opening the doors to your store; you want to showcase your work to the world. You\u2019ve learned how to build a React app, and now it\u2019s time to learn how to deploy it. This involves taking your local development environment and transferring it to a hosting service. Understanding deployment is crucial because it allows you to share your applications with others and receive feedback, which is essential for improvement and growth.",
-        "applied_explanation": "To deploy your React app, you typically follow a few steps. First, you need to create a production build of your app using the command 'npm run build'. This command compiles your app into static files that can be served by a web server. Next, you choose a hosting service, such as Netlify or Vercel, which are beginner-friendly options. You will then upload your build folder to the hosting service. Pay attention to the configuration settings, as they can vary between services. A common beginner mistake is forgetting to set the correct base URL, which can lead to broken links in your app. Once deployed, you can access your app via a URL provided by the hosting service.",
-        "example": "Let\u2019s walk through deploying your React app to Netlify. After you\u2019ve built your app using 'npm run build', you will have a 'build' folder in your project directory. Go to the Netlify website and sign up for an account. Once logged in, click on 'New site from Git' or 'Deploy manually'. If you choose to deploy manually, drag and drop your 'build' folder into the designated area on the Netlify dashboard. Netlify will automatically handle the deployment process. After a few moments, you will receive a URL where your app is live. This process illustrates how easy it is to deploy a React app using modern hosting services.",
+        "title": "Deploying Your React App",
+        "conceptual_explanation": "Deployment is the process of making your app available to users on the internet. It exists because, after building your app, you want others to access and use it. Think of deployment like opening a store after building it; you want customers to come in and see what you have created. You have learned about creating apps, but deployment is the final step that brings your work to life. Common hosting services for React apps include Netlify and Vercel, which simplify the deployment process. Understanding deployment is essential as it allows you to share your projects with others and receive feedback.",
+        "applied_explanation": "To deploy your React app, you typically need to build it first, which compiles your code into static files. You can do this by running 'npm run build' in your project directory. This command creates a 'build' folder containing optimized files for production. Next, you will choose a hosting service. For example, if you use Netlify, you can drag and drop your 'build' folder into their interface, and your app will be live. Pay attention to any errors during the build process, as they can prevent successful deployment. A common mistake is forgetting to build the app before deploying, which will result in an empty or broken site.",
+        "example": "Imagine you have completed your to-do list app and want to deploy it using Netlify. First, you run 'npm run build' in your terminal, which generates a 'build' folder. Inside this folder, you will find an 'index.html' file and other assets. Next, you go to the Netlify website, create an account, and find the option to deploy a new site. You simply drag your 'build' folder into the designated area on the Netlify dashboard. After a few moments, your app will be live at a unique URL provided by Netlify, allowing anyone to access your to-do list app online.",
         "practice_questions": [
           {
-            "question": "What command do you use to create a production build of your React app?",
+            "question": "What command do you run to build your React app for deployment?",
             "type": "short_answer"
           },
           {
-            "question": "Name one hosting service you can use to deploy your React app.",
-            "type": "short_answer"
-          },
-          {
-            "question": "You have deployed your app, but the links are broken. What could be a possible reason?",
-            "type": "scenario",
-            "explanation": "Consider the importance of setting the correct base URL during deployment, which can affect how your app's links function."
+            "question": "Describe the steps to deploy a React app using Netlify.",
+            "type": "scenario"
           }
         ]
       }

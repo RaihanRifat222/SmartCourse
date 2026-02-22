@@ -4,23 +4,22 @@
     "sections": [
       {
         "section_id": "1",
-        "title": "Introduction to React Router",
-        "conceptual_explanation": "React Router is a library that enables navigation among different components in a React application. It exists to help developers create single-page applications (SPAs) that can change views without reloading the entire page. Think of it like a GPS for your app; just as a GPS helps you navigate from one location to another without leaving the car, React Router allows users to move between different parts of your app seamlessly. You may already be familiar with how web pages work, where each page is a separate HTML file. React Router changes this by allowing you to define routes in your app, which are like paths that lead to different components. This is essential for creating a smooth user experience, as it keeps the app responsive and fast.",
-        "applied_explanation": "To implement routing in a React app using React Router, you first need to install the library. This is done using npm, the package manager for JavaScript. Once installed, you can import the necessary components from React Router, such as BrowserRouter, Route, and Switch. The BrowserRouter component wraps your entire application, enabling routing capabilities. Inside this component, you define routes using the Route component, which specifies a path and the component to render when that path is accessed. Pay attention to the order of your routes, as React Router matches them from top to bottom. A common mistake beginners make is not wrapping their routes in BrowserRouter, which leads to routing not functioning correctly.",
-        "example": "Let's say you want to create a simple React app with two pages: Home and About. First, you would install React Router by running 'npm install react-router-dom' in your terminal. Then, in your main App.js file, you would import BrowserRouter, Route, and Switch from 'react-router-dom'. You would wrap your routes in BrowserRouter like this: <BrowserRouter>. Inside it, you would use <Switch> to group your routes. For the Home page, you would write <Route path='/' exact component={Home} /> and for the About page, <Route path='/about' component={About} />. The 'exact' keyword ensures that the Home component only renders when the path is exactly '/'. This setup allows users to navigate between the Home and About pages without reloading the app.",
+        "title": "Review and Conversational Practice",
+        "conceptual_explanation": "In this section, we will focus on reviewing key vocabulary and phrases that you have learned in previous modules. This review is essential because it reinforces your memory and helps you become more comfortable using the language. Think of it like revisiting a favorite book; the more you read it, the more familiar you become with the characters and plot. By practicing conversation, you will also learn how to use these phrases in real-life situations, which is crucial for effective communication. Remember, language learning is a cumulative process, and each new word or phrase builds on what you already know. This section will help you connect the dots between vocabulary and practical usage, making it easier for you to engage in conversations confidently.",
+        "applied_explanation": "Now, let's put this into practice. We will engage in simple conversations using the vocabulary and phrases you have learned. Start by recalling the phrases you practiced before, such as greetings, asking questions, and expressing likes or dislikes. When you practice, pay attention to pronunciation and intonation, as these can change the meaning of what you say. A common beginner mistake is to rush through sentences without pausing, which can make it hard for others to understand you. Instead, take your time, and remember to listen actively to your conversation partner. This will help you respond appropriately and keep the conversation flowing. We will also incorporate role-play scenarios where you can practice these conversations in a safe environment, allowing you to build confidence and fluency.",
+        "example": "Let's consider a simple role-play scenario where you meet someone new at a caf\u00e9. You might start with a greeting: 'Hola, \u00bfc\u00f3mo est\u00e1s?' (Hello, how are you?). The other person might respond, 'Estoy bien, gracias. \u00bfY t\u00fa?' (I am good, thank you. And you?). Here, you are using basic conversational phrases. Next, you could say, 'Me gusta este caf\u00e9' (I like this caf\u00e9). This shows your ability to express preferences. If you were to write this out, it would look like this: 'Hola, \u00bfc\u00f3mo est\u00e1s?' - you are greeting someone. 'Estoy bien, gracias. \u00bfY t\u00fa?' - you are responding to their greeting. 'Me gusta este caf\u00e9' - you are sharing your opinion. Each line builds on your vocabulary and helps you practice speaking in a real-world context.",
         "practice_questions": [
           {
-            "question": "What is the purpose of React Router?",
+            "question": "What is the importance of reviewing vocabulary in language learning?",
             "type": "short_answer"
           },
           {
-            "question": "Which component do you need to wrap your routes in for React Router to work?",
+            "question": "In a conversation, why is it important to listen actively?",
             "type": "short_answer"
           },
           {
-            "question": "You are building a React app with multiple pages. Describe how you would set up routing using React Router.",
-            "type": "scenario",
-            "explanation": "In your response, explain the steps you would take to implement routing, including the components you would use and how you would structure your routes."
+            "question": "Imagine you are at a party and meet someone new. How would you introduce yourself in Spanish? Write a short dialogue.",
+            "type": "scenario"
           }
         ]
       }

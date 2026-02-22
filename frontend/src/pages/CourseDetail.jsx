@@ -16,9 +16,21 @@ function CourseDetail({ courses, loadingCourses }) {
       </section>
 
       <div className="card">
-        <Link className="text-link" to="/courses">
-          ← Back to all courses
-        </Link>
+        <div className="detail-actions">
+          <Link className="text-link" to="/courses">
+            ← Back to all courses
+          </Link>
+          {course && (
+            <a
+              className="primary-button"
+              href={`http://localhost:8000/courses/${course.id}/export?format=pdf&ts=${Date.now()}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Download PDF
+            </a>
+          )}
+        </div>
       </div>
 
       {loadingCourses && <p className="muted">Loading saved courses...</p>}

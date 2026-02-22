@@ -4,43 +4,23 @@
     "sections": [
       {
         "section_id": "1",
-        "title": "Controlled Components",
-        "conceptual_explanation": "Controlled components in React are form elements whose values are controlled by the state of the component. This means that the input fields do not maintain their own state; instead, the React component manages the state. This concept exists to provide a single source of truth for form data, making it easier to manage and validate user input. Think of it like a puppet show where the puppeteer (React component) controls the puppets (input fields). You have already learned about state in React, and controlled components are a natural extension of that concept. By using controlled components, you can easily access and manipulate the form data, ensuring that your application behaves predictably and consistently.",
-        "applied_explanation": "In practice, controlled components work by binding the value of an input field to a piece of state in your React component. When the user types into the input field, an event handler updates the state, which in turn updates the input field's value. Here\u2019s how it works step-by-step: First, you define a state variable using the useState hook. Next, you create an input element and set its value to this state variable. Then, you add an onChange event handler to the input that updates the state whenever the user types. Pay attention to ensuring that the state is updated correctly; a common beginner mistake is forgetting to bind the input value to the state, which can lead to unexpected behavior.",
-        "example": "Let's create a simple controlled component for a text input. First, we import React and the useState hook. Then, we define a functional component called 'TextInput'. Inside this component, we initialize a state variable called 'inputValue' using useState, starting with an empty string. We create an input element and set its value to 'inputValue'. We also add an onChange event handler that updates 'inputValue' with the current value of the input field. This way, as the user types, the state updates, and the input reflects the current state. Here\u2019s the code: \n\nimport React, { useState } from 'react';\n\nconst TextInput = () => {\n  const [inputValue, setInputValue] = useState('');\n\n  const handleChange = (event) => {\n    setInputValue(event.target.value);\n  };\n\n  return <input type='text' value={inputValue} onChange={handleChange} />;\n};\n\nexport default TextInput; \n\nIn this example, 'handleChange' is called every time the user types, updating 'inputValue' and ensuring the input field displays the current state.",
+        "title": "Expressing Likes and Dislikes",
+        "conceptual_explanation": "In Spanish, expressing likes and dislikes is essential for communicating your preferences and engaging in conversations. This concept exists because sharing what you enjoy or dislike helps others understand you better and fosters connections. Think of it like a bridge that connects your feelings to the people around you. You already know how to express likes and dislikes in English, such as saying 'I like pizza' or 'I don't like broccoli.' In Spanish, we use similar structures, but with different vocabulary and grammar. For example, the phrase 'Me gusta' means 'I like,' and 'No me gusta' means 'I don't like.' Understanding these phrases will allow you to share your interests and preferences in Spanish, making your conversations more meaningful.",
+        "applied_explanation": "To express likes and dislikes in Spanish, you will primarily use the phrases 'Me gusta' for likes and 'No me gusta' for dislikes. Start by identifying what you want to express. For example, if you want to say you like ice cream, you would say 'Me gusta el helado.' Notice that 'el helado' means 'the ice cream.' When expressing dislikes, simply add 'No' before 'me gusta,' like 'No me gusta el br\u00f3coli.' Pay attention to the subject of your sentence; if you are talking about multiple items, you will use 'gustan' instead of 'gusta.' A common beginner mistake is forgetting to match the verb with the subject, such as saying 'Me gusta los helados' instead of 'Me gustan los helados.' Remember, if you are talking about more than one thing, use 'gustan.'",
+        "example": "Let's say you want to express that you like pizza and dislike spinach. In Spanish, you would say: 'Me gusta la pizza' for 'I like pizza' and 'No me gusta la espinaca' for 'I don't like spinach.' Here\u2019s the breakdown: 'Me' means 'to me,' 'gusta' means 'is pleasing,' and 'la pizza' means 'the pizza.' So, together, it translates to 'Pizza is pleasing to me.' For the dislike, 'No' negates the statement, making it 'Not pleasing to me.' This structure is straightforward and allows you to express your preferences clearly.",
         "practice_questions": [
           {
-            "question": "What is a controlled component in React?",
+            "question": "What does 'Me gusta' mean in English?",
             "type": "short_answer"
           },
           {
-            "question": "Which hook is commonly used to manage state in controlled components?",
-            "type": "mcq",
-            "options": [
-              "useEffect",
-              "useState",
-              "useContext"
-            ],
-            "correct_answer": "useState",
-            "explanation": "The useState hook is used to manage state in functional components, making it essential for controlled components."
-          }
-        ]
-      },
-      {
-        "section_id": "2",
-        "title": "Handling Form Submissions",
-        "conceptual_explanation": "Handling form submissions in React involves capturing the data entered by the user and processing it when the form is submitted. This concept exists to allow developers to create interactive applications that can respond to user input. Imagine a restaurant where customers place their orders (form data), and the waiter (your React component) takes the orders to the kitchen (backend or processing function). You have already learned about events in JavaScript, and handling form submissions is an extension of that knowledge. By managing form submissions effectively, you can validate user input, send data to a server, or update the application state based on user actions.",
-        "applied_explanation": "To handle form submissions in React, you typically define a function that will be called when the form is submitted. This function can prevent the default behavior of the form (which is to refresh the page) and then process the form data. Here\u2019s how it works step-by-step: First, create a function that handles the form submission. Inside this function, use event.preventDefault() to stop the page from refreshing. Next, access the form data, which can be done using state variables for controlled components. Finally, you can log the data, send it to an API, or perform any other action. A common beginner mistake is forgetting to call preventDefault(), which can lead to unexpected page reloads.",
-        "example": "Let's create a simple form that captures a user's name and handles the submission. We will use the TextInput component we created earlier. First, we define a new component called 'UserForm'. Inside this component, we create a state variable called 'name' using useState. We then create a form element with an onSubmit event handler that calls 'handleSubmit'. Inside 'handleSubmit', we prevent the default form submission behavior and log the name to the console. Here\u2019s the code: \n\nimport React, { useState } from 'react';\n\nconst UserForm = () => {\n  const [name, setName] = useState('');\n\n  const handleSubmit = (event) => {\n    event.preventDefault();\n    console.log('Submitted Name:', name);\n  };\n\n  return (\n    <form onSubmit={handleSubmit}>\n      <TextInput value={name} onChange={(e) => setName(e.target.value)} />\n      <button type='submit'>Submit</button>\n    </form>\n  );\n};\n\nexport default UserForm; \n\nIn this example, when the user submits the form, 'handleSubmit' is called, preventing the default action and logging the name entered by the user.",
-        "practice_questions": [
-          {
-            "question": "What method is used to prevent the default form submission behavior?",
+            "question": "Translate 'I don't like broccoli' into Spanish.",
             "type": "short_answer"
           },
           {
-            "question": "What happens if you forget to call preventDefault() in your form submission handler?",
+            "question": "You want to tell a friend that you like apples and dislike bananas. Write a sentence in Spanish for each.",
             "type": "scenario",
-            "explanation": "If you forget to call preventDefault(), the form will submit and refresh the page, causing you to lose any unsaved data entered by the user."
+            "explanation": "This question tests your ability to apply what you've learned about expressing likes and dislikes in Spanish."
           }
         ]
       }

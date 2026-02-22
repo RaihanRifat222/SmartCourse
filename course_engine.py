@@ -1,5 +1,6 @@
 import json
 import os
+import copy
 from agents.user_proxy import user_proxy
 from agents.curriculum_architect import curriculum_architect
 from agents.curriculum_validator import curriculum_validator
@@ -8,8 +9,8 @@ from utils.schema_validator import validate_json
 from utils.json_cleaner import extract_json
 
 def generate_course(learning_request: dict):
-
-
+    learning_request = copy.deepcopy(learning_request)
+    _normalize_learning_request(learning_request)
 
     MAX_RETRIES = 3
     
@@ -19,6 +20,13 @@ def generate_course(learning_request: dict):
         print(f"Attempt {attempt} to generate and validate curriculum")
 
         architect_prompt = f"Design a curriculum for this request:\n{learning_request}\n"
+
+        if _requires_speaking_practice(learning_request):
+            architect_prompt += (
+                "\nImportant: include explicit speaking practice. "
+                "Add dedicated speaking-focused modules or activities in each module "
+                "(dialogues, role-play, pronunciation drills).\n"
+            )
 
         if issues:
             architect_prompt += f"\nPrevious attempt had these issues:\n{issues}\n"
@@ -106,3 +114,19 @@ def generate_course(learning_request: dict):
         "curriculum": curriculum_json,
         "module_contents": all_module_contents
     }
+
+def _requires_speaking_practice(learning_request: dict) -> bool:
+    goals = learning_request.get("learning_goals", [])
+    return any("speak" in str(goal).lower() for goal in goals)
+
+def _normalize_learning_request(learning_request: dict) -> None:
+    audience = learning_request.get("audience", {})
+    constraints = learning_request.get("constraints", {})
+
+    audience_level = str(audience.get("seniority", "")).strip().lower()
+    depth_level = str(constraints.get("depth", "")).strip().lower()
+
+    order = {"beginner": 0, "intermediate": 1, "advanced": 2}
+    if audience_level in order and depth_level in order:
+        if order[depth_level] > order[audience_level]:
+            constraints["depth"] = audience.get("seniority")

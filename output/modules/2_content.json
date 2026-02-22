@@ -4,45 +4,54 @@
     "sections": [
       {
         "section_id": "1",
-        "title": "Installing Node.js and npm",
-        "conceptual_explanation": "Node.js is a powerful JavaScript runtime that allows you to run JavaScript code outside of a web browser. It exists because it enables developers to build server-side applications using JavaScript, which was traditionally limited to client-side scripting. Think of Node.js as a bridge that allows JavaScript to interact with the server, much like how Python can run scripts on a server. npm, which stands for Node Package Manager, is a tool that comes with Node.js. It helps you manage libraries and packages that you can use in your projects. You can think of npm as a library catalog where you can find and install various tools that enhance your JavaScript applications. This is crucial for React development because many React libraries and tools are available through npm, making it easier to build and manage your applications.",
-        "applied_explanation": "To install Node.js and npm, you first need to download the installer from the official Node.js website. Once you run the installer, it will guide you through the installation process. After installation, you can verify that Node.js and npm are installed correctly by opening your command line interface (CLI) and typing 'node -v' and 'npm -v'. This will display the version numbers of Node.js and npm, confirming that they are installed. Pay attention to the installation path and any prompts during the installation, as these can affect how Node.js and npm function on your system. A common beginner mistake is to skip the installation of npm, thinking it is optional, but it is essential for managing packages in your React projects.",
-        "example": "To install Node.js, go to the Node.js website and download the installer for your operating system. After downloading, open the installer. You will see a welcome screen; click 'Next'. Accept the license agreement and click 'Next' again. Choose the installation path or leave it as default, then click 'Next'. Make sure to check the box that says 'Install npm package manager' and click 'Next'. Finally, click 'Install' to begin the installation. Once installed, open your command line and type 'node -v' to check the Node.js version. If it shows a version number, Node.js is installed correctly. Then type 'npm -v' to check npm. If both commands return version numbers, you are ready to start using Node.js and npm for your React projects.",
+        "title": "Common Greetings in Spanish",
+        "conceptual_explanation": "Greetings are the first words we use to connect with others. In Spanish, greetings are essential for starting conversations and showing respect. They exist to create a friendly atmosphere and establish rapport. Think of greetings as the opening lines of a book; they set the tone for what follows. You may already know greetings in English, like 'Hello' or 'Good morning.' In Spanish, similar phrases exist, such as 'Hola' for 'Hello' and 'Buenos d\u00edas' for 'Good morning.' Understanding these phrases will help you engage with Spanish speakers and make a positive impression.",
+        "applied_explanation": "When you greet someone in Spanish, you typically start with a simple phrase. For example, if you meet someone in the morning, you would say 'Buenos d\u00edas.' This means 'Good morning.' Pay attention to the time of day when choosing your greeting. In the afternoon, you would use 'Buenas tardes' (Good afternoon), and in the evening, 'Buenas noches' (Good evening). A common beginner mistake is using 'Hola' at all times, which is fine but may not feel as polite in formal situations. Remember to adjust your greeting based on the context and time of day to show respect and awareness.",
+        "example": "Let's say you walk into a caf\u00e9 in Spain. You see the barista and want to greet them. You would say, '\u00a1Hola!' which means 'Hello!' If it's morning, you could say, '\u00a1Buenos d\u00edas!' This shows that you are aware of the time and are being polite. If you want to be more formal, you might say, '\u00a1Buenas tardes!' if it's afternoon. Each greeting sets a different tone, so it's important to choose the right one. Remember, using these greetings can make your interactions more pleasant and friendly.",
         "practice_questions": [
           {
-            "question": "What is the purpose of Node.js?",
+            "question": "What does 'Buenos d\u00edas' mean in English?",
             "type": "short_answer"
           },
           {
-            "question": "What command would you use to check the version of npm installed on your system?",
-            "type": "short_answer"
-          },
-          {
-            "question": "Why is it important to install npm along with Node.js?",
-            "type": "scenario",
-            "explanation": "Explain how npm helps in managing packages for React applications."
+            "question": "Which greeting would you use in the evening?",
+            "type": "mcq",
+            "options": [
+              "Hola",
+              "Buenas tardes",
+              "Buenas noches"
+            ],
+            "correct_answer": "Buenas noches",
+            "explanation": "In the evening, 'Buenas noches' is the appropriate greeting, while 'Hola' is more casual and 'Buenas tardes' is for the afternoon."
           }
         ]
       },
       {
         "section_id": "2",
-        "title": "Setting Up a New React Project Using Create React App",
-        "conceptual_explanation": "Create React App is a command-line tool that simplifies the process of setting up a new React project. It exists to help developers quickly bootstrap a React application without having to configure build tools like Webpack or Babel manually. Imagine Create React App as a starter kit that provides you with a pre-configured environment, allowing you to focus on writing your application rather than setting up the infrastructure. This is particularly useful for beginners, as it abstracts away the complexities of configuration. By using Create React App, you can start building your React application immediately, leveraging the power of React without getting bogged down in setup details.",
-        "applied_explanation": "To set up a new React project using Create React App, first, ensure that Node.js and npm are installed on your machine. Open your command line interface and navigate to the directory where you want to create your project. Then, run the command 'npx create-react-app my-app', replacing 'my-app' with your desired project name. This command uses npx, which comes with npm, to execute Create React App without needing to install it globally. After running the command, it will create a new directory with your project name and set up all the necessary files and dependencies. Pay attention to any error messages during this process, as they can indicate issues with your Node.js or npm installation. A common beginner mistake is to forget to navigate to the correct directory before running the command, which can lead to confusion about where the project files are created.",
-        "example": "To create a new React app, first, open your command line interface. Navigate to the folder where you want to create your project by using the 'cd' command, for example, 'cd Documents'. Then, type 'npx create-react-app my-app'. This command will download the Create React App tool and set up a new React project in a folder named 'my-app'. You will see a series of messages indicating the progress of the setup. Once it's done, navigate into your new project folder by typing 'cd my-app'. Finally, start the development server by typing 'npm start'. This will open your new React app in your default web browser, and you can see the default React welcome page.",
+        "title": "Self-Introduction Phrases",
+        "conceptual_explanation": "Self-introduction phrases are essential for sharing who you are with others. They help establish your identity and create connections. These phrases exist to facilitate communication and make social interactions smoother. Think of self-introductions as the opening chapter of a story where you present yourself to the reader. In English, you might say, 'My name is...' In Spanish, you would say, 'Me llamo...' followed by your name. This connection to what you already know helps you understand how to introduce yourself in a new language.",
+        "applied_explanation": "To introduce yourself in Spanish, you would typically say, 'Me llamo' followed by your name. For example, if your name is John, you would say, 'Me llamo John.' After introducing yourself, it's polite to ask for the other person's name by saying, '\u00bfY t\u00fa?' which means 'And you?' Pay attention to the tone and context; using a friendly tone makes the interaction more pleasant. A common beginner mistake is forgetting to ask for the other person's name after introducing yourself, which can make the conversation feel one-sided.",
+        "example": "Imagine you are at a language exchange event. You meet someone and want to introduce yourself. You would say, 'Hola, me llamo John.' This means, 'Hello, my name is John.' After that, you can ask, '\u00bfY t\u00fa?' which means 'And you?' This shows that you are interested in the other person. If they respond with 'Me llamo Mar\u00eda,' you now know their name and can continue the conversation. This simple exchange is a great way to start building relationships in Spanish.",
         "practice_questions": [
           {
-            "question": "What command do you use to create a new React app with Create React App?",
+            "question": "What does 'Me llamo' mean?",
             "type": "short_answer"
           },
           {
-            "question": "What does the 'npx' command do in the context of Create React App?",
-            "type": "short_answer"
+            "question": "How would you ask someone their name in Spanish after introducing yourself?",
+            "type": "mcq",
+            "options": [
+              "\u00bfC\u00f3mo est\u00e1s?",
+              "\u00bfY t\u00fa?",
+              "\u00bfQu\u00e9 tal?"
+            ],
+            "correct_answer": "\u00bfY t\u00fa?",
+            "explanation": "After introducing yourself, '\u00bfY t\u00fa?' is the correct way to ask for the other person's name, while the other options are greetings or inquiries about well-being."
           },
           {
-            "question": "Imagine you ran 'npx create-react-app my-app' but forgot to navigate to the desired directory. What would happen?",
+            "question": "You meet someone named Ana. How would you introduce yourself?",
             "type": "scenario",
-            "explanation": "Discuss how this mistake could lead to confusion about where the project files are located."
+            "explanation": "You would say, 'Hola, me llamo [Your Name].' After that, you can ask, '\u00bfY t\u00fa?' to learn her name."
           }
         ]
       }

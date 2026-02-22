@@ -3,160 +3,135 @@
     "modules": [
       {
         "module_id": "1",
-        "title": "Introduction to React",
+        "title": "Introduction to Spanish Sounds",
         "learning_objectives": [
-          "Understand what React is",
-          "Learn about the benefits of using React"
+          "Identify and pronounce basic Spanish vowels and consonants",
+          "Differentiate between English and Spanish pronunciation"
         ],
         "key_concepts": [
-          "JavaScript library",
-          "Component-based architecture"
+          "Spanish alphabet",
+          "Vowel sounds",
+          "Consonant sounds"
         ]
       },
       {
         "module_id": "2",
-        "title": "Setting Up the Development Environment",
+        "title": "Basic Greetings and Introductions",
         "learning_objectives": [
-          "Install Node.js and npm",
-          "Set up a new React project using Create React App"
+          "Use common greetings in Spanish",
+          "Introduce oneself and ask for someone's name"
         ],
         "key_concepts": [
-          "Node.js",
-          "npm",
-          "Create React App"
+          "Greetings",
+          "Self-introduction phrases"
         ]
       },
       {
         "module_id": "3",
-        "title": "Understanding JSX",
+        "title": "Numbers and Basic Counting",
         "learning_objectives": [
-          "Learn what JSX is",
-          "Write simple JSX code"
+          "Count from 1 to 20 in Spanish",
+          "Use numbers in simple conversations"
         ],
         "key_concepts": [
-          "JSX syntax",
-          "Embedding expressions"
+          "Numbers 1-20",
+          "Basic counting phrases"
         ]
       },
       {
         "module_id": "4",
-        "title": "Components and Props",
+        "title": "Everyday Vocabulary: Family and Friends",
         "learning_objectives": [
-          "Understand the concept of components",
-          "Learn how to pass data using props"
+          "Identify family members and friends in Spanish",
+          "Describe relationships using simple sentences"
         ],
         "key_concepts": [
-          "Functional components",
-          "Props"
+          "Family vocabulary",
+          "Descriptive phrases"
         ]
       },
       {
         "module_id": "5",
-        "title": "State and Lifecycle",
+        "title": "Basic Verbs and Simple Sentences",
         "learning_objectives": [
-          "Learn about state in React",
-          "Understand component lifecycle methods"
+          "Use common verbs in the present tense",
+          "Construct simple sentences"
         ],
         "key_concepts": [
-          "State",
-          "Lifecycle methods"
+          "Common verbs",
+          "Sentence structure"
         ]
       },
       {
         "module_id": "6",
-        "title": "Handling Events",
+        "title": "Asking Questions in Spanish",
         "learning_objectives": [
-          "Learn how to handle events in React",
-          "Create interactive components"
+          "Formulate basic questions",
+          "Practice asking and answering questions"
         ],
         "key_concepts": [
-          "Event handling",
-          "Synthetic events"
+          "Question words",
+          "Question formation"
         ]
       },
       {
         "module_id": "7",
-        "title": "Conditional Rendering",
+        "title": "Describing Daily Activities",
         "learning_objectives": [
-          "Understand how to render components conditionally",
-          "Implement conditional logic in JSX"
+          "Talk about daily routines using verbs",
+          "Use time expressions in sentences"
         ],
         "key_concepts": [
-          "Conditional rendering",
-          "Logical operators"
+          "Daily activities vocabulary",
+          "Time expressions"
         ]
       },
       {
         "module_id": "8",
-        "title": "Lists and Keys",
+        "title": "Food and Drink Vocabulary",
         "learning_objectives": [
-          "Learn how to render lists of data",
-          "Understand the importance of keys in lists"
+          "Identify common foods and drinks in Spanish",
+          "Order food and drinks in a restaurant setting"
         ],
         "key_concepts": [
-          "Mapping arrays",
-          "Keys in React"
+          "Food vocabulary",
+          "Restaurant phrases"
         ]
       },
       {
         "module_id": "9",
-        "title": "Forms in React",
+        "title": "Expressing Likes and Dislikes",
         "learning_objectives": [
-          "Understand controlled components",
-          "Handle form submissions"
+          "Use phrases to express preferences",
+          "Discuss favorite foods and activities"
         ],
         "key_concepts": [
-          "Controlled components",
-          "Form handling"
+          "Likes and dislikes vocabulary",
+          "Preference expressions"
         ]
       },
       {
         "module_id": "10",
-        "title": "Lifting State Up",
+        "title": "Travel Vocabulary and Directions",
         "learning_objectives": [
-          "Learn how to lift state up to a common ancestor",
-          "Share state between components"
+          "Identify key travel vocabulary",
+          "Ask for and give directions"
         ],
         "key_concepts": [
-          "Lifting state",
-          "Shared state"
+          "Travel vocabulary",
+          "Directional phrases"
         ]
       },
       {
         "module_id": "11",
-        "title": "React Router Basics",
+        "title": "Review and Conversational Practice",
         "learning_objectives": [
-          "Understand the purpose of React Router",
-          "Implement basic routing in a React app"
+          "Review key vocabulary and phrases from previous modules",
+          "Engage in simple conversations using learned material"
         ],
         "key_concepts": [
-          "React Router",
-          "Routing"
-        ]
-      },
-      {
-        "module_id": "12",
-        "title": "Introduction to Hooks",
-        "learning_objectives": [
-          "Learn what hooks are",
-          "Use the useState and useEffect hooks"
-        ],
-        "key_concepts": [
-          "Hooks",
-          "useState",
-          "useEffect"
-        ]
-      },
-      {
-        "module_id": "13",
-        "title": "Building a Simple React App",
-        "learning_objectives": [
-          "Apply all learned concepts to build a simple React app",
-          "Deploy the app to a hosting service"
-        ],
-        "key_concepts": [
-          "Project integration",
-          "Deployment"
+          "Conversation practice",
+          "Role-play scenarios"
         ]
       }
     ]

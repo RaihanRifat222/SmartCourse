@@ -4,23 +4,49 @@
     "sections": [
       {
         "section_id": "1",
-        "title": "Rendering Lists and Understanding Keys",
-        "conceptual_explanation": "In React, rendering lists of data is a common task that allows you to display multiple items dynamically. This concept exists because applications often need to show collections of data, such as user profiles, product listings, or messages. A mental model to understand this is to think of a list as a collection of items in a grocery store. Just as you can have multiple apples, oranges, and bananas, in programming, you can have multiple objects or elements. You have already learned about components in React, and rendering lists is an extension of that. Instead of creating a component for each item manually, you can use a method called mapping to create them automatically from an array of data. This makes your code cleaner and more efficient.",
-        "applied_explanation": "To render a list in React, you typically use the map() function, which iterates over an array and returns a new array of elements. For example, if you have an array of user names, you can map over it to create a list of <li> elements. Pay attention to the fact that each element in the list must have a unique key prop. This key helps React identify which items have changed, are added, or are removed, improving performance. A common beginner mistake is forgetting to provide a key prop, which can lead to issues with component state and performance. Always ensure that your keys are unique and stable, ideally using an ID from your data.",
-        "example": "Let's say you have an array of fruits: const fruits = ['Apple', 'Banana', 'Cherry'];. To render this list in a React component, you would use the map() function like this: const fruitList = fruits.map((fruit, index) => <li key={index}>{fruit}</li>);. Here, we are creating a list item for each fruit. The key={index} part is crucial; it gives each list item a unique identifier based on its position in the array. This helps React manage the list efficiently. Finally, you would return this list in your component's render method, like so: return <ul>{fruitList}</ul>.",
+        "title": "Food Vocabulary",
+        "conceptual_explanation": "Food vocabulary in Spanish refers to the words and phrases used to describe various types of food and drinks. This vocabulary exists because food is a fundamental part of culture and daily life, and being able to communicate about it is essential for social interactions, especially in Spanish-speaking countries. Think of food vocabulary as the building blocks of conversations about meals, ingredients, and preferences. Just like in English, where you learn words like 'apple' or 'bread', in Spanish, you will learn words like 'manzana' (apple) and 'pan' (bread). This vocabulary connects to what you already know about food in English, making it easier to remember the Spanish equivalents.",
+        "applied_explanation": "In practice, using food vocabulary involves recognizing and naming different foods and drinks in Spanish. For example, when you see a menu in a Spanish-speaking restaurant, you will need to identify items like 'pollo' (chicken) or 'agua' (water). Start by familiarizing yourself with common food items and their Spanish translations. Pay attention to pronunciation, as it can change the meaning of words. A common beginner mistake is confusing similar-sounding words, such as 'carne' (meat) and 'carn\u00e9' (card). To avoid this, practice saying the words out loud and using them in sentences. This will help reinforce your memory and improve your confidence when ordering food.",
+        "example": "Let's look at a simple example of food vocabulary in action. Imagine you are at a restaurant and the waiter hands you a menu. You see the word 'ensalada' which means 'salad'. You can say, 'Me gustar\u00eda una ensalada, por favor' which translates to 'I would like a salad, please.' Here\u2019s a breakdown: 'Me gustar\u00eda' means 'I would like', 'una' means 'a', and 'por favor' means 'please'. This sentence structure is useful for ordering food. Remember to practice saying it out loud to get comfortable with the pronunciation and flow of the language.",
         "practice_questions": [
           {
-            "question": "What method do you use to render a list of items in React?",
+            "question": "What is the Spanish word for 'chicken'?",
             "type": "short_answer"
           },
           {
-            "question": "Why is it important to provide a unique key for each item in a list?",
+            "question": "Which of the following is the correct translation for 'water'?",
+            "type": "mcq",
+            "options": [
+              "agua",
+              "vino",
+              "leche"
+            ],
+            "correct_answer": "agua",
+            "explanation": "The correct translation for 'water' in Spanish is 'agua'. 'Vino' means 'wine' and 'leche' means 'milk'."
+          }
+        ]
+      },
+      {
+        "section_id": "2",
+        "title": "Restaurant Phrases",
+        "conceptual_explanation": "Restaurant phrases in Spanish are essential expressions that help you navigate dining experiences. These phrases exist to facilitate communication between customers and restaurant staff, ensuring that orders are taken correctly and that diners feel comfortable. Think of restaurant phrases as the toolkit you need when you enter a restaurant. Just like you learned basic greetings in English, you will learn phrases like '\u00bfMe puede traer el men\u00fa?' (Can you bring me the menu?). These phrases build on your existing knowledge of conversational English, making it easier to engage in similar interactions in Spanish.",
+        "applied_explanation": "Using restaurant phrases involves knowing how to ask for things, make requests, and express preferences. For instance, when you want to order food, you might say, 'Quisiera ordenar...' which means 'I would like to order...'. Pay attention to the context in which you use these phrases, as they can vary depending on the formality of the restaurant. A common beginner mistake is forgetting to use polite forms like 'por favor' (please) or 'gracias' (thank you), which are important in Spanish-speaking cultures. Practice these phrases in role-play scenarios to build your confidence and fluency.",
+        "example": "Imagine you are at a restaurant and ready to order. You can say, 'Quisiera una pizza, por favor' which means 'I would like a pizza, please.' Breaking it down: 'Quisiera' means 'I would like', 'una' means 'a', and 'pizza' is the same in both languages. Adding 'por favor' at the end makes your request polite. This structure is very useful when ordering any dish. Practicing this sentence will help you feel more comfortable when you are in a real restaurant setting.",
+        "practice_questions": [
+          {
+            "question": "What does '\u00bfMe puede traer el men\u00fa?' mean?",
             "type": "short_answer"
           },
           {
-            "question": "You have an array of user names. Write a simple React component that renders this array as a list, ensuring each item has a unique key.",
-            "type": "scenario",
-            "explanation": "This question tests your understanding of how to map over an array and the importance of keys in React."
+            "question": "Which phrase would you use to politely order food?",
+            "type": "mcq",
+            "options": [
+              "Quiero pizza",
+              "Quisiera una pizza, por favor",
+              "Dame pizza"
+            ],
+            "correct_answer": "Quisiera una pizza, por favor",
+            "explanation": "The phrase 'Quisiera una pizza, por favor' is polite and appropriate for ordering food, while 'Quiero pizza' is less formal and 'Dame pizza' is too direct."
           }
         ]
       }

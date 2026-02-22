@@ -4,22 +4,54 @@
     "sections": [
       {
         "section_id": "1",
-        "title": "Lifting State Up",
-        "conceptual_explanation": "Lifting state up is a fundamental concept in React that allows you to manage shared state between components. In React, each component can have its own state, but sometimes you need to share that state with other components. This is where lifting state up comes into play. It involves moving the state from a child component to a common ancestor component, allowing multiple child components to access and modify the same state. This concept exists to promote better data flow and maintainability in your applications. Think of it like a family where the parents (the common ancestor) hold important information that the children (the child components) need to know. By lifting state up, you ensure that all children have access to the same data, which helps in keeping your UI consistent and predictable. You may have already learned about components and state in React, and lifting state up is a natural progression in understanding how to manage data across your application effectively.",
-        "applied_explanation": "In practice, lifting state up involves a few steps. First, identify the state that needs to be shared between components. Next, move this state to the nearest common ancestor component. This ancestor will hold the state and pass it down to the child components as props. When a child component needs to update the state, it will call a function passed down from the ancestor, which will then update the state in the ancestor. This change will trigger a re-render of the child components that depend on that state, ensuring they reflect the latest data. Pay attention to how you structure your components; if you lift state too high, it can lead to unnecessary re-renders and performance issues. A common beginner mistake is to keep state in child components when it should be lifted, leading to inconsistent UI and data management problems. By following these steps, you can effectively share state between components and create a more cohesive application.",
-        "example": "Let's say we have a simple app with two components: a 'TemperatureInput' that allows users to input a temperature in Celsius, and a 'TemperatureDisplay' that shows the temperature in Fahrenheit. Instead of each component managing its own state, we can lift the state up to a common ancestor component called 'TemperatureConverter'. In 'TemperatureConverter', we define a state variable called 'temperature' and a function to update it. We pass the 'temperature' state and the update function as props to both 'TemperatureInput' and 'TemperatureDisplay'. When the user inputs a temperature in 'TemperatureInput', it calls the update function to change the state in 'TemperatureConverter'. This change automatically updates 'TemperatureDisplay', which converts the Celsius temperature to Fahrenheit and displays it. This way, both components share the same state, ensuring they are always in sync.",
+        "title": "Travel Vocabulary",
+        "conceptual_explanation": "Travel vocabulary refers to the specific words and phrases that are commonly used when traveling. This vocabulary exists to help travelers communicate effectively in different situations, such as at the airport, in hotels, or while exploring a new city. Think of travel vocabulary as your toolkit; just like a carpenter needs specific tools to build something, you need these words to navigate your travel experiences. You may already know some basic words in Spanish, like 'hola' (hello) or 'gracias' (thank you), which are essential for polite interactions. Expanding your travel vocabulary will enhance your ability to engage with locals and make your travels more enjoyable and less stressful.",
+        "applied_explanation": "In practice, using travel vocabulary involves learning and memorizing key words and phrases that you will likely encounter during your travels. Start by focusing on essential categories such as transportation, accommodation, food, and common questions. For example, when you arrive at an airport, you might need to ask, '\u00bfD\u00f3nde est\u00e1 la salida?' (Where is the exit?). Pay attention to pronunciation and practice saying these phrases out loud. A common beginner mistake is trying to translate word-for-word from English to Spanish, which can lead to confusion. Instead, focus on learning phrases as complete units, which will help you sound more natural and be understood more easily.",
+        "example": "Let's look at some essential travel vocabulary. For instance, if you want to ask for a taxi, you would say, '\u00bfPuede llamar un taxi, por favor?' (Can you call a taxi, please?). Here\u2019s a breakdown: '\u00bfPuede' means 'Can you', 'llamar' means 'call', 'un taxi' means 'a taxi', and 'por favor' means 'please'. This phrase is useful when you are at a hotel or restaurant and need transportation. Practicing this phrase will help you feel more confident when you need to ask for a taxi during your travels.",
         "practice_questions": [
           {
-            "question": "What does lifting state up in React allow you to do?",
+            "question": "What does '\u00bfD\u00f3nde est\u00e1 la salida?' mean in English?",
             "type": "short_answer"
           },
           {
-            "question": "In the context of lifting state up, what is a common mistake beginners make?",
+            "question": "Which phrase would you use to ask for a taxi?",
+            "type": "mcq",
+            "options": [
+              "\u00bfD\u00f3nde est\u00e1 el ba\u00f1o?",
+              "\u00bfPuede llamar un taxi, por favor?",
+              "\u00bfCu\u00e1nto cuesta esto?"
+            ],
+            "correct_answer": "\u00bfPuede llamar un taxi, por favor?",
+            "explanation": "This phrase directly translates to 'Can you call a taxi, please?', which is the correct way to ask for a taxi."
+          }
+        ]
+      },
+      {
+        "section_id": "2",
+        "title": "Directional Phrases",
+        "conceptual_explanation": "Directional phrases are expressions used to give or ask for directions. They exist to facilitate navigation and help people find their way in unfamiliar places. Imagine you are in a new city and need to find a restaurant; knowing how to ask for directions can make your experience much smoother. You may have learned some basic directional words in English, like 'left', 'right', and 'straight', which are also essential in Spanish. By mastering directional phrases, you will be able to confidently ask for help and understand where to go, enhancing your travel experience.",
+        "applied_explanation": "When using directional phrases, it\u2019s important to learn key terms such as 'izquierda' (left), 'derecha' (right), and 'recto' (straight). Start by practicing how to combine these words into questions. For example, you might ask, '\u00bfC\u00f3mo llego a la estaci\u00f3n de tren?' (How do I get to the train station?). Pay attention to the responses you receive, as they may include these directional words. A common mistake is not understanding the response, especially if it includes multiple directions. To avoid this, practice listening to native speakers and repeating the phrases until you feel comfortable.",
+        "example": "An example of using directional phrases is when you want to find a nearby caf\u00e9. You could ask, '\u00bfD\u00f3nde est\u00e1 el caf\u00e9 m\u00e1s cercano?' (Where is the nearest caf\u00e9?). The breakdown is: '\u00bfD\u00f3nde est\u00e1' means 'Where is', 'el caf\u00e9' means 'the caf\u00e9', and 'm\u00e1s cercano' means 'nearest'. If someone responds with 'Sigue recto y gira a la derecha' (Go straight and turn right), you now know to continue straight ahead and then turn right to find the caf\u00e9. Practicing these phrases will help you navigate easily in Spanish-speaking countries.",
+        "practice_questions": [
+          {
+            "question": "What does 'izquierda' mean in English?",
             "type": "short_answer"
           },
           {
-            "question": "Imagine you have a form with two input fields that need to share the same state. Describe how you would lift the state up to a common ancestor component.",
-            "type": "scenario"
+            "question": "If someone says 'Sigue recto', what should you do?",
+            "type": "mcq",
+            "options": [
+              "Turn left",
+              "Go straight",
+              "Turn right"
+            ],
+            "correct_answer": "Go straight",
+            "explanation": "'Sigue recto' translates to 'Go straight', indicating the direction you should take."
+          },
+          {
+            "question": "Imagine you are lost in a city. How would you ask someone for directions to the nearest bus stop?",
+            "type": "scenario",
+            "explanation": "You could say, '\u00bfD\u00f3nde est\u00e1 la parada de autob\u00fas m\u00e1s cercana?' which means 'Where is the nearest bus stop?'."
           }
         ]
       }

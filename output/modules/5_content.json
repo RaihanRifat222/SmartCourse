@@ -4,36 +4,45 @@
     "sections": [
       {
         "section_id": "1",
-        "title": "Understanding State in React",
-        "conceptual_explanation": "In React, 'state' refers to a built-in object that allows components to manage their own data. It exists because components often need to respond to user input or other events, and state provides a way to store and manipulate this dynamic data. Think of state as a container that holds information about the component's current situation, similar to how a variable holds data in Python. For example, if you have a counter app, the current count is stored in the state. This concept connects to what you've learned in Python about variables, but in React, state is more dynamic and can change over time, triggering re-renders of the component to reflect the new data.",
-        "applied_explanation": "To use state in a React component, you typically start by importing the useState hook from React. This hook allows you to declare a state variable and a function to update it. For instance, you might declare a state variable called 'count' and initialize it to zero. When the user clicks a button, you can call the update function to increase the count. Pay attention to how state updates can cause the component to re-render, which is crucial for keeping the UI in sync with the underlying data. A common beginner mistake is to directly modify the state variable instead of using the update function, which can lead to unexpected behavior and bugs.",
-        "example": "Let's create a simple counter app using React. First, we import React and the useState hook: 'import React, { useState } from 'react';'. Next, we define our functional component: 'function Counter() {'. Inside this function, we declare our state variable: 'const [count, setCount] = useState(0);'. This line initializes 'count' to 0 and provides 'setCount' to update it. We then return a button and a display for the count: '<button onClick={() => setCount(count + 1)}>Increment</button>' and '<p>Count: {count}</p>'. When the button is clicked, 'setCount' updates the state, causing the component to re-render and display the new count.",
+        "title": "Common Verbs in the Present Tense",
+        "conceptual_explanation": "Common verbs are the building blocks of any language, including Spanish. They allow us to express actions, states, and occurrences. In Spanish, verbs are conjugated based on the subject performing the action, which is why understanding the present tense is crucial. The present tense is used to describe actions happening now or habitual actions. Think of verbs as the engines of sentences; without them, sentences would be incomplete. For example, in English, we say 'I eat' or 'She runs.' In Spanish, these would be 'Yo como' and 'Ella corre.' This concept connects to what you already know about verbs in English, where the subject and verb must agree in number and person. Understanding this will help you form basic sentences in Spanish.",
+        "applied_explanation": "To use common verbs in the present tense, start by identifying the subject of your sentence. In Spanish, the subject can often be omitted because the verb conjugation indicates who is performing the action. For example, if you want to say 'I eat,' you can simply say 'Como.' Next, choose the correct verb form based on the subject. Pay attention to the endings of the verbs, as they change depending on whether the subject is 'I,' 'you,' 'he,' 'she,' etc. A common beginner mistake is forgetting to conjugate the verb correctly, which can lead to confusion. For instance, saying 'Yo come' instead of 'Yo como' is incorrect because 'come' is the form for 'he/she eats,' not 'I eat.' Practice conjugating regular verbs like 'hablar' (to speak), 'comer' (to eat), and 'vivir' (to live) to get comfortable with this.",
+        "example": "Let's take the verb 'comer' (to eat) as an example. In the present tense, it is conjugated as follows: 'Yo como' (I eat), 'T\u00fa comes' (You eat), '\u00c9l/Ella come' (He/She eats). Here\u2019s how it works: 'Yo' is the subject meaning 'I,' and 'como' is the first-person singular form of 'comer.' 'T\u00fa' means 'you,' and 'comes' is the second-person singular form. '\u00c9l/Ella' means 'he/she,' and 'come' is the third-person singular form. Notice how the endings change: -o for 'yo,' -es for 't\u00fa,' and -e for '\u00e9l/ella.' This pattern is essential for forming sentences in Spanish.",
         "practice_questions": [
           {
-            "question": "What is the purpose of state in a React component?",
+            "question": "What is the Spanish verb for 'to eat'?",
             "type": "short_answer"
           },
           {
-            "question": "How do you update the state in a React component?",
+            "question": "Which form of the verb 'comer' would you use for 'he eats'?",
             "type": "short_answer"
+          },
+          {
+            "question": "If you want to say 'We speak' in Spanish, what would you say?",
+            "type": "scenario",
+            "explanation": "Think about the subject 'we' and how the verb 'hablar' (to speak) is conjugated in the present tense."
           }
         ]
       },
       {
         "section_id": "2",
-        "title": "Component Lifecycle Methods",
-        "conceptual_explanation": "Lifecycle methods are special functions in React components that allow you to run code at specific points in a component's life, such as when it is created, updated, or removed from the DOM. They exist to give developers control over the behavior of components during these phases, enabling tasks like fetching data or cleaning up resources. You can think of lifecycle methods as checkpoints in a component's journey, similar to how you might have checkpoints in a program to handle different states. This concept builds on your understanding of functions in Python, where you might execute certain code based on conditions or events.",
-        "applied_explanation": "In class components, lifecycle methods are defined as part of the component class. For example, 'componentDidMount' is called after the component is first rendered, making it a great place to fetch data. You can also use 'componentDidUpdate' to respond to changes in props or state. It's important to remember that these methods can affect performance, so you should only include necessary logic. A common mistake is to forget to clean up resources in 'componentWillUnmount', which can lead to memory leaks and performance issues. In functional components, you can achieve similar behavior using the useEffect hook, which allows you to run side effects based on state or prop changes.",
-        "example": "Let's look at a class component that fetches data when it mounts. First, we define our component: 'class DataFetcher extends React.Component {'. In the constructor, we initialize state: 'this.state = { data: null };'. Next, we implement 'componentDidMount': 'componentDidMount() { fetch('https://api.example.com/data') .then(response => response.json()) .then(data => this.setState({ data })); }'. This method fetches data from an API and updates the state with the received data. Finally, we render the data: 'return <div>{this.state.data ? this.state.data : 'Loading...'}</div>;'. When the component mounts, it fetches the data and updates the UI accordingly.",
+        "title": "Constructing Simple Sentences",
+        "conceptual_explanation": "Constructing simple sentences is essential for effective communication in any language. In Spanish, a basic sentence typically follows the Subject-Verb-Object (SVO) structure, similar to English. For example, 'I eat an apple' translates to 'Yo como una manzana.' The subject 'Yo' (I) comes first, followed by the verb 'como' (eat), and then the object 'una manzana' (an apple). This structure helps convey clear meaning and is foundational for building more complex sentences later. Understanding how to construct simple sentences will allow you to express your thoughts and ideas in Spanish, making it easier to engage in conversations.",
+        "applied_explanation": "To construct a simple sentence in Spanish, start with the subject, which can be a pronoun or a noun. Next, add the verb in the correct form based on the subject. Finally, include the object if necessary. For example, if you want to say 'She drinks water,' you would start with 'Ella' (she), followed by 'bebe' (drinks), and then 'agua' (water), resulting in 'Ella bebe agua.' Pay attention to the agreement between the subject and verb. A common mistake is to mix up the order of words, which can lead to confusion. Remember, the subject should always come first in a simple sentence.",
+        "example": "Let's create a simple sentence using the verb 'beber' (to drink). If you want to say 'They drink coffee,' you would say 'Ellos beben caf\u00e9.' Here\u2019s the breakdown: 'Ellos' means 'they,' 'beben' is the third-person plural form of 'beber,' and 'caf\u00e9' means 'coffee.' The structure is clear: Subject (Ellos) + Verb (beben) + Object (caf\u00e9). This sentence follows the SVO format, making it easy to understand. Practice forming sentences with different subjects and verbs to become more comfortable with this structure.",
         "practice_questions": [
           {
-            "question": "What are lifecycle methods in React?",
+            "question": "What is the structure of a simple sentence in Spanish?",
             "type": "short_answer"
           },
           {
-            "question": "Describe a scenario where you would use componentDidMount.",
+            "question": "Translate the sentence 'I drink water' into Spanish.",
+            "type": "short_answer"
+          },
+          {
+            "question": "Create a simple sentence using the subject 'We' and the verb 'to eat.'",
             "type": "scenario",
-            "explanation": "Think about a situation where you need to fetch data from an API when a component is first rendered. This is a perfect use case for componentDidMount, as it allows you to initiate the data fetching process right after the component is added to the DOM."
+            "explanation": "Think about how to conjugate the verb 'comer' for 'we' and what object you might want to include."
           }
         ]
       }

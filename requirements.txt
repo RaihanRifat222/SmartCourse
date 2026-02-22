@@ -5,3 +5,5 @@ python-dotenv
 jsonschema
 fastapi
 uvicorn
+pdfkit
+markdown

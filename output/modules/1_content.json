@@ -4,30 +4,52 @@
     "sections": [
       {
         "section_id": "1.1",
-        "title": "What is React?",
-        "conceptual_explanation": "React is a JavaScript library developed by Facebook for building user interfaces, particularly for single-page applications where you want a smooth user experience. It exists to simplify the process of creating interactive UIs by allowing developers to build encapsulated components that manage their own state. This means you can create complex UIs from small, reusable pieces of code. Think of React as a set of building blocks; each block (or component) can be put together to create a larger structure (your application). If you have learned about functions in Python, you can think of React components as similar to functions that return a piece of UI instead of a value. This modular approach makes it easier to manage and scale applications as they grow.",
-        "applied_explanation": "In practice, using React involves creating components that represent parts of your user interface. Each component can have its own state and props (properties) that determine how it behaves and what it displays. When you build a React app, you start by creating a component, which is essentially a JavaScript function or class. You then use this component in your main application file, often called 'App.js'. As you develop, you will notice that React updates the UI efficiently when the state of a component changes, thanks to its virtual DOM. A common mistake for beginners is to try to manipulate the DOM directly instead of using React's state management, which can lead to unexpected behavior. Always remember to let React handle the UI updates for you.",
-        "example": "Let's create a simple React component that displays a greeting message. First, we import React from 'react'. Then, we define a function called 'Greeting' that returns a JSX element, which looks like HTML but is actually JavaScript. Inside this function, we can use a variable to hold our message. Finally, we export the component so it can be used in other parts of our application. Here\u2019s the code: \n\nimport React from 'react'; \n\nfunction Greeting() { \n  const message = 'Hello, welcome to React!'; \n  return <h1>{message}</h1>; \n} \n\nexport default Greeting; \n\nIn this example, we created a functional component called 'Greeting'. The 'message' variable holds the text we want to display, and we use JSX to render it inside an <h1> tag. This is a simple yet effective way to create reusable UI elements in React.",
+        "title": "Understanding the Spanish Alphabet",
+        "conceptual_explanation": "The Spanish alphabet consists of 27 letters, which include the same 26 letters as the English alphabet plus the letter '\u00f1'. This alphabet is the foundation of the Spanish language, and it exists to provide a consistent way to represent sounds in writing. Think of the alphabet as a toolkit; just as a carpenter needs specific tools to build a house, you need the letters of the alphabet to build words in Spanish. You may already be familiar with the English alphabet, so consider how each letter corresponds to a sound. For example, the letter 'a' in both languages is pronounced differently, which is crucial for proper pronunciation in Spanish. Understanding the alphabet is the first step in mastering the sounds of the language.",
+        "applied_explanation": "To use the Spanish alphabet in practice, start by familiarizing yourself with each letter and its corresponding sound. For instance, the letter 'a' is pronounced like 'ah', 'e' like 'eh', and 'i' like 'ee'. When you see a word, break it down letter by letter, pronouncing each sound as you go. Pay attention to the unique letters like '\u00f1', which sounds like 'ny' in 'canyon'. A common beginner mistake is to apply English pronunciation rules to Spanish letters, which can lead to misunderstandings. For example, the letter 'c' can sound like 's' or 'k' depending on the vowels that follow it. Practice saying the alphabet out loud, and try to spell simple words to reinforce your learning.",
+        "example": "Let's take the word 'casa', which means 'house' in Spanish. The first letter 'c' is pronounced like 'k' because it is followed by the vowel 'a'. The next letter 'a' is pronounced 'ah'. So, when you say 'casa', you break it down like this: 'ka' + 'sah'. The 's' is pronounced like the English 's', and the final 'a' is again 'ah'. Therefore, 'casa' is pronounced 'kah-sah'. This example shows how understanding the sounds of the letters helps you pronounce the word correctly.",
         "practice_questions": [
           {
-            "question": "What is React primarily used for?",
+            "question": "What is the additional letter in the Spanish alphabet that is not found in the English alphabet?",
             "type": "short_answer"
           },
           {
-            "question": "Which of the following best describes React's architecture?",
-            "type": "mcq",
-            "options": [
-              "Monolithic architecture",
-              "Component-based architecture",
-              "Service-oriented architecture"
-            ],
-            "correct_answer": "Component-based architecture",
-            "explanation": "React uses a component-based architecture, allowing developers to build encapsulated components that manage their own state."
+            "question": "Which letter in Spanish can sound like 's' or 'k' depending on the following vowel?",
+            "type": "short_answer"
+          }
+        ]
+      },
+      {
+        "section_id": "1.2",
+        "title": "Spanish Vowel Sounds",
+        "conceptual_explanation": "Spanish has five vowel sounds: 'a', 'e', 'i', 'o', and 'u'. Each vowel has a consistent pronunciation, which is different from English where vowels can have multiple sounds. This consistency exists to make pronunciation easier and more predictable for learners. Imagine vowels as the building blocks of words; just like how a strong foundation is essential for a building, clear vowel sounds are crucial for clear communication in Spanish. Since you already know some English vowels, think of how they differ in sound. For example, the Spanish 'e' is always pronounced like the 'e' in 'met', not like the 'ee' in 'see'.",
+        "applied_explanation": "To practice Spanish vowel sounds, start by pronouncing each vowel clearly and consistently. For example, say 'a' as 'ah', 'e' as 'eh', 'i' as 'ee', 'o' as 'oh', and 'u' as 'oo'. When you encounter a word, identify the vowels and pronounce them according to these rules. A common mistake is to mix up the sounds with English vowels, leading to mispronunciations. For instance, saying 'e' like 'ee' can change the meaning of a word. Focus on listening to native speakers and mimicking their vowel sounds to improve your pronunciation.",
+        "example": "Consider the word 'mesa', which means 'table'. The first vowel 'e' is pronounced 'eh', and the second vowel 'a' is pronounced 'ah'. So, when you break it down, you say 'meh' + 'sah'. The 'm' is pronounced like in English, and the 's' is also the same. Therefore, 'mesa' is pronounced 'meh-sah'. This example illustrates how mastering vowel sounds can help you pronounce words accurately.",
+        "practice_questions": [
+          {
+            "question": "How many vowel sounds are there in Spanish?",
+            "type": "short_answer"
           },
           {
-            "question": "Imagine you are building a user profile component in React. What key features would you include to manage user data effectively?",
-            "type": "scenario",
-            "explanation": "Consider using state to hold user information and props to pass data to child components. Think about how you would handle updates to the user data."
+            "question": "What is the correct pronunciation of the Spanish vowel 'o'?",
+            "type": "short_answer"
+          }
+        ]
+      },
+      {
+        "section_id": "1.3",
+        "title": "Spanish Consonant Sounds",
+        "conceptual_explanation": "Spanish consonants can be similar to English consonants, but many have distinct pronunciations. For example, the letter 'j' in Spanish is pronounced like the English 'h', while 'v' is often pronounced like 'b'. This variation exists to create a unique sound system that distinguishes Spanish from other languages. Think of consonants as the framework of a house; they provide structure to words. Since you are familiar with English consonants, you can relate to how they function in Spanish, but be mindful of their different sounds. For instance, the letter 'r' is rolled in Spanish, which is a key feature of the language.",
+        "applied_explanation": "To practice Spanish consonant sounds, start by pronouncing each consonant clearly, paying attention to those that differ from English. For example, practice saying 'r' by rolling your tongue, and 'j' by producing a sound similar to 'h'. When you read a word, focus on the consonants and how they interact with the vowels. A common beginner mistake is to pronounce consonants as they are in English, which can lead to misunderstandings. For instance, saying 'v' as 'v' instead of 'b' can change the meaning of a word. Listening to native speakers can help you grasp the correct pronunciation.",
+        "example": "Take the word 'perro', which means 'dog'. The first 'r' is rolled, so you would say 'pe' + 'rro', where the 'rr' is pronounced with a strong roll. The 'e' is pronounced 'eh', and the 'o' is pronounced 'oh'. Therefore, 'perro' is pronounced 'peh-rro'. This example shows how understanding consonant sounds is essential for accurate pronunciation.",
+        "practice_questions": [
+          {
+            "question": "What is the Spanish pronunciation of the letter 'j'?",
+            "type": "short_answer"
+          },
+          {
+            "question": "How is the letter 'r' pronounced in Spanish?",
+            "type": "short_answer"
           }
         ]
       }

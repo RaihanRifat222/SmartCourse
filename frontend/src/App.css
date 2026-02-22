@@ -282,6 +282,13 @@
   color: var(--accent-2);
 }
 
+.detail-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
 .stack-header {
   display: flex;
   justify-content: space-between;

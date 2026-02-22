@@ -1,0 +1,732 @@
+{
+  "id": "spanish_0001",
+  "created_at": "2026-02-20T14:29:03.489006Z",
+  "learning_request": {
+    "topic": "Spanish",
+    "audience": {
+      "role": "English Speaker",
+      "prior_knowledge": "English",
+      "seniority": "Beginner"
+    },
+    "learning_goals": [
+      "Learn how to speak spanish"
+    ],
+    "constraints": {
+      "depth": "Intermediate",
+      "tone": "Friendly"
+    }
+  },
+  "course": {
+    "curriculum": {
+      "curriculum": {
+        "modules": [
+          {
+            "module_id": "1",
+            "title": "Introduction to Spanish Sounds",
+            "learning_objectives": [
+              "Identify and pronounce basic Spanish vowels and consonants",
+              "Differentiate between English and Spanish pronunciation"
+            ],
+            "key_concepts": [
+              "Spanish alphabet",
+              "Vowel sounds",
+              "Consonant sounds"
+            ]
+          },
+          {
+            "module_id": "2",
+            "title": "Basic Greetings and Introductions",
+            "learning_objectives": [
+              "Use common greetings in Spanish",
+              "Introduce oneself and ask for someone's name"
+            ],
+            "key_concepts": [
+              "Greetings",
+              "Self-introduction phrases"
+            ]
+          },
+          {
+            "module_id": "3",
+            "title": "Numbers and Basic Counting",
+            "learning_objectives": [
+              "Count from 1 to 20 in Spanish",
+              "Use numbers in simple conversations"
+            ],
+            "key_concepts": [
+              "Numbers 1-20",
+              "Basic counting phrases"
+            ]
+          },
+          {
+            "module_id": "4",
+            "title": "Everyday Vocabulary: Family and Friends",
+            "learning_objectives": [
+              "Identify family members and friends in Spanish",
+              "Describe relationships using simple sentences"
+            ],
+            "key_concepts": [
+              "Family vocabulary",
+              "Descriptive phrases"
+            ]
+          },
+          {
+            "module_id": "5",
+            "title": "Basic Verbs and Simple Sentences",
+            "learning_objectives": [
+              "Use common verbs in the present tense",
+              "Construct simple sentences"
+            ],
+            "key_concepts": [
+              "Common verbs",
+              "Sentence structure"
+            ]
+          },
+          {
+            "module_id": "6",
+            "title": "Asking Questions in Spanish",
+            "learning_objectives": [
+              "Formulate basic questions",
+              "Practice asking and answering questions"
+            ],
+            "key_concepts": [
+              "Question words",
+              "Question formation"
+            ]
+          },
+          {
+            "module_id": "7",
+            "title": "Describing Daily Activities",
+            "learning_objectives": [
+              "Talk about daily routines using verbs",
+              "Use time expressions in sentences"
+            ],
+            "key_concepts": [
+              "Daily activities vocabulary",
+              "Time expressions"
+            ]
+          },
+          {
+            "module_id": "8",
+            "title": "Food and Drink Vocabulary",
+            "learning_objectives": [
+              "Identify common foods and drinks in Spanish",
+              "Order food and drinks in a restaurant setting"
+            ],
+            "key_concepts": [
+              "Food vocabulary",
+              "Restaurant phrases"
+            ]
+          },
+          {
+            "module_id": "9",
+            "title": "Expressing Likes and Dislikes",
+            "learning_objectives": [
+              "Use phrases to express preferences",
+              "Discuss favorite foods and activities"
+            ],
+            "key_concepts": [
+              "Likes and dislikes vocabulary",
+              "Preference expressions"
+            ]
+          },
+          {
+            "module_id": "10",
+            "title": "Travel Vocabulary and Directions",
+            "learning_objectives": [
+              "Identify key travel vocabulary",
+              "Ask for and give directions"
+            ],
+            "key_concepts": [
+              "Travel vocabulary",
+              "Directional phrases"
+            ]
+          },
+          {
+            "module_id": "11",
+            "title": "Review and Conversational Practice",
+            "learning_objectives": [
+              "Review key vocabulary and phrases from previous modules",
+              "Engage in simple conversations using learned material"
+            ],
+            "key_concepts": [
+              "Conversation practice",
+              "Role-play scenarios"
+            ]
+          }
+        ]
+      }
+    },
+    "module_contents": {
+      "1": {
+        "module_content": {
+          "module_id": "1",
+          "sections": [
+            {
+              "section_id": "1.1",
+              "title": "Understanding the Spanish Alphabet",
+              "conceptual_explanation": "The Spanish alphabet consists of 27 letters, which include the same 26 letters as the English alphabet plus the letter '\u00f1'. This alphabet is the foundation of the Spanish language, and it exists to provide a consistent way to represent sounds in writing. Think of the alphabet as a toolkit; just as a carpenter needs specific tools to build a house, you need the letters of the alphabet to build words in Spanish. You may already be familiar with the English alphabet, so consider how each letter corresponds to a sound. For example, the letter 'a' in both languages is pronounced differently, which is crucial for proper pronunciation in Spanish. Understanding the alphabet is the first step in mastering the sounds of the language.",
+              "applied_explanation": "To use the Spanish alphabet in practice, start by familiarizing yourself with each letter and its corresponding sound. For instance, the letter 'a' is pronounced like 'ah', 'e' like 'eh', and 'i' like 'ee'. When you see a word, break it down letter by letter, pronouncing each sound as you go. Pay attention to the unique letters like '\u00f1', which sounds like 'ny' in 'canyon'. A common beginner mistake is to apply English pronunciation rules to Spanish letters, which can lead to misunderstandings. For example, the letter 'c' can sound like 's' or 'k' depending on the vowels that follow it. Practice saying the alphabet out loud, and try to spell simple words to reinforce your learning.",
+              "example": "Let's take the word 'casa', which means 'house' in Spanish. The first letter 'c' is pronounced like 'k' because it is followed by the vowel 'a'. The next letter 'a' is pronounced 'ah'. So, when you say 'casa', you break it down like this: 'ka' + 'sah'. The 's' is pronounced like the English 's', and the final 'a' is again 'ah'. Therefore, 'casa' is pronounced 'kah-sah'. This example shows how understanding the sounds of the letters helps you pronounce the word correctly.",
+              "practice_questions": [
+                {
+                  "question": "What is the additional letter in the Spanish alphabet that is not found in the English alphabet?",
+                  "type": "short_answer"
+                },
+                {
+                  "question": "Which letter in Spanish can sound like 's' or 'k' depending on the following vowel?",
+                  "type": "short_answer"
+                }
+              ]
+            },
+            {
+              "section_id": "1.2",
+              "title": "Spanish Vowel Sounds",
+              "conceptual_explanation": "Spanish has five vowel sounds: 'a', 'e', 'i', 'o', and 'u'. Each vowel has a consistent pronunciation, which is different from English where vowels can have multiple sounds. This consistency exists to make pronunciation easier and more predictable for learners. Imagine vowels as the building blocks of words; just like how a strong foundation is essential for a building, clear vowel sounds are crucial for clear communication in Spanish. Since you already know some English vowels, think of how they differ in sound. For example, the Spanish 'e' is always pronounced like the 'e' in 'met', not like the 'ee' in 'see'.",
+              "applied_explanation": "To practice Spanish vowel sounds, start by pronouncing each vowel clearly and consistently. For example, say 'a' as 'ah', 'e' as 'eh', 'i' as 'ee', 'o' as 'oh', and 'u' as 'oo'. When you encounter a word, identify the vowels and pronounce them according to these rules. A common mistake is to mix up the sounds with English vowels, leading to mispronunciations. For instance, saying 'e' like 'ee' can change the meaning of a word. Focus on listening to native speakers and mimicking their vowel sounds to improve your pronunciation.",
+              "example": "Consider the word 'mesa', which means 'table'. The first vowel 'e' is pronounced 'eh', and the second vowel 'a' is pronounced 'ah'. So, when you break it down, you say 'meh' + 'sah'. The 'm' is pronounced like in English, and the 's' is also the same. Therefore, 'mesa' is pronounced 'meh-sah'. This example illustrates how mastering vowel sounds can help you pronounce words accurately.",
+              "practice_questions": [
+                {
+                  "question": "How many vowel sounds are there in Spanish?",
+                  "type": "short_answer"
+                },
+                {
+                  "question": "What is the correct pronunciation of the Spanish vowel 'o'?",
+                  "type": "short_answer"
+                }
+              ]
+            },
+            {
+              "section_id": "1.3",
+              "title": "Spanish Consonant Sounds",
+              "conceptual_explanation": "Spanish consonants can be similar to English consonants, but many have distinct pronunciations. For example, the letter 'j' in Spanish is pronounced like the English 'h', while 'v' is often pronounced like 'b'. This variation exists to create a unique sound system that distinguishes Spanish from other languages. Think of consonants as the framework of a house; they provide structure to words. Since you are familiar with English consonants, you can relate to how they function in Spanish, but be mindful of their different sounds. For instance, the letter 'r' is rolled in Spanish, which is a key feature of the language.",
+              "applied_explanation": "To practice Spanish consonant sounds, start by pronouncing each consonant clearly, paying attention to those that differ from English. For example, practice saying 'r' by rolling your tongue, and 'j' by producing a sound similar to 'h'. When you read a word, focus on the consonants and how they interact with the vowels. A common beginner mistake is to pronounce consonants as they are in English, which can lead to misunderstandings. For instance, saying 'v' as 'v' instead of 'b' can change the meaning of a word. Listening to native speakers can help you grasp the correct pronunciation.",
+              "example": "Take the word 'perro', which means 'dog'. The first 'r' is rolled, so you would say 'pe' + 'rro', where the 'rr' is pronounced with a strong roll. The 'e' is pronounced 'eh', and the 'o' is pronounced 'oh'. Therefore, 'perro' is pronounced 'peh-rro'. This example shows how understanding consonant sounds is essential for accurate pronunciation.",
+              "practice_questions": [
+                {
+                  "question": "What is the Spanish pronunciation of the letter 'j'?",
+                  "type": "short_answer"
+                },
+                {
+                  "question": "How is the letter 'r' pronounced in Spanish?",
+                  "type": "short_answer"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "2": {
+        "module_content": {
+          "module_id": "2",
+          "sections": [
+            {
+              "section_id": "1",
+              "title": "Common Greetings in Spanish",
+              "conceptual_explanation": "Greetings are the first words we use to connect with others. In Spanish, greetings are essential for starting conversations and showing respect. They exist to create a friendly atmosphere and establish rapport. Think of greetings as the opening lines of a book; they set the tone for what follows. You may already know greetings in English, like 'Hello' or 'Good morning.' In Spanish, similar phrases exist, such as 'Hola' for 'Hello' and 'Buenos d\u00edas' for 'Good morning.' Understanding these phrases will help you engage with Spanish speakers and make a positive impression.",
+              "applied_explanation": "When you greet someone in Spanish, you typically start with a simple phrase. For example, if you meet someone in the morning, you would say 'Buenos d\u00edas.' This means 'Good morning.' Pay attention to the time of day when choosing your greeting. In the afternoon, you would use 'Buenas tardes' (Good afternoon), and in the evening, 'Buenas noches' (Good evening). A common beginner mistake is using 'Hola' at all times, which is fine but may not feel as polite in formal situations. Remember to adjust your greeting based on the context and time of day to show respect and awareness.",
+              "example": "Let's say you walk into a caf\u00e9 in Spain. You see the barista and want to greet them. You would say, '\u00a1Hola!' which means 'Hello!' If it's morning, you could say, '\u00a1Buenos d\u00edas!' This shows that you are aware of the time and are being polite. If you want to be more formal, you might say, '\u00a1Buenas tardes!' if it's afternoon. Each greeting sets a different tone, so it's important to choose the right one. Remember, using these greetings can make your interactions more pleasant and friendly.",
+              "practice_questions": [
+                {
+                  "question": "What does 'Buenos d\u00edas' mean in English?",
+                  "type": "short_answer"
+                },
+                {
+                  "question": "Which greeting would you use in the evening?",
+                  "type": "mcq",
+                  "options": [
+                    "Hola",
+                    "Buenas tardes",
+                    "Buenas noches"
+                  ],
+                  "correct_answer": "Buenas noches",
+                  "explanation": "In the evening, 'Buenas noches' is the appropriate greeting, while 'Hola' is more casual and 'Buenas tardes' is for the afternoon."
+                }
+              ]
+            },
+            {
+              "section_id": "2",
+              "title": "Self-Introduction Phrases",
+              "conceptual_explanation": "Self-introduction phrases are essential for sharing who you are with others. They help establish your identity and create connections. These phrases exist to facilitate communication and make social interactions smoother. Think of self-introductions as the opening chapter of a story where you present yourself to the reader. In English, you might say, 'My name is...' In Spanish, you would say, 'Me llamo...' followed by your name. This connection to what you already know helps you understand how to introduce yourself in a new language.",
+              "applied_explanation": "To introduce yourself in Spanish, you would typically say, 'Me llamo' followed by your name. For example, if your name is John, you would say, 'Me llamo John.' After introducing yourself, it's polite to ask for the other person's name by saying, '\u00bfY t\u00fa?' which means 'And you?' Pay attention to the tone and context; using a friendly tone makes the interaction more pleasant. A common beginner mistake is forgetting to ask for the other person's name after introducing yourself, which can make the conversation feel one-sided.",
+              "example": "Imagine you are at a language exchange event. You meet someone and want to introduce yourself. You would say, 'Hola, me llamo John.' This means, 'Hello, my name is John.' After that, you can ask, '\u00bfY t\u00fa?' which means 'And you?' This shows that you are interested in the other person. If they respond with 'Me llamo Mar\u00eda,' you now know their name and can continue the conversation. This simple exchange is a great way to start building relationships in Spanish.",
+              "practice_questions": [
+                {
+                  "question": "What does 'Me llamo' mean?",
+                  "type": "short_answer"
+                },
+                {
+                  "question": "How would you ask someone their name in Spanish after introducing yourself?",
+                  "type": "mcq",
+                  "options": [
+                    "\u00bfC\u00f3mo est\u00e1s?",
+                    "\u00bfY t\u00fa?",
+                    "\u00bfQu\u00e9 tal?"
+                  ],
+                  "correct_answer": "\u00bfY t\u00fa?",
+                  "explanation": "After introducing yourself, '\u00bfY t\u00fa?' is the correct way to ask for the other person's name, while the other options are greetings or inquiries about well-being."
+                },
+                {
+                  "question": "You meet someone named Ana. How would you introduce yourself?",
+                  "type": "scenario",
+                  "explanation": "You would say, 'Hola, me llamo [Your Name].' After that, you can ask, '\u00bfY t\u00fa?' to learn her name."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "3": {
+        "module_content": {
+          "module_id": "3",
+          "sections": [
+            {
+              "section_id": "1",
+              "title": "Counting from 1 to 20 in Spanish",
+              "conceptual_explanation": "In Spanish, just like in English, numbers are fundamental for communication. They allow us to express quantities, tell time, and engage in various everyday conversations. Understanding numbers from 1 to 20 is essential because they form the foundation for counting and using larger numbers. Think of numbers as building blocks; once you know the basics, you can construct more complex ideas. You may already be familiar with some numbers in Spanish, like 'uno' for one or 'dos' for two, but learning the complete set will enhance your ability to communicate effectively. This section will help you recognize and pronounce each number, making it easier to incorporate them into your conversations.",
+              "applied_explanation": "To count from 1 to 20 in Spanish, you will start by learning the individual numbers and their pronunciations. Begin with 'uno' (1), 'dos' (2), 'tres' (3), and continue up to 'veinte' (20). Practice saying each number aloud, paying attention to the pronunciation, as it can differ significantly from English. A common beginner mistake is confusing similar-sounding numbers, such as 'seis' (6) and 'diez' (10). To avoid this, repeat the numbers multiple times and try to associate them with visual aids or objects around you. Once you feel comfortable with the numbers, practice using them in simple sentences, like 'Tengo tres manzanas' (I have three apples). This will help reinforce your learning and build confidence in using numbers in conversation.",
+              "example": "Let's look at how to count from 1 to 20 in Spanish. Here\u2019s the list: 1 - uno, 2 - dos, 3 - tres, 4 - cuatro, 5 - cinco, 6 - seis, 7 - siete, 8 - ocho, 9 - nueve, 10 - diez, 11 - once, 12 - doce, 13 - trece, 14 - catorce, 15 - quince, 16 - diecis\u00e9is, 17 - diecisiete, 18 - dieciocho, 19 - diecinueve, 20 - veinte. For example, if you want to say 'I have five books' in Spanish, you would say 'Tengo cinco libros.' Here, 'Tengo' means 'I have,' 'cinco' is 'five,' and 'libros' means 'books.' Practice saying this sentence out loud, focusing on the pronunciation of 'cinco' to ensure clarity.",
+              "practice_questions": [
+                {
+                  "question": "What is the Spanish word for the number 10?",
+                  "type": "short_answer"
+                },
+                {
+                  "question": "Which number comes after 'siete'?",
+                  "type": "short_answer"
+                },
+                {
+                  "question": "If you have 4 apples, how would you say that in Spanish?",
+                  "type": "scenario",
+                  "explanation": "Think about how to structure the sentence using the verb 'tener' (to have) and the number in Spanish."
+                }
+              ]
+            },
+            {
+              "section_id": "2",
+              "title": "Basic Counting Phrases",
+              "conceptual_explanation": "Basic counting phrases in Spanish are essential for everyday interactions. These phrases help you express quantities, ask questions, and engage in conversations about numbers. For instance, phrases like '\u00bfCu\u00e1ntos hay?' (How many are there?) or 'Tengo cinco' (I have five) are commonly used. Understanding these phrases allows you to participate in discussions about items, prices, and more. Think of these phrases as tools in your communication toolbox; the more you know, the more effectively you can express yourself. You may have already learned some basic phrases in English, and now you will see how they translate into Spanish, making it easier to connect your existing knowledge with new learning.",
+              "applied_explanation": "To use basic counting phrases, start by practicing common questions and statements. For example, when you want to ask someone how many items they have, you can say '\u00bfCu\u00e1ntos tienes?' (How many do you have?). Pay attention to the context in which you use these phrases, as they can vary depending on the situation. A common mistake is forgetting to match the number with the noun in gender and number, such as saying 'tres manzana' instead of 'tres manzanas' (three apples). To avoid this, always remember to use the plural form of the noun when counting more than one. Practice these phrases in different scenarios, like shopping or counting objects around you, to build confidence.",
+              "example": "Here are some basic counting phrases: '\u00bfCu\u00e1ntos libros tienes?' (How many books do you have?), 'Tengo dos gatos' (I have two cats), and 'Hay cinco sillas' (There are five chairs). Let\u2019s break down the phrase 'Tengo dos gatos.' 'Tengo' means 'I have,' 'dos' is 'two,' and 'gatos' means 'cats.' When you say this, you are clearly stating how many cats you possess. Practice saying this phrase out loud, and try to create your own sentences using different numbers and nouns, like 'Tengo tres perros' (I have three dogs). This will help reinforce your understanding of counting in Spanish.",
+              "practice_questions": [
+                {
+                  "question": "How do you ask 'How many do you have?' in Spanish?",
+                  "type": "short_answer"
+                },
+                {
+                  "question": "Translate 'There are four chairs' into Spanish.",
+                  "type": "short_answer"
+                },
+                {
+                  "question": "Imagine you are at a store and want to ask how many apples are available. What would you say?",
+                  "type": "scenario",
+                  "explanation": "Think about how to structure your question using the vocabulary you have learned."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "4": {
+        "module_content": {
+          "module_id": "4",
+          "sections": [
+            {
+              "section_id": "1",
+              "title": "Family Vocabulary",
+              "conceptual_explanation": "Family vocabulary in Spanish refers to the words we use to describe our family members. This vocabulary exists because, just like in English, we need specific terms to identify and talk about our relatives. Think of family vocabulary as the building blocks of conversations about your personal life. For example, just as you would say 'mother' or 'brother' in English, in Spanish, you would say 'madre' for mother and 'hermano' for brother. This vocabulary is essential for expressing who is important in your life and helps you connect with others by sharing about your family. You may already know some family terms in English, and learning their Spanish equivalents will help you create meaningful sentences about your loved ones.",
+              "applied_explanation": "In practice, using family vocabulary involves learning the Spanish words for each family member and how to use them in sentences. Start by memorizing the basic terms: 'madre' (mother), 'padre' (father), 'hermano' (brother), and 'hermana' (sister). Once you know these words, you can create simple sentences like 'Mi madre es amable' (My mother is kind). Pay attention to the gender of the words; for instance, 'hermano' is masculine, while 'hermana' is feminine. A common beginner mistake is confusing the gender of family terms, so always remember to match the article (el for masculine, la for feminine) with the noun. Practice saying these words aloud to get comfortable with pronunciation and usage.",
+              "example": "Let's look at a simple example. If you want to introduce your family, you might say: 'Tengo una madre y un padre. Tengo un hermano y una hermana.' This translates to 'I have a mother and a father. I have a brother and a sister.' Here, 'Tengo' means 'I have,' 'una' is the feminine article for 'mother' (madre), and 'un' is the masculine article for 'father' (padre). Notice how the structure is similar to English, but the vocabulary is different. Practicing this sentence will help you remember the family terms and how to use them in context.",
+              "practice_questions": [
+                {
+                  "question": "What is the Spanish word for 'sister'?",
+                  "type": "short_answer"
+                },
+                {
+                  "question": "Which of the following is the correct term for 'father' in Spanish?",
+                  "type": "mcq",
+                  "options": [
+                    "madre",
+                    "padre",
+                    "hermano"
+                  ],
+                  "correct_answer": "padre",
+                  "explanation": "The correct term for 'father' in Spanish is 'padre'. 'Madre' means 'mother' and 'hermano' means 'brother'."
+                }
+              ]
+            },
+            {
+              "section_id": "2",
+              "title": "Descriptive Phrases",
+              "conceptual_explanation": "Descriptive phrases in Spanish are used to provide more information about family members and friends. These phrases exist to help us express our thoughts and feelings about the people we care about. For example, you might want to say 'My brother is tall' or 'My mother is kind.' In Spanish, this would be 'Mi hermano es alto' and 'Mi madre es amable.' Think of descriptive phrases as the way to paint a picture of your relationships. You already know how to describe people in English, and now you will learn how to do it in Spanish, which will enhance your ability to communicate effectively.",
+              "applied_explanation": "To use descriptive phrases, start by learning common adjectives in Spanish, such as 'alto' (tall), 'bajo' (short), 'amable' (kind), and 'inteligente' (smart). Combine these adjectives with the family vocabulary you learned earlier. For instance, you can say 'Mi hermana es inteligente' (My sister is smart). Pay attention to the agreement between the noun and the adjective; if the noun is feminine, the adjective must also be in its feminine form. A common mistake is forgetting to match the gender, so always check if the family member is male or female before choosing the adjective.",
+              "example": "For example, if you want to describe your mother, you could say: 'Mi madre es amable y trabajadora.' This means 'My mother is kind and hardworking.' Here, 'amable' describes her character, and 'trabajadora' means 'hardworking.' Notice how both adjectives follow the verb 'es' (is) and agree with 'madre' in being feminine. Practicing these phrases will help you express your thoughts about your family members clearly and confidently.",
+              "practice_questions": [
+                {
+                  "question": "Translate 'My brother is tall' into Spanish.",
+                  "type": "short_answer"
+                },
+                {
+                  "question": "Which of the following describes a kind person in Spanish?",
+                  "type": "mcq",
+                  "options": [
+                    "alto",
+                    "amable",
+                    "bajo"
+                  ],
+                  "correct_answer": "amable",
+                  "explanation": "'Amable' means 'kind' in Spanish, while 'alto' means 'tall' and 'bajo' means 'short'."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "5": {
+        "module_content": {
+          "module_id": "5",
+          "sections": [
+            {
+              "section_id": "1",
+              "title": "Common Verbs in the Present Tense",
+              "conceptual_explanation": "Common verbs are the building blocks of any language, including Spanish. They allow us to express actions, states, and occurrences. In Spanish, verbs are conjugated based on the subject performing the action, which is why understanding the present tense is crucial. The present tense is used to describe actions happening now or habitual actions. Think of verbs as the engines of sentences; without them, sentences would be incomplete. For example, in English, we say 'I eat' or 'She runs.' In Spanish, these would be 'Yo como' and 'Ella corre.' This concept connects to what you already know about verbs in English, where the subject and verb must agree in number and person. Understanding this will help you form basic sentences in Spanish.",
+              "applied_explanation": "To use common verbs in the present tense, start by identifying the subject of your sentence. In Spanish, the subject can often be omitted because the verb conjugation indicates who is performing the action. For example, if you want to say 'I eat,' you can simply say 'Como.' Next, choose the correct verb form based on the subject. Pay attention to the endings of the verbs, as they change depending on whether the subject is 'I,' 'you,' 'he,' 'she,' etc. A common beginner mistake is forgetting to conjugate the verb correctly, which can lead to confusion. For instance, saying 'Yo come' instead of 'Yo como' is incorrect because 'come' is the form for 'he/she eats,' not 'I eat.' Practice conjugating regular verbs like 'hablar' (to speak), 'comer' (to eat), and 'vivir' (to live) to get comfortable with this.",
+              "example": "Let's take the verb 'comer' (to eat) as an example. In the present tense, it is conjugated as follows: 'Yo como' (I eat), 'T\u00fa comes' (You eat), '\u00c9l/Ella come' (He/She eats). Here\u2019s how it works: 'Yo' is the subject meaning 'I,' and 'como' is the first-person singular form of 'comer.' 'T\u00fa' means 'you,' and 'comes' is the second-person singular form. '\u00c9l/Ella' means 'he/she,' and 'come' is the third-person singular form. Notice how the endings change: -o for 'yo,' -es for 't\u00fa,' and -e for '\u00e9l/ella.' This pattern is essential for forming sentences in Spanish.",
+              "practice_questions": [
+                {
+                  "question": "What is the Spanish verb for 'to eat'?",
+                  "type": "short_answer"
+                },
+                {
+                  "question": "Which form of the verb 'comer' would you use for 'he eats'?",
+                  "type": "short_answer"
+                },
+                {
+                  "question": "If you want to say 'We speak' in Spanish, what would you say?",
+                  "type": "scenario",
+                  "explanation": "Think about the subject 'we' and how the verb 'hablar' (to speak) is conjugated in the present tense."
+                }
+              ]
+            },
+            {
+              "section_id": "2",
+              "title": "Constructing Simple Sentences",
+              "conceptual_explanation": "Constructing simple sentences is essential for effective communication in any language. In Spanish, a basic sentence typically follows the Subject-Verb-Object (SVO) structure, similar to English. For example, 'I eat an apple' translates to 'Yo como una manzana.' The subject 'Yo' (I) comes first, followed by the verb 'como' (eat), and then the object 'una manzana' (an apple). This structure helps convey clear meaning and is foundational for building more complex sentences later. Understanding how to construct simple sentences will allow you to express your thoughts and ideas in Spanish, making it easier to engage in conversations.",
+              "applied_explanation": "To construct a simple sentence in Spanish, start with the subject, which can be a pronoun or a noun. Next, add the verb in the correct form based on the subject. Finally, include the object if necessary. For example, if you want to say 'She drinks water,' you would start with 'Ella' (she), followed by 'bebe' (drinks), and then 'agua' (water), resulting in 'Ella bebe agua.' Pay attention to the agreement between the subject and verb. A common mistake is to mix up the order of words, which can lead to confusion. Remember, the subject should always come first in a simple sentence.",
+              "example": "Let's create a simple sentence using the verb 'beber' (to drink). If you want to say 'They drink coffee,' you would say 'Ellos beben caf\u00e9.' Here\u2019s the breakdown: 'Ellos' means 'they,' 'beben' is the third-person plural form of 'beber,' and 'caf\u00e9' means 'coffee.' The structure is clear: Subject (Ellos) + Verb (beben) + Object (caf\u00e9). This sentence follows the SVO format, making it easy to understand. Practice forming sentences with different subjects and verbs to become more comfortable with this structure.",
+              "practice_questions": [
+                {
+                  "question": "What is the structure of a simple sentence in Spanish?",
+                  "type": "short_answer"
+                },
+                {
+                  "question": "Translate the sentence 'I drink water' into Spanish.",
+                  "type": "short_answer"
+                },
+                {
+                  "question": "Create a simple sentence using the subject 'We' and the verb 'to eat.'",
+                  "type": "scenario",
+                  "explanation": "Think about how to conjugate the verb 'comer' for 'we' and what object you might want to include."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "6": {
+        "module_content": {
+          "module_id": "6",
+          "sections": [
+            {
+              "section_id": "1",
+              "title": "Understanding Question Words",
+              "conceptual_explanation": "Question words are essential in any language as they help us gather information. In Spanish, these words include 'qu\u00e9' (what), 'qui\u00e9n' (who), 'd\u00f3nde' (where), 'cu\u00e1ndo' (when), 'por qu\u00e9' (why), and 'c\u00f3mo' (how). They exist because they allow us to ask for specific details rather than making statements. Think of question words as keys that unlock the information you need. For example, if you want to know about someone's favorite food, you would use 'qu\u00e9' to ask, '\u00bfQu\u00e9 te gusta comer?' (What do you like to eat?). This connects to what you already know in English, where we also use question words to seek information. Understanding these words is the first step in formulating questions in Spanish.",
+              "applied_explanation": "To use question words in practice, start by identifying the information you want to know. For instance, if you want to ask someone where they live, you would use 'd\u00f3nde'. The structure of your question will typically follow the format: question word + verb + subject. So, '\u00bfD\u00f3nde vives?' translates to 'Where do you live?'. Pay attention to the verb conjugation that matches the subject. A common beginner mistake is forgetting to conjugate the verb correctly, which can lead to confusion. Always ensure that your question is clear and that the verb agrees with the subject you are asking about.",
+              "example": "Let's say you want to ask someone about their favorite color. You would start with the question word 'qu\u00e9'. The full question would be '\u00bfQu\u00e9 color te gusta?' which means 'What color do you like?'. Here\u2019s the breakdown: '\u00bfQu\u00e9' is the question word, 'color' is the subject, 'te' is the indirect object pronoun meaning 'to you', and 'gusta' is the verb that agrees with the singular noun 'color'. This structure is crucial as it helps you form clear and correct questions in Spanish.",
+              "practice_questions": [
+                {
+                  "question": "What is the Spanish word for 'who'?",
+                  "type": "short_answer"
+                },
+                {
+                  "question": "Formulate a question using 'd\u00f3nde'.",
+                  "type": "short_answer"
+                },
+                {
+                  "question": "Which of the following is a question word in Spanish?",
+                  "type": "mcq",
+                  "options": [
+                    "casa",
+                    "qui\u00e9n",
+                    "comer"
+                  ],
+                  "correct_answer": "qui\u00e9n",
+                  "explanation": "'Qui\u00e9n' means 'who' in Spanish, making it a question word. 'Casa' means 'house' and 'comer' means 'to eat', neither of which are question words."
+                }
+              ]
+            },
+            {
+              "section_id": "2",
+              "title": "Formulating Questions in Spanish",
+              "conceptual_explanation": "Formulating questions in Spanish involves understanding the structure of a question. Unlike English, where the word order can change, Spanish questions often maintain a similar structure to statements but with a few key changes. Questions exist to facilitate communication and gather information. Think of it as a conversation starter. For example, if you want to ask someone what they are doing, you would say, '\u00bfQu\u00e9 est\u00e1s haciendo?' (What are you doing?). This structure connects to your previous knowledge of English questions, where you also rearrange words to form a question.",
+              "applied_explanation": "To formulate a question, start with a question word if applicable, followed by the verb and then the subject. For example, '\u00bfQu\u00e9 comes?' (What do you eat?). Here, 'comes' is the verb for 'you eat', and it is conjugated to match the subject 't\u00fa' (you). Pay attention to the verb conjugation, as this is a common area where beginners make mistakes. They might forget to change the verb form according to the subject, leading to incorrect questions. Always double-check your verb forms to ensure clarity.",
+              "example": "Consider you want to ask someone when they are going to the store. You would say, '\u00bfCu\u00e1ndo vas a la tienda?' which translates to 'When are you going to the store?'. Breaking it down: '\u00bfCu\u00e1ndo' is the question word for 'when', 'vas' is the conjugated form of 'ir' (to go) for 'you', and 'a la tienda' means 'to the store'. This structure is important as it helps you create meaningful questions that others can easily understand.",
+              "practice_questions": [
+                {
+                  "question": "What is the correct structure for asking a question in Spanish?",
+                  "type": "short_answer"
+                },
+                {
+                  "question": "Create a question using 'por qu\u00e9'.",
+                  "type": "short_answer"
+                },
+                {
+                  "question": "Which of the following is the correct way to ask 'What do you want?' in Spanish?",
+                  "type": "mcq",
+                  "options": [
+                    "\u00bfQu\u00e9 quieres?",
+                    "\u00bfQuieres qu\u00e9?",
+                    "\u00bfQuieres?"
+                  ],
+                  "correct_answer": "\u00bfQu\u00e9 quieres?",
+                  "explanation": "'\u00bfQu\u00e9 quieres?' is the correct structure for asking 'What do you want?' in Spanish. The other options do not follow the proper question format."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "7": {
+        "module_content": {
+          "module_id": "7",
+          "sections": [
+            {
+              "section_id": "1",
+              "title": "Daily Activities Vocabulary",
+              "conceptual_explanation": "Daily activities vocabulary refers to the words and phrases we use to describe what we do every day. This vocabulary exists because it helps us communicate our routines and actions clearly. Imagine your daily life as a series of small stories; each activity is a part of that story. For example, when you wake up, you might brush your teeth, eat breakfast, or go to work. These actions are the building blocks of your daily narrative. By learning these words, you can express yourself better in Spanish, connecting with others about shared experiences. You may already know some English words that are similar to their Spanish counterparts, which can make learning easier. For instance, 'comer' means 'to eat' in Spanish, and it sounds a bit like 'come' in English. This connection can help you remember the vocabulary more easily.",
+              "applied_explanation": "In practice, using daily activities vocabulary involves identifying the actions you perform regularly and learning their Spanish equivalents. Start by listing your daily activities in English, such as 'wake up', 'shower', 'eat breakfast', and 'go to work'. Then, find the Spanish translations: 'despertarse', 'ducharse', 'desayunar', and 'ir al trabajo'. Pay attention to the verbs, as they are crucial for forming sentences. A common beginner mistake is to forget to conjugate the verbs according to the subject. For example, instead of saying 'yo comer' (I eat), you should say 'yo como'. This small change makes your sentences grammatically correct. Practice saying these activities out loud, and try to use them in sentences to describe your routine.",
+              "example": "Let's take the daily activity 'to eat breakfast'. In Spanish, this is 'desayunar'. If you want to say 'I eat breakfast at 8 AM', you would say 'Yo desayuno a las 8 de la ma\u00f1ana'. Here\u2019s the breakdown: 'Yo' means 'I', 'desayuno' is the first-person singular form of 'desayunar', and 'a las 8 de la ma\u00f1ana' means 'at 8 in the morning'. This sentence structure is essential for describing your daily routine. You can replace 'desayuno' with other activities like 'ducho' (I shower) or 'voy al trabajo' (I go to work) to create a full picture of your day.",
+              "practice_questions": [
+                {
+                  "question": "What does 'desayunar' mean in English?",
+                  "type": "short_answer"
+                },
+                {
+                  "question": "Which of the following is the correct way to say 'I eat breakfast' in Spanish?",
+                  "type": "mcq",
+                  "options": [
+                    "Yo desayuno",
+                    "Yo desayunar",
+                    "Yo desayunas"
+                  ],
+                  "correct_answer": "Yo desayuno",
+                  "explanation": "The correct form is 'Yo desayuno' because 'desayuno' is the first-person singular conjugation of the verb 'desayunar'."
+                }
+              ]
+            },
+            {
+              "section_id": "2",
+              "title": "Time Expressions",
+              "conceptual_explanation": "Time expressions are words or phrases that help us indicate when an action takes place. They exist because they provide context to our activities, allowing us to communicate not just what we do, but when we do it. Think of time expressions as the clock of your daily narrative; they help others understand the timing of your actions. For example, saying 'I eat breakfast at 8 AM' gives a clear picture of your routine. You may already be familiar with some time expressions in English, like 'in the morning', 'at noon', or 'in the evening'. In Spanish, these expressions are similar: 'por la ma\u00f1ana', 'al mediod\u00eda', and 'por la tarde'. Learning these will help you create more detailed sentences about your daily life.",
+              "applied_explanation": "To use time expressions in practice, start by learning common phrases that indicate time. For instance, 'por la ma\u00f1ana' means 'in the morning', 'por la tarde' means 'in the afternoon', and 'por la noche' means 'at night'. When you combine these with your daily activities, you can create sentences like 'Yo desayuno por la ma\u00f1ana' (I eat breakfast in the morning). Pay attention to the structure of your sentences; the time expression usually comes before the verb. A common mistake is to place the time expression at the end of the sentence, which can sound awkward in Spanish. Instead, practice placing it correctly to enhance clarity and fluency.",
+              "example": "For example, if you want to say 'I go to work in the afternoon', you would say 'Yo voy al trabajo por la tarde'. Breaking it down: 'Yo' means 'I', 'voy' is the first-person singular form of 'ir' (to go), 'al trabajo' means 'to work', and 'por la tarde' means 'in the afternoon'. This structure helps you convey not just the action but also the timing, making your communication more effective. You can mix and match different activities and time expressions to describe your entire day, such as 'Yo estudio por la ma\u00f1ana' (I study in the morning) or 'Yo ceno por la noche' (I have dinner at night).",
+              "practice_questions": [
+                {
+                  "question": "What does 'por la tarde' mean in English?",
+                  "type": "short_answer"
+                },
+                {
+                  "question": "Which of the following is the correct way to say 'I go to work in the morning' in Spanish?",
+                  "type": "mcq",
+                  "options": [
+                    "Yo voy al trabajo por la ma\u00f1ana",
+                    "Yo voy al trabajo por la tarde",
+                    "Yo voy al trabajo por la noche"
+                  ],
+                  "correct_answer": "Yo voy al trabajo por la ma\u00f1ana",
+                  "explanation": "'Yo voy al trabajo por la ma\u00f1ana' is correct because it specifies the time as 'in the morning'."
+                },
+                {
+                  "question": "Create a sentence using 'desayunar' and 'por la ma\u00f1ana'.",
+                  "type": "scenario",
+                  "explanation": "This question encourages you to practice combining a daily activity with a time expression, reinforcing your understanding of both concepts."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "8": {
+        "module_content": {
+          "module_id": "8",
+          "sections": [
+            {
+              "section_id": "1",
+              "title": "Food Vocabulary",
+              "conceptual_explanation": "Food vocabulary in Spanish refers to the words and phrases used to describe various types of food and drinks. This vocabulary exists because food is a fundamental part of culture and daily life, and being able to communicate about it is essential for social interactions, especially in Spanish-speaking countries. Think of food vocabulary as the building blocks of conversations about meals, ingredients, and preferences. Just like in English, where you learn words like 'apple' or 'bread', in Spanish, you will learn words like 'manzana' (apple) and 'pan' (bread). This vocabulary connects to what you already know about food in English, making it easier to remember the Spanish equivalents.",
+              "applied_explanation": "In practice, using food vocabulary involves recognizing and naming different foods and drinks in Spanish. For example, when you see a menu in a Spanish-speaking restaurant, you will need to identify items like 'pollo' (chicken) or 'agua' (water). Start by familiarizing yourself with common food items and their Spanish translations. Pay attention to pronunciation, as it can change the meaning of words. A common beginner mistake is confusing similar-sounding words, such as 'carne' (meat) and 'carn\u00e9' (card). To avoid this, practice saying the words out loud and using them in sentences. This will help reinforce your memory and improve your confidence when ordering food.",
+              "example": "Let's look at a simple example of food vocabulary in action. Imagine you are at a restaurant and the waiter hands you a menu. You see the word 'ensalada' which means 'salad'. You can say, 'Me gustar\u00eda una ensalada, por favor' which translates to 'I would like a salad, please.' Here\u2019s a breakdown: 'Me gustar\u00eda' means 'I would like', 'una' means 'a', and 'por favor' means 'please'. This sentence structure is useful for ordering food. Remember to practice saying it out loud to get comfortable with the pronunciation and flow of the language.",
+              "practice_questions": [
+                {
+                  "question": "What is the Spanish word for 'chicken'?",
+                  "type": "short_answer"
+                },
+                {
+                  "question": "Which of the following is the correct translation for 'water'?",
+                  "type": "mcq",
+                  "options": [
+                    "agua",
+                    "vino",
+                    "leche"
+                  ],
+                  "correct_answer": "agua",
+                  "explanation": "The correct translation for 'water' in Spanish is 'agua'. 'Vino' means 'wine' and 'leche' means 'milk'."
+                }
+              ]
+            },
+            {
+              "section_id": "2",
+              "title": "Restaurant Phrases",
+              "conceptual_explanation": "Restaurant phrases in Spanish are essential expressions that help you navigate dining experiences. These phrases exist to facilitate communication between customers and restaurant staff, ensuring that orders are taken correctly and that diners feel comfortable. Think of restaurant phrases as the toolkit you need when you enter a restaurant. Just like you learned basic greetings in English, you will learn phrases like '\u00bfMe puede traer el men\u00fa?' (Can you bring me the menu?). These phrases build on your existing knowledge of conversational English, making it easier to engage in similar interactions in Spanish.",
+              "applied_explanation": "Using restaurant phrases involves knowing how to ask for things, make requests, and express preferences. For instance, when you want to order food, you might say, 'Quisiera ordenar...' which means 'I would like to order...'. Pay attention to the context in which you use these phrases, as they can vary depending on the formality of the restaurant. A common beginner mistake is forgetting to use polite forms like 'por favor' (please) or 'gracias' (thank you), which are important in Spanish-speaking cultures. Practice these phrases in role-play scenarios to build your confidence and fluency.",
+              "example": "Imagine you are at a restaurant and ready to order. You can say, 'Quisiera una pizza, por favor' which means 'I would like a pizza, please.' Breaking it down: 'Quisiera' means 'I would like', 'una' means 'a', and 'pizza' is the same in both languages. Adding 'por favor' at the end makes your request polite. This structure is very useful when ordering any dish. Practicing this sentence will help you feel more comfortable when you are in a real restaurant setting.",
+              "practice_questions": [
+                {
+                  "question": "What does '\u00bfMe puede traer el men\u00fa?' mean?",
+                  "type": "short_answer"
+                },
+                {
+                  "question": "Which phrase would you use to politely order food?",
+                  "type": "mcq",
+                  "options": [
+                    "Quiero pizza",
+                    "Quisiera una pizza, por favor",
+                    "Dame pizza"
+                  ],
+                  "correct_answer": "Quisiera una pizza, por favor",
+                  "explanation": "The phrase 'Quisiera una pizza, por favor' is polite and appropriate for ordering food, while 'Quiero pizza' is less formal and 'Dame pizza' is too direct."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "9": {
+        "module_content": {
+          "module_id": "9",
+          "sections": [
+            {
+              "section_id": "1",
+              "title": "Expressing Likes and Dislikes",
+              "conceptual_explanation": "In Spanish, expressing likes and dislikes is essential for communicating your preferences and engaging in conversations. This concept exists because sharing what you enjoy or dislike helps others understand you better and fosters connections. Think of it like a bridge that connects your feelings to the people around you. You already know how to express likes and dislikes in English, such as saying 'I like pizza' or 'I don't like broccoli.' In Spanish, we use similar structures, but with different vocabulary and grammar. For example, the phrase 'Me gusta' means 'I like,' and 'No me gusta' means 'I don't like.' Understanding these phrases will allow you to share your interests and preferences in Spanish, making your conversations more meaningful.",
+              "applied_explanation": "To express likes and dislikes in Spanish, you will primarily use the phrases 'Me gusta' for likes and 'No me gusta' for dislikes. Start by identifying what you want to express. For example, if you want to say you like ice cream, you would say 'Me gusta el helado.' Notice that 'el helado' means 'the ice cream.' When expressing dislikes, simply add 'No' before 'me gusta,' like 'No me gusta el br\u00f3coli.' Pay attention to the subject of your sentence; if you are talking about multiple items, you will use 'gustan' instead of 'gusta.' A common beginner mistake is forgetting to match the verb with the subject, such as saying 'Me gusta los helados' instead of 'Me gustan los helados.' Remember, if you are talking about more than one thing, use 'gustan.'",
+              "example": "Let's say you want to express that you like pizza and dislike spinach. In Spanish, you would say: 'Me gusta la pizza' for 'I like pizza' and 'No me gusta la espinaca' for 'I don't like spinach.' Here\u2019s the breakdown: 'Me' means 'to me,' 'gusta' means 'is pleasing,' and 'la pizza' means 'the pizza.' So, together, it translates to 'Pizza is pleasing to me.' For the dislike, 'No' negates the statement, making it 'Not pleasing to me.' This structure is straightforward and allows you to express your preferences clearly.",
+              "practice_questions": [
+                {
+                  "question": "What does 'Me gusta' mean in English?",
+                  "type": "short_answer"
+                },
+                {
+                  "question": "Translate 'I don't like broccoli' into Spanish.",
+                  "type": "short_answer"
+                },
+                {
+                  "question": "You want to tell a friend that you like apples and dislike bananas. Write a sentence in Spanish for each.",
+                  "type": "scenario",
+                  "explanation": "This question tests your ability to apply what you've learned about expressing likes and dislikes in Spanish."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "10": {
+        "module_content": {
+          "module_id": "10",
+          "sections": [
+            {
+              "section_id": "1",
+              "title": "Travel Vocabulary",
+              "conceptual_explanation": "Travel vocabulary refers to the specific words and phrases that are commonly used when traveling. This vocabulary exists to help travelers communicate effectively in different situations, such as at the airport, in hotels, or while exploring a new city. Think of travel vocabulary as your toolkit; just like a carpenter needs specific tools to build something, you need these words to navigate your travel experiences. You may already know some basic words in Spanish, like 'hola' (hello) or 'gracias' (thank you), which are essential for polite interactions. Expanding your travel vocabulary will enhance your ability to engage with locals and make your travels more enjoyable and less stressful.",
+              "applied_explanation": "In practice, using travel vocabulary involves learning and memorizing key words and phrases that you will likely encounter during your travels. Start by focusing on essential categories such as transportation, accommodation, food, and common questions. For example, when you arrive at an airport, you might need to ask, '\u00bfD\u00f3nde est\u00e1 la salida?' (Where is the exit?). Pay attention to pronunciation and practice saying these phrases out loud. A common beginner mistake is trying to translate word-for-word from English to Spanish, which can lead to confusion. Instead, focus on learning phrases as complete units, which will help you sound more natural and be understood more easily.",
+              "example": "Let's look at some essential travel vocabulary. For instance, if you want to ask for a taxi, you would say, '\u00bfPuede llamar un taxi, por favor?' (Can you call a taxi, please?). Here\u2019s a breakdown: '\u00bfPuede' means 'Can you', 'llamar' means 'call', 'un taxi' means 'a taxi', and 'por favor' means 'please'. This phrase is useful when you are at a hotel or restaurant and need transportation. Practicing this phrase will help you feel more confident when you need to ask for a taxi during your travels.",
+              "practice_questions": [
+                {
+                  "question": "What does '\u00bfD\u00f3nde est\u00e1 la salida?' mean in English?",
+                  "type": "short_answer"
+                },
+                {
+                  "question": "Which phrase would you use to ask for a taxi?",
+                  "type": "mcq",
+                  "options": [
+                    "\u00bfD\u00f3nde est\u00e1 el ba\u00f1o?",
+                    "\u00bfPuede llamar un taxi, por favor?",
+                    "\u00bfCu\u00e1nto cuesta esto?"
+                  ],
+                  "correct_answer": "\u00bfPuede llamar un taxi, por favor?",
+                  "explanation": "This phrase directly translates to 'Can you call a taxi, please?', which is the correct way to ask for a taxi."
+                }
+              ]
+            },
+            {
+              "section_id": "2",
+              "title": "Directional Phrases",
+              "conceptual_explanation": "Directional phrases are expressions used to give or ask for directions. They exist to facilitate navigation and help people find their way in unfamiliar places. Imagine you are in a new city and need to find a restaurant; knowing how to ask for directions can make your experience much smoother. You may have learned some basic directional words in English, like 'left', 'right', and 'straight', which are also essential in Spanish. By mastering directional phrases, you will be able to confidently ask for help and understand where to go, enhancing your travel experience.",
+              "applied_explanation": "When using directional phrases, it\u2019s important to learn key terms such as 'izquierda' (left), 'derecha' (right), and 'recto' (straight). Start by practicing how to combine these words into questions. For example, you might ask, '\u00bfC\u00f3mo llego a la estaci\u00f3n de tren?' (How do I get to the train station?). Pay attention to the responses you receive, as they may include these directional words. A common mistake is not understanding the response, especially if it includes multiple directions. To avoid this, practice listening to native speakers and repeating the phrases until you feel comfortable.",
+              "example": "An example of using directional phrases is when you want to find a nearby caf\u00e9. You could ask, '\u00bfD\u00f3nde est\u00e1 el caf\u00e9 m\u00e1s cercano?' (Where is the nearest caf\u00e9?). The breakdown is: '\u00bfD\u00f3nde est\u00e1' means 'Where is', 'el caf\u00e9' means 'the caf\u00e9', and 'm\u00e1s cercano' means 'nearest'. If someone responds with 'Sigue recto y gira a la derecha' (Go straight and turn right), you now know to continue straight ahead and then turn right to find the caf\u00e9. Practicing these phrases will help you navigate easily in Spanish-speaking countries.",
+              "practice_questions": [
+                {
+                  "question": "What does 'izquierda' mean in English?",
+                  "type": "short_answer"
+                },
+                {
+                  "question": "If someone says 'Sigue recto', what should you do?",
+                  "type": "mcq",
+                  "options": [
+                    "Turn left",
+                    "Go straight",
+                    "Turn right"
+                  ],
+                  "correct_answer": "Go straight",
+                  "explanation": "'Sigue recto' translates to 'Go straight', indicating the direction you should take."
+                },
+                {
+                  "question": "Imagine you are lost in a city. How would you ask someone for directions to the nearest bus stop?",
+                  "type": "scenario",
+                  "explanation": "You could say, '\u00bfD\u00f3nde est\u00e1 la parada de autob\u00fas m\u00e1s cercana?' which means 'Where is the nearest bus stop?'."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "11": {
+        "module_content": {
+          "module_id": "11",
+          "sections": [
+            {
+              "section_id": "1",
+              "title": "Review and Conversational Practice",
+              "conceptual_explanation": "In this section, we will focus on reviewing key vocabulary and phrases that you have learned in previous modules. This review is essential because it reinforces your memory and helps you become more comfortable using the language. Think of it like revisiting a favorite book; the more you read it, the more familiar you become with the characters and plot. By practicing conversation, you will also learn how to use these phrases in real-life situations, which is crucial for effective communication. Remember, language learning is a cumulative process, and each new word or phrase builds on what you already know. This section will help you connect the dots between vocabulary and practical usage, making it easier for you to engage in conversations confidently.",
+              "applied_explanation": "Now, let's put this into practice. We will engage in simple conversations using the vocabulary and phrases you have learned. Start by recalling the phrases you practiced before, such as greetings, asking questions, and expressing likes or dislikes. When you practice, pay attention to pronunciation and intonation, as these can change the meaning of what you say. A common beginner mistake is to rush through sentences without pausing, which can make it hard for others to understand you. Instead, take your time, and remember to listen actively to your conversation partner. This will help you respond appropriately and keep the conversation flowing. We will also incorporate role-play scenarios where you can practice these conversations in a safe environment, allowing you to build confidence and fluency.",
+              "example": "Let's consider a simple role-play scenario where you meet someone new at a caf\u00e9. You might start with a greeting: 'Hola, \u00bfc\u00f3mo est\u00e1s?' (Hello, how are you?). The other person might respond, 'Estoy bien, gracias. \u00bfY t\u00fa?' (I am good, thank you. And you?). Here, you are using basic conversational phrases. Next, you could say, 'Me gusta este caf\u00e9' (I like this caf\u00e9). This shows your ability to express preferences. If you were to write this out, it would look like this: 'Hola, \u00bfc\u00f3mo est\u00e1s?' - you are greeting someone. 'Estoy bien, gracias. \u00bfY t\u00fa?' - you are responding to their greeting. 'Me gusta este caf\u00e9' - you are sharing your opinion. Each line builds on your vocabulary and helps you practice speaking in a real-world context.",
+              "practice_questions": [
+                {
+                  "question": "What is the importance of reviewing vocabulary in language learning?",
+                  "type": "short_answer"
+                },
+                {
+                  "question": "In a conversation, why is it important to listen actively?",
+                  "type": "short_answer"
+                },
+                {
+                  "question": "Imagine you are at a party and meet someone new. How would you introduce yourself in Spanish? Write a short dialogue.",
+                  "type": "scenario"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

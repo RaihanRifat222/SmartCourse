@@ -4,23 +4,45 @@
     "sections": [
       {
         "section_id": "1",
-        "title": "Introduction to JSX",
-        "conceptual_explanation": "JSX, or JavaScript XML, is a syntax extension for JavaScript that looks similar to HTML. It allows developers to write HTML-like code directly within JavaScript, making it easier to create and visualize the structure of user interfaces in React applications. JSX exists because it simplifies the process of building UI components by allowing you to describe what the UI should look like in a declarative way. Think of JSX as a bridge between the JavaScript logic and the HTML structure of your application. If you have experience with Python, you can think of JSX as a way to combine the logic of your code with the presentation layer, similar to how you might use string formatting to create HTML in Python. This makes it easier to manage and understand your code, especially as your applications grow in complexity.",
-        "applied_explanation": "In practice, JSX works by allowing you to write HTML-like tags within your JavaScript code. When you write JSX, it gets transformed into regular JavaScript function calls that create React elements. For example, when you write `<h1>Hello, World!</h1>`, it is transformed into `React.createElement('h1', null, 'Hello, World!')`. This transformation happens behind the scenes, so you can focus on writing your UI without worrying about the underlying JavaScript. As you write JSX, pay attention to the syntax: you must use camelCase for attributes (like `className` instead of `class`) and wrap expressions in curly braces `{}`. A common mistake for beginners is forgetting to close tags or using incorrect attribute names, which can lead to errors in your application.",
-        "example": "Let's look at a simple example of JSX. Suppose you want to create a greeting message. You can write the following JSX code: `const greeting = <h1>Hello, {name}!</h1>;`. Here, `name` is a variable that holds a string value. When this JSX is rendered, it will display 'Hello, John!' if `name` is 'John'. The curly braces `{}` allow you to embed JavaScript expressions directly within your JSX. This means you can dynamically change the content based on your application's state. If you were to write this in plain JavaScript, it would look like this: `const greeting = React.createElement('h1', null, `Hello, ${name}!`);`. This shows how JSX simplifies the process of creating elements and makes your code more readable.",
+        "title": "Counting from 1 to 20 in Spanish",
+        "conceptual_explanation": "In Spanish, just like in English, numbers are fundamental for communication. They allow us to express quantities, tell time, and engage in various everyday conversations. Understanding numbers from 1 to 20 is essential because they form the foundation for counting and using larger numbers. Think of numbers as building blocks; once you know the basics, you can construct more complex ideas. You may already be familiar with some numbers in Spanish, like 'uno' for one or 'dos' for two, but learning the complete set will enhance your ability to communicate effectively. This section will help you recognize and pronounce each number, making it easier to incorporate them into your conversations.",
+        "applied_explanation": "To count from 1 to 20 in Spanish, you will start by learning the individual numbers and their pronunciations. Begin with 'uno' (1), 'dos' (2), 'tres' (3), and continue up to 'veinte' (20). Practice saying each number aloud, paying attention to the pronunciation, as it can differ significantly from English. A common beginner mistake is confusing similar-sounding numbers, such as 'seis' (6) and 'diez' (10). To avoid this, repeat the numbers multiple times and try to associate them with visual aids or objects around you. Once you feel comfortable with the numbers, practice using them in simple sentences, like 'Tengo tres manzanas' (I have three apples). This will help reinforce your learning and build confidence in using numbers in conversation.",
+        "example": "Let's look at how to count from 1 to 20 in Spanish. Here\u2019s the list: 1 - uno, 2 - dos, 3 - tres, 4 - cuatro, 5 - cinco, 6 - seis, 7 - siete, 8 - ocho, 9 - nueve, 10 - diez, 11 - once, 12 - doce, 13 - trece, 14 - catorce, 15 - quince, 16 - diecis\u00e9is, 17 - diecisiete, 18 - dieciocho, 19 - diecinueve, 20 - veinte. For example, if you want to say 'I have five books' in Spanish, you would say 'Tengo cinco libros.' Here, 'Tengo' means 'I have,' 'cinco' is 'five,' and 'libros' means 'books.' Practice saying this sentence out loud, focusing on the pronunciation of 'cinco' to ensure clarity.",
         "practice_questions": [
           {
-            "question": "What does JSX stand for?",
+            "question": "What is the Spanish word for the number 10?",
             "type": "short_answer"
           },
           {
-            "question": "In JSX, how do you embed a JavaScript expression?",
+            "question": "Which number comes after 'siete'?",
             "type": "short_answer"
           },
           {
-            "question": "You want to display a user's name in a greeting message using JSX. Write a simple JSX code snippet that accomplishes this.",
+            "question": "If you have 4 apples, how would you say that in Spanish?",
             "type": "scenario",
-            "explanation": "This question tests your understanding of how to use JSX to create dynamic content. You should demonstrate the ability to embed a variable within JSX."
+            "explanation": "Think about how to structure the sentence using the verb 'tener' (to have) and the number in Spanish."
+          }
+        ]
+      },
+      {
+        "section_id": "2",
+        "title": "Basic Counting Phrases",
+        "conceptual_explanation": "Basic counting phrases in Spanish are essential for everyday interactions. These phrases help you express quantities, ask questions, and engage in conversations about numbers. For instance, phrases like '\u00bfCu\u00e1ntos hay?' (How many are there?) or 'Tengo cinco' (I have five) are commonly used. Understanding these phrases allows you to participate in discussions about items, prices, and more. Think of these phrases as tools in your communication toolbox; the more you know, the more effectively you can express yourself. You may have already learned some basic phrases in English, and now you will see how they translate into Spanish, making it easier to connect your existing knowledge with new learning.",
+        "applied_explanation": "To use basic counting phrases, start by practicing common questions and statements. For example, when you want to ask someone how many items they have, you can say '\u00bfCu\u00e1ntos tienes?' (How many do you have?). Pay attention to the context in which you use these phrases, as they can vary depending on the situation. A common mistake is forgetting to match the number with the noun in gender and number, such as saying 'tres manzana' instead of 'tres manzanas' (three apples). To avoid this, always remember to use the plural form of the noun when counting more than one. Practice these phrases in different scenarios, like shopping or counting objects around you, to build confidence.",
+        "example": "Here are some basic counting phrases: '\u00bfCu\u00e1ntos libros tienes?' (How many books do you have?), 'Tengo dos gatos' (I have two cats), and 'Hay cinco sillas' (There are five chairs). Let\u2019s break down the phrase 'Tengo dos gatos.' 'Tengo' means 'I have,' 'dos' is 'two,' and 'gatos' means 'cats.' When you say this, you are clearly stating how many cats you possess. Practice saying this phrase out loud, and try to create your own sentences using different numbers and nouns, like 'Tengo tres perros' (I have three dogs). This will help reinforce your understanding of counting in Spanish.",
+        "practice_questions": [
+          {
+            "question": "How do you ask 'How many do you have?' in Spanish?",
+            "type": "short_answer"
+          },
+          {
+            "question": "Translate 'There are four chairs' into Spanish.",
+            "type": "short_answer"
+          },
+          {
+            "question": "Imagine you are at a store and want to ask how many apples are available. What would you say?",
+            "type": "scenario",
+            "explanation": "Think about how to structure your question using the vocabulary you have learned."
           }
         ]
       }
