@@ -3,6 +3,7 @@ from pydantic import BaseModel
 from typing import Dict, Any
 import json
 import os
+import shutil
 import textwrap
 import re
 import html
@@ -21,8 +22,14 @@ app = FastAPI()
 COURSE_DIR = "output/courses"
 COURSE_PREFIX = "course_"
 
-WKHTMLTOPDF_PATH = r"C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe"
-PDFKIT_CONFIG = pdfkit.configuration(wkhtmltopdf=WKHTMLTOPDF_PATH)
+WKHTMLTOPDF_PATH = (
+    os.getenv("WKHTMLTOPDF_PATH") or shutil.which("wkhtmltopdf")
+)
+PDFKIT_CONFIG = (
+    pdfkit.configuration(wkhtmltopdf=WKHTMLTOPDF_PATH)
+    if WKHTMLTOPDF_PATH
+    else None
+)
 
 PDF_OPTIONS = {
     "page-size": "A4",
@@ -203,6 +210,11 @@ def export_course(course_id: str, format: str = "pdf"):
     html_page = _wrap_html(html_body)
 
     if format == "pdf":
+        if not PDFKIT_CONFIG:
+            raise HTTPException(
+                status_code=500,
+                detail="wkhtmltopdf not found. Install it on the server or set WKHTMLTOPDF_PATH."
+            )
         pdf_bytes = pdfkit.from_string(
             html_page,
             False,
