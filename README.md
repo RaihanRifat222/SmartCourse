@@ -37,7 +37,6 @@ SmartCourse follows a simple pipeline with clear separation between generation, 
    - `POST /generate_course` triggers full course generation.
    - `GET /courses` lists all saved courses.
    - `POST /courses/{id}/modules/{module_id}/regenerate` regenerates a single module.
-   - `GET /courses/{id}/export?format=pdf` exports to PDF.
 
 3. **Generation Engine (`course_engine.py`)**
    - Builds a curriculum with the `curriculum_architect`.
@@ -79,6 +78,7 @@ npm start
 ## API Endpoints
 - `POST /generate_course`: Generates a new course and saves it to `output/courses`.
 - `GET /courses`: Returns all saved courses from `output/courses`.
+- `POST /courses/{id}/modules/{module_id}/regenerate`: Regenerates a single module.
 
 ## Notes
 - Course files are stored as JSON. No SQL server is required.

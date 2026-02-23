@@ -46,16 +46,6 @@ function CourseDetail({ courses, loadingCourses, onRegenerateModule }) {
           <Link className="text-link" to="/courses">
             &larr; Back to all courses
           </Link>
-          {course && (
-            <a
-              className="primary-button"
-              href={`http://localhost:8000/courses/${course.id}/export?format=pdf&ts=${Date.now()}`}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Download PDF
-            </a>
-          )}
         </div>
       </div>
 
