@@ -4,49 +4,50 @@
     "sections": [
       {
         "section_id": "1",
-        "title": "Food Vocabulary",
-        "conceptual_explanation": "Food vocabulary in Spanish refers to the words and phrases used to describe various types of food and drinks. This vocabulary exists because food is a fundamental part of culture and daily life, and being able to communicate about it is essential for social interactions, especially in Spanish-speaking countries. Think of food vocabulary as the building blocks of conversations about meals, ingredients, and preferences. Just like in English, where you learn words like 'apple' or 'bread', in Spanish, you will learn words like 'manzana' (apple) and 'pan' (bread). This vocabulary connects to what you already know about food in English, making it easier to remember the Spanish equivalents.",
-        "applied_explanation": "In practice, using food vocabulary involves recognizing and naming different foods and drinks in Spanish. For example, when you see a menu in a Spanish-speaking restaurant, you will need to identify items like 'pollo' (chicken) or 'agua' (water). Start by familiarizing yourself with common food items and their Spanish translations. Pay attention to pronunciation, as it can change the meaning of words. A common beginner mistake is confusing similar-sounding words, such as 'carne' (meat) and 'carn\u00e9' (card). To avoid this, practice saying the words out loud and using them in sentences. This will help reinforce your memory and improve your confidence when ordering food.",
-        "example": "Let's look at a simple example of food vocabulary in action. Imagine you are at a restaurant and the waiter hands you a menu. You see the word 'ensalada' which means 'salad'. You can say, 'Me gustar\u00eda una ensalada, por favor' which translates to 'I would like a salad, please.' Here\u2019s a breakdown: 'Me gustar\u00eda' means 'I would like', 'una' means 'a', and 'por favor' means 'please'. This sentence structure is useful for ordering food. Remember to practice saying it out loud to get comfortable with the pronunciation and flow of the language.",
+        "title": "Understanding Encapsulation in OOP",
+        "conceptual_explanation": "Encapsulation is a fundamental concept in Object-Oriented Programming (OOP) that involves bundling the data (attributes) and methods (functions) that operate on the data into a single unit, known as a class. It exists to protect the internal state of an object from unintended interference and misuse. Think of encapsulation like a capsule that contains medicine; the capsule protects the medicine inside from the outside environment, ensuring it works as intended. In programming, encapsulation allows you to control how the data is accessed and modified, which helps maintain the integrity of the object. You may have learned about variables and functions separately, but encapsulation combines them into a cohesive structure, making your code more organized and easier to manage.",
+        "applied_explanation": "In practice, encapsulation works by defining a class with private attributes and providing public methods to access and modify these attributes. For example, if you have a class called 'BankAccount', you might want to keep the balance attribute private to prevent direct access from outside the class. Instead, you would create public methods, known as getters and setters, to allow controlled access to the balance. When implementing encapsulation, pay attention to the visibility of your class members; use 'private' for attributes that should not be accessed directly and 'public' for methods that provide access. A common beginner mistake is to make attributes public, which defeats the purpose of encapsulation and can lead to unintended changes to the object's state.",
+        "example": "Let's create a simple 'BankAccount' class to illustrate encapsulation. First, we define the class and its private attribute 'balance'. Then, we implement a getter method 'getBalance()' to retrieve the balance and a setter method 'deposit(amount)' to modify the balance. Here\u2019s the code:\n\nclass BankAccount {\n    private double balance; // This is a private attribute\n\n    public BankAccount(double initialBalance) { // Constructor to initialize balance\n        this.balance = initialBalance;\n    }\n\n    public double getBalance() { // Getter method to access balance\n        return balance;\n    }\n\n    public void deposit(double amount) { // Setter method to modify balance\n        if (amount > 0) { // Check if the deposit amount is valid\n            balance += amount; // Update the balance\n        }\n    }\n}\n\nIn this example, the 'balance' attribute is private, meaning it cannot be accessed directly from outside the class. The 'getBalance()' method allows us to view the balance, while the 'deposit()' method allows us to add money to the account, ensuring that only valid amounts are added.",
         "practice_questions": [
           {
-            "question": "What is the Spanish word for 'chicken'?",
+            "question": "What is encapsulation in OOP?",
             "type": "short_answer"
           },
           {
-            "question": "Which of the following is the correct translation for 'water'?",
-            "type": "mcq",
-            "options": [
-              "agua",
-              "vino",
-              "leche"
-            ],
-            "correct_answer": "agua",
-            "explanation": "The correct translation for 'water' in Spanish is 'agua'. 'Vino' means 'wine' and 'leche' means 'milk'."
+            "question": "Why is it important to keep class attributes private?",
+            "type": "short_answer"
+          },
+          {
+            "question": "You are creating a class for a 'Car'. How would you implement encapsulation for the 'speed' attribute? Provide a brief explanation.",
+            "type": "scenario"
           }
         ]
       },
       {
         "section_id": "2",
-        "title": "Restaurant Phrases",
-        "conceptual_explanation": "Restaurant phrases in Spanish are essential expressions that help you navigate dining experiences. These phrases exist to facilitate communication between customers and restaurant staff, ensuring that orders are taken correctly and that diners feel comfortable. Think of restaurant phrases as the toolkit you need when you enter a restaurant. Just like you learned basic greetings in English, you will learn phrases like '\u00bfMe puede traer el men\u00fa?' (Can you bring me the menu?). These phrases build on your existing knowledge of conversational English, making it easier to engage in similar interactions in Spanish.",
-        "applied_explanation": "Using restaurant phrases involves knowing how to ask for things, make requests, and express preferences. For instance, when you want to order food, you might say, 'Quisiera ordenar...' which means 'I would like to order...'. Pay attention to the context in which you use these phrases, as they can vary depending on the formality of the restaurant. A common beginner mistake is forgetting to use polite forms like 'por favor' (please) or 'gracias' (thank you), which are important in Spanish-speaking cultures. Practice these phrases in role-play scenarios to build your confidence and fluency.",
-        "example": "Imagine you are at a restaurant and ready to order. You can say, 'Quisiera una pizza, por favor' which means 'I would like a pizza, please.' Breaking it down: 'Quisiera' means 'I would like', 'una' means 'a', and 'pizza' is the same in both languages. Adding 'por favor' at the end makes your request polite. This structure is very useful when ordering any dish. Practicing this sentence will help you feel more comfortable when you are in a real restaurant setting.",
+        "title": "Implementing Getters and Setters",
+        "conceptual_explanation": "Getters and setters are methods used to access and modify the private attributes of a class. They are essential for encapsulation because they provide a controlled way to interact with the data. Getters allow you to retrieve the value of a private attribute, while setters enable you to change its value. This practice exists to ensure that any changes to the data can be validated or processed before they are applied. Imagine you have a remote control for a TV; the buttons (getters and setters) allow you to change the channel or volume without directly accessing the internal components of the TV. This separation of concerns helps maintain the integrity of the object's state and makes your code more maintainable. You may have learned about methods before, but getters and setters specifically focus on managing access to an object's data.",
+        "applied_explanation": "To implement getters and setters, you define public methods within your class that correspond to each private attribute. For instance, if you have a private attribute 'age', you would create a getter method 'getAge()' to return the age and a setter method 'setAge(int age)' to modify it. When writing these methods, pay attention to the data types and any validation you might need. A common beginner mistake is to forget to include validation in the setter methods, which can lead to invalid data being set. For example, if you set an age to a negative number, it doesn't make sense. Therefore, you should check the value in the setter before applying it.",
+        "example": "Let's extend our 'BankAccount' class by adding a 'holderName' attribute with its getter and setter. Here\u2019s how it looks:\n\nclass BankAccount {\n    private String holderName; // Private attribute for account holder's name\n    private double balance;\n\n    public BankAccount(String name, double initialBalance) {\n        this.holderName = name;\n        this.balance = initialBalance;\n    }\n\n    public String getHolderName() { // Getter for holderName\n        return holderName;\n    }\n\n    public void setHolderName(String name) { // Setter for holderName\n        if (name != null && !name.isEmpty()) { // Validate name\n            holderName = name;\n        }\n    }\n}\n\nIn this example, the 'holderName' attribute is private, and we have a getter 'getHolderName()' to access it. The setter 'setHolderName(String name)' checks if the provided name is not null or empty before updating the attribute, ensuring that the account holder's name is always valid.",
         "practice_questions": [
           {
-            "question": "What does '\u00bfMe puede traer el men\u00fa?' mean?",
+            "question": "What are getters and setters used for?",
             "type": "short_answer"
           },
           {
-            "question": "Which phrase would you use to politely order food?",
+            "question": "How would you implement a setter for an attribute 'email' in a class? Provide a brief explanation.",
+            "type": "scenario"
+          },
+          {
+            "question": "Which of the following is a benefit of using setters? \nA) They allow direct access to private attributes. \nB) They can include validation logic. \nC) They are not necessary in OOP. ",
             "type": "mcq",
             "options": [
-              "Quiero pizza",
-              "Quisiera una pizza, por favor",
-              "Dame pizza"
+              "A",
+              "B",
+              "C"
             ],
-            "correct_answer": "Quisiera una pizza, por favor",
-            "explanation": "The phrase 'Quisiera una pizza, por favor' is polite and appropriate for ordering food, while 'Quiero pizza' is less formal and 'Dame pizza' is too direct."
+            "correct_answer": "B",
+            "explanation": "Setters can include validation logic to ensure that only valid data is assigned to the private attributes, which helps maintain the integrity of the object's state."
           }
         ]
       }

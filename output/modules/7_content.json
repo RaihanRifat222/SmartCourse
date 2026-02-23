@@ -4,54 +4,22 @@
     "sections": [
       {
         "section_id": "1",
-        "title": "Daily Activities Vocabulary",
-        "conceptual_explanation": "Daily activities vocabulary refers to the words and phrases we use to describe what we do every day. This vocabulary exists because it helps us communicate our routines and actions clearly. Imagine your daily life as a series of small stories; each activity is a part of that story. For example, when you wake up, you might brush your teeth, eat breakfast, or go to work. These actions are the building blocks of your daily narrative. By learning these words, you can express yourself better in Spanish, connecting with others about shared experiences. You may already know some English words that are similar to their Spanish counterparts, which can make learning easier. For instance, 'comer' means 'to eat' in Spanish, and it sounds a bit like 'come' in English. This connection can help you remember the vocabulary more easily.",
-        "applied_explanation": "In practice, using daily activities vocabulary involves identifying the actions you perform regularly and learning their Spanish equivalents. Start by listing your daily activities in English, such as 'wake up', 'shower', 'eat breakfast', and 'go to work'. Then, find the Spanish translations: 'despertarse', 'ducharse', 'desayunar', and 'ir al trabajo'. Pay attention to the verbs, as they are crucial for forming sentences. A common beginner mistake is to forget to conjugate the verbs according to the subject. For example, instead of saying 'yo comer' (I eat), you should say 'yo como'. This small change makes your sentences grammatically correct. Practice saying these activities out loud, and try to use them in sentences to describe your routine.",
-        "example": "Let's take the daily activity 'to eat breakfast'. In Spanish, this is 'desayunar'. If you want to say 'I eat breakfast at 8 AM', you would say 'Yo desayuno a las 8 de la ma\u00f1ana'. Here\u2019s the breakdown: 'Yo' means 'I', 'desayuno' is the first-person singular form of 'desayunar', and 'a las 8 de la ma\u00f1ana' means 'at 8 in the morning'. This sentence structure is essential for describing your daily routine. You can replace 'desayuno' with other activities like 'ducho' (I shower) or 'voy al trabajo' (I go to work) to create a full picture of your day.",
+        "title": "Creating Classes and Objects",
+        "conceptual_explanation": "In Java, a class is a blueprint for creating objects. It defines the properties (attributes) and behaviors (methods) that the objects created from the class will have. Classes exist to help organize code and make it reusable. Think of a class like a recipe: it tells you what ingredients (attributes) you need and what steps (methods) to follow to create a dish (object). If you have already learned about variables and methods, you can think of classes as a way to group these concepts together. By using classes, you can create multiple objects that share the same structure and behavior, which is essential for efficient programming and problem-solving in competitive programming.",
+        "applied_explanation": "To create a class in Java, you start with the keyword 'class', followed by the class name. Inside the class, you define attributes using variables and methods using functions. Once you have your class defined, you can create an object by using the 'new' keyword followed by the class name and parentheses. This process is called instantiation. Pay attention to the naming conventions: class names should start with an uppercase letter. A common beginner mistake is forgetting to use the 'new' keyword when creating an object, which will lead to a compilation error. Remember, the class is just a template until you create an object from it.",
+        "example": "Let's create a simple class called 'Car'. First, we define the class: 'class Car { String color; int year; void drive() { System.out.println('The car is driving.'); } }'. Here, 'color' and 'year' are attributes of the Car class, and 'drive' is a method that describes a behavior of the car. Now, to create an object from this class, we write: 'Car myCar = new Car();'. This line creates a new instance of the Car class. We can then set the attributes like this: 'myCar.color = 'red'; myCar.year = 2020;'. Finally, we can call the method: 'myCar.drive();', which will output 'The car is driving.' This example shows how to create a class, instantiate an object, and use its attributes and methods.",
         "practice_questions": [
           {
-            "question": "What does 'desayunar' mean in English?",
+            "question": "What is a class in Java?",
             "type": "short_answer"
           },
           {
-            "question": "Which of the following is the correct way to say 'I eat breakfast' in Spanish?",
-            "type": "mcq",
-            "options": [
-              "Yo desayuno",
-              "Yo desayunar",
-              "Yo desayunas"
-            ],
-            "correct_answer": "Yo desayuno",
-            "explanation": "The correct form is 'Yo desayuno' because 'desayuno' is the first-person singular conjugation of the verb 'desayunar'."
-          }
-        ]
-      },
-      {
-        "section_id": "2",
-        "title": "Time Expressions",
-        "conceptual_explanation": "Time expressions are words or phrases that help us indicate when an action takes place. They exist because they provide context to our activities, allowing us to communicate not just what we do, but when we do it. Think of time expressions as the clock of your daily narrative; they help others understand the timing of your actions. For example, saying 'I eat breakfast at 8 AM' gives a clear picture of your routine. You may already be familiar with some time expressions in English, like 'in the morning', 'at noon', or 'in the evening'. In Spanish, these expressions are similar: 'por la ma\u00f1ana', 'al mediod\u00eda', and 'por la tarde'. Learning these will help you create more detailed sentences about your daily life.",
-        "applied_explanation": "To use time expressions in practice, start by learning common phrases that indicate time. For instance, 'por la ma\u00f1ana' means 'in the morning', 'por la tarde' means 'in the afternoon', and 'por la noche' means 'at night'. When you combine these with your daily activities, you can create sentences like 'Yo desayuno por la ma\u00f1ana' (I eat breakfast in the morning). Pay attention to the structure of your sentences; the time expression usually comes before the verb. A common mistake is to place the time expression at the end of the sentence, which can sound awkward in Spanish. Instead, practice placing it correctly to enhance clarity and fluency.",
-        "example": "For example, if you want to say 'I go to work in the afternoon', you would say 'Yo voy al trabajo por la tarde'. Breaking it down: 'Yo' means 'I', 'voy' is the first-person singular form of 'ir' (to go), 'al trabajo' means 'to work', and 'por la tarde' means 'in the afternoon'. This structure helps you convey not just the action but also the timing, making your communication more effective. You can mix and match different activities and time expressions to describe your entire day, such as 'Yo estudio por la ma\u00f1ana' (I study in the morning) or 'Yo ceno por la noche' (I have dinner at night).",
-        "practice_questions": [
-          {
-            "question": "What does 'por la tarde' mean in English?",
+            "question": "What keyword is used to create an object from a class?",
             "type": "short_answer"
           },
           {
-            "question": "Which of the following is the correct way to say 'I go to work in the morning' in Spanish?",
-            "type": "mcq",
-            "options": [
-              "Yo voy al trabajo por la ma\u00f1ana",
-              "Yo voy al trabajo por la tarde",
-              "Yo voy al trabajo por la noche"
-            ],
-            "correct_answer": "Yo voy al trabajo por la ma\u00f1ana",
-            "explanation": "'Yo voy al trabajo por la ma\u00f1ana' is correct because it specifies the time as 'in the morning'."
-          },
-          {
-            "question": "Create a sentence using 'desayunar' and 'por la ma\u00f1ana'.",
-            "type": "scenario",
-            "explanation": "This question encourages you to practice combining a daily activity with a time expression, reinforcing your understanding of both concepts."
+            "question": "Imagine you want to create a class for a 'Book'. What attributes and methods might you include? Describe your class.",
+            "type": "scenario"
           }
         ]
       }

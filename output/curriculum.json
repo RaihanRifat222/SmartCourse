@@ -2,147 +2,147 @@
   "curriculum": {
     "modules": [
       {
-        "module_id": "module_1",
-        "title": "Introduction to Python",
+        "module_id": "1",
+        "title": "Introduction to Java",
         "learning_objectives": [
-          "Understand what Python is",
-          "Install Python on your computer"
+          "Understand what Java is and its applications",
+          "Set up the Java development environment"
         ],
         "key_concepts": [
-          "Python overview",
-          "Installation process"
+          "Java Overview",
+          "Installation and Setup"
         ]
       },
       {
-        "module_id": "module_2",
+        "module_id": "2",
         "title": "Basic Syntax and Data Types",
         "learning_objectives": [
-          "Learn basic syntax rules",
-          "Identify and use different data types"
+          "Learn Java syntax and structure",
+          "Identify and use basic data types"
         ],
         "key_concepts": [
-          "Syntax",
-          "Data types (int, float, str, bool)"
+          "Java Syntax",
+          "Primitive Data Types"
         ]
       },
       {
-        "module_id": "module_3",
-        "title": "Control Structures",
+        "module_id": "3",
+        "title": "Variables and Operators",
         "learning_objectives": [
-          "Understand and implement conditional statements",
+          "Declare and initialize variables",
+          "Use operators for calculations"
+        ],
+        "key_concepts": [
+          "Variables",
+          "Operators"
+        ]
+      },
+      {
+        "module_id": "4",
+        "title": "Control Flow Statements",
+        "learning_objectives": [
+          "Implement conditional statements",
           "Use loops for iteration"
         ],
         "key_concepts": [
-          "If statements",
-          "For and while loops"
+          "If-Else Statements",
+          "For and While Loops"
         ]
       },
       {
-        "module_id": "module_4",
-        "title": "Functions and Modules",
+        "module_id": "5",
+        "title": "Methods and Functions",
         "learning_objectives": [
-          "Define and call functions",
-          "Import and use modules"
+          "Define and call methods",
+          "Understand method parameters and return types"
         ],
         "key_concepts": [
-          "Function definition",
-          "Module import"
+          "Method Definition",
+          "Parameters and Return Types"
         ]
       },
       {
-        "module_id": "module_5",
-        "title": "Data Structures: Lists and Dictionaries",
+        "module_id": "6",
+        "title": "Introduction to Object-Oriented Programming (OOP)",
         "learning_objectives": [
-          "Manipulate lists and dictionaries",
-          "Understand their use cases"
+          "Understand the principles of OOP",
+          "Identify classes and objects"
         ],
         "key_concepts": [
-          "Lists",
-          "Dictionaries"
+          "OOP Principles",
+          "Classes and Objects"
         ]
       },
       {
-        "module_id": "module_6",
-        "title": "File Handling",
+        "module_id": "7",
+        "title": "Creating Classes and Objects",
         "learning_objectives": [
-          "Read from and write to files",
-          "Understand file modes"
+          "Create your own classes",
+          "Instantiate objects from classes"
         ],
         "key_concepts": [
-          "File operations",
-          "File modes (read, write)"
+          "Class Creation",
+          "Object Instantiation"
         ]
       },
       {
-        "module_id": "module_7",
-        "title": "Introduction to Problem Solving",
+        "module_id": "8",
+        "title": "Encapsulation in OOP",
         "learning_objectives": [
-          "Apply Python to solve simple problems",
-          "Understand the problem-solving process"
+          "Understand encapsulation and its benefits",
+          "Implement getters and setters"
         ],
         "key_concepts": [
-          "Problem-solving steps",
-          "Real-world examples of problem-solving"
+          "Encapsulation",
+          "Getters and Setters"
         ]
       },
       {
-        "module_id": "module_8",
-        "title": "Basic Data Analysis with Python",
+        "module_id": "9",
+        "title": "Inheritance in OOP",
         "learning_objectives": [
-          "Use Python for basic data analysis",
-          "Understand libraries like Pandas"
+          "Learn about inheritance and its advantages",
+          "Create subclasses and use superclasses"
         ],
         "key_concepts": [
-          "Data analysis concepts",
-          "Introduction to Pandas"
+          "Inheritance",
+          "Superclasses and Subclasses"
         ]
       },
       {
-        "module_id": "module_9",
-        "title": "Data Visualization",
+        "module_id": "10",
+        "title": "Polymorphism in OOP",
         "learning_objectives": [
-          "Create simple visualizations using Matplotlib",
-          "Understand the importance of data visualization"
+          "Understand polymorphism and its types",
+          "Implement method overriding"
         ],
         "key_concepts": [
-          "Matplotlib basics",
-          "Types of visualizations"
+          "Polymorphism",
+          "Method Overriding"
         ]
       },
       {
-        "module_id": "module_10",
-        "title": "Introduction to Artificial Intelligence",
+        "module_id": "11",
+        "title": "Problem Solving with Java",
         "learning_objectives": [
-          "Understand what AI is",
-          "Explore basic AI concepts using Python"
+          "Apply Java concepts to solve problems",
+          "Practice competitive programming challenges"
         ],
         "key_concepts": [
-          "AI overview",
-          "Simple AI examples in Python"
+          "Problem Solving Techniques",
+          "Competitive Programming Basics"
         ]
       },
       {
-        "module_id": "module_11",
-        "title": "Competitive Programming Basics",
+        "module_id": "12",
+        "title": "Final Project: Build a Simple Java Application",
         "learning_objectives": [
-          "Learn strategies for competitive programming",
-          "Practice with simple coding challenges"
+          "Integrate all learned concepts to create a project",
+          "Demonstrate problem-solving skills through application"
         ],
         "key_concepts": [
-          "Competitive programming strategies",
-          "Real-world coding challenges"
-        ]
-      },
-      {
-        "module_id": "module_12",
-        "title": "Final Project: Integrating Skills",
-        "learning_objectives": [
-          "Create a project that combines data analysis and AI",
-          "Present your project"
-        ],
-        "key_concepts": [
-          "Project development",
-          "Integration of learned concepts"
+          "Project Development",
+          "Application of OOP Principles"
         ]
       }
     ]

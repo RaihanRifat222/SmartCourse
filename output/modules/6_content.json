@@ -4,57 +4,35 @@
     "sections": [
       {
         "section_id": "1",
-        "title": "Understanding Question Words",
-        "conceptual_explanation": "Question words are essential in any language as they help us gather information. In Spanish, these words include 'qu\u00e9' (what), 'qui\u00e9n' (who), 'd\u00f3nde' (where), 'cu\u00e1ndo' (when), 'por qu\u00e9' (why), and 'c\u00f3mo' (how). They exist because they allow us to ask for specific details rather than making statements. Think of question words as keys that unlock the information you need. For example, if you want to know about someone's favorite food, you would use 'qu\u00e9' to ask, '\u00bfQu\u00e9 te gusta comer?' (What do you like to eat?). This connects to what you already know in English, where we also use question words to seek information. Understanding these words is the first step in formulating questions in Spanish.",
-        "applied_explanation": "To use question words in practice, start by identifying the information you want to know. For instance, if you want to ask someone where they live, you would use 'd\u00f3nde'. The structure of your question will typically follow the format: question word + verb + subject. So, '\u00bfD\u00f3nde vives?' translates to 'Where do you live?'. Pay attention to the verb conjugation that matches the subject. A common beginner mistake is forgetting to conjugate the verb correctly, which can lead to confusion. Always ensure that your question is clear and that the verb agrees with the subject you are asking about.",
-        "example": "Let's say you want to ask someone about their favorite color. You would start with the question word 'qu\u00e9'. The full question would be '\u00bfQu\u00e9 color te gusta?' which means 'What color do you like?'. Here\u2019s the breakdown: '\u00bfQu\u00e9' is the question word, 'color' is the subject, 'te' is the indirect object pronoun meaning 'to you', and 'gusta' is the verb that agrees with the singular noun 'color'. This structure is crucial as it helps you form clear and correct questions in Spanish.",
+        "title": "Understanding OOP Principles",
+        "conceptual_explanation": "Object-Oriented Programming (OOP) is a programming paradigm that uses 'objects' to design applications and computer programs. The main reason OOP exists is to help programmers create modular, reusable, and organized code. Think of OOP like a toolbox where each tool (object) has its own specific function but can work together to build something larger. This is similar to how you might use different kitchen utensils to prepare a meal. In OOP, the four main principles are encapsulation, inheritance, polymorphism, and abstraction. These principles help in managing complexity by allowing you to group related data and functions together. You may have learned about functions and variables in programming; OOP builds on that by organizing them into classes and objects, making it easier to manage larger codebases.",
+        "applied_explanation": "In practice, OOP allows you to create classes, which are blueprints for objects. For example, if you have a class called 'Car', you can create multiple 'Car' objects, each with its own properties like color and model. To implement OOP, you start by defining a class using the 'class' keyword, followed by the class name. Inside the class, you define attributes (data) and methods (functions) that describe the behavior of the objects. Pay attention to how you define attributes and methods, as this structure is crucial for creating effective classes. A common beginner mistake is to forget to use the 'this' keyword when referring to instance variables within methods, which can lead to confusion about which variable you are trying to access.",
+        "example": "Let's create a simple class called 'Dog'. In this class, we will define two attributes: 'name' and 'age', and one method called 'bark'. Here\u2019s how it looks in Java:\n\nclass Dog {\n    String name; // This is an attribute for the dog's name\n    int age; // This is an attribute for the dog's age\n\n    void bark() { // This is a method that makes the dog bark\n        System.out.println(name + \" says Woof!\");\n    }\n}\n\nIn this example, we define a class 'Dog' with two attributes: 'name' and 'age'. The 'bark' method prints a message that includes the dog's name. To create a 'Dog' object, you would write:\n\nDog myDog = new Dog();\nmyDog.name = \"Buddy\";\nmyDog.age = 3;\nmyDog.bark();\n\nThis code creates a new Dog object named 'myDog', sets its name to 'Buddy', and calls the 'bark' method, which outputs 'Buddy says Woof!'.",
         "practice_questions": [
           {
-            "question": "What is the Spanish word for 'who'?",
+            "question": "What are the four main principles of OOP?",
             "type": "short_answer"
           },
           {
-            "question": "Formulate a question using 'd\u00f3nde'.",
-            "type": "short_answer"
-          },
-          {
-            "question": "Which of the following is a question word in Spanish?",
-            "type": "mcq",
-            "options": [
-              "casa",
-              "qui\u00e9n",
-              "comer"
-            ],
-            "correct_answer": "qui\u00e9n",
-            "explanation": "'Qui\u00e9n' means 'who' in Spanish, making it a question word. 'Casa' means 'house' and 'comer' means 'to eat', neither of which are question words."
+            "question": "Explain how you would create a class for a 'Book' with attributes like title and author.",
+            "type": "scenario"
           }
         ]
       },
       {
         "section_id": "2",
-        "title": "Formulating Questions in Spanish",
-        "conceptual_explanation": "Formulating questions in Spanish involves understanding the structure of a question. Unlike English, where the word order can change, Spanish questions often maintain a similar structure to statements but with a few key changes. Questions exist to facilitate communication and gather information. Think of it as a conversation starter. For example, if you want to ask someone what they are doing, you would say, '\u00bfQu\u00e9 est\u00e1s haciendo?' (What are you doing?). This structure connects to your previous knowledge of English questions, where you also rearrange words to form a question.",
-        "applied_explanation": "To formulate a question, start with a question word if applicable, followed by the verb and then the subject. For example, '\u00bfQu\u00e9 comes?' (What do you eat?). Here, 'comes' is the verb for 'you eat', and it is conjugated to match the subject 't\u00fa' (you). Pay attention to the verb conjugation, as this is a common area where beginners make mistakes. They might forget to change the verb form according to the subject, leading to incorrect questions. Always double-check your verb forms to ensure clarity.",
-        "example": "Consider you want to ask someone when they are going to the store. You would say, '\u00bfCu\u00e1ndo vas a la tienda?' which translates to 'When are you going to the store?'. Breaking it down: '\u00bfCu\u00e1ndo' is the question word for 'when', 'vas' is the conjugated form of 'ir' (to go) for 'you', and 'a la tienda' means 'to the store'. This structure is important as it helps you create meaningful questions that others can easily understand.",
+        "title": "Identifying Classes and Objects",
+        "conceptual_explanation": "In OOP, a class is a blueprint for creating objects. It defines the properties and behaviors that the objects created from the class will have. Think of a class as a recipe: it outlines the ingredients (attributes) and the steps (methods) needed to create a dish (object). Objects are instances of classes, meaning they are created based on the structure defined by the class. For example, if you have a class 'Car', each individual car you create (like a red Toyota or a blue Honda) is an object of that class. Understanding the distinction between classes and objects is crucial because it helps you organize your code and manage complexity. You may have learned about variables and functions; classes and objects take these concepts further by grouping them together in a meaningful way.",
+        "applied_explanation": "To identify classes and objects in your code, start by looking for the 'class' keyword, which indicates the definition of a class. After defining a class, you can create objects using the 'new' keyword followed by the class name. For instance, if you have a class 'Animal', you can create an object called 'myAnimal' by writing 'Animal myAnimal = new Animal();'. When creating objects, pay attention to the attributes you want to set and the methods you want to call. A common beginner mistake is to forget to instantiate the object before trying to access its attributes or methods, which will lead to errors in your code.",
+        "example": "Let's create a class called 'Student'. This class will have attributes for 'name' and 'grade', and a method to display the student's information. Here\u2019s how it looks in Java:\n\nclass Student {\n    String name; // Attribute for the student's name\n    int grade; // Attribute for the student's grade\n\n    void displayInfo() { // Method to display student information\n        System.out.println(\"Name: \" + name + \", Grade: \" + grade);\n    }\n}\n\nTo create a 'Student' object, you would write:\n\nStudent student1 = new Student();\nstudent1.name = \"Alice\";\nstudent1.grade = 10;\nstudent1.displayInfo();\n\nThis code creates a new Student object named 'student1', sets its name to 'Alice', and its grade to 10. When you call 'displayInfo()', it outputs 'Name: Alice, Grade: 10'.",
         "practice_questions": [
           {
-            "question": "What is the correct structure for asking a question in Spanish?",
+            "question": "What is the difference between a class and an object?",
             "type": "short_answer"
           },
           {
-            "question": "Create a question using 'por qu\u00e9'.",
-            "type": "short_answer"
-          },
-          {
-            "question": "Which of the following is the correct way to ask 'What do you want?' in Spanish?",
-            "type": "mcq",
-            "options": [
-              "\u00bfQu\u00e9 quieres?",
-              "\u00bfQuieres qu\u00e9?",
-              "\u00bfQuieres?"
-            ],
-            "correct_answer": "\u00bfQu\u00e9 quieres?",
-            "explanation": "'\u00bfQu\u00e9 quieres?' is the correct structure for asking 'What do you want?' in Spanish. The other options do not follow the proper question format."
+            "question": "Create a class called 'Vehicle' with attributes for 'type' and 'color'. How would you instantiate an object of this class?",
+            "type": "scenario"
           }
         ]
       }

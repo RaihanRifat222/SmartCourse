@@ -4,49 +4,37 @@
     "sections": [
       {
         "section_id": "1",
-        "title": "Family Vocabulary",
-        "conceptual_explanation": "Family vocabulary in Spanish refers to the words we use to describe our family members. This vocabulary exists because, just like in English, we need specific terms to identify and talk about our relatives. Think of family vocabulary as the building blocks of conversations about your personal life. For example, just as you would say 'mother' or 'brother' in English, in Spanish, you would say 'madre' for mother and 'hermano' for brother. This vocabulary is essential for expressing who is important in your life and helps you connect with others by sharing about your family. You may already know some family terms in English, and learning their Spanish equivalents will help you create meaningful sentences about your loved ones.",
-        "applied_explanation": "In practice, using family vocabulary involves learning the Spanish words for each family member and how to use them in sentences. Start by memorizing the basic terms: 'madre' (mother), 'padre' (father), 'hermano' (brother), and 'hermana' (sister). Once you know these words, you can create simple sentences like 'Mi madre es amable' (My mother is kind). Pay attention to the gender of the words; for instance, 'hermano' is masculine, while 'hermana' is feminine. A common beginner mistake is confusing the gender of family terms, so always remember to match the article (el for masculine, la for feminine) with the noun. Practice saying these words aloud to get comfortable with pronunciation and usage.",
-        "example": "Let's look at a simple example. If you want to introduce your family, you might say: 'Tengo una madre y un padre. Tengo un hermano y una hermana.' This translates to 'I have a mother and a father. I have a brother and a sister.' Here, 'Tengo' means 'I have,' 'una' is the feminine article for 'mother' (madre), and 'un' is the masculine article for 'father' (padre). Notice how the structure is similar to English, but the vocabulary is different. Practicing this sentence will help you remember the family terms and how to use them in context.",
+        "title": "If-Else Statements",
+        "conceptual_explanation": "If-Else statements are fundamental control flow structures in Java that allow you to execute different blocks of code based on certain conditions. They exist to enable decision-making in your programs, allowing the code to respond differently depending on the input or state of the program. Think of it like a fork in the road: if a certain condition is true, you take one path; if it\u2019s false, you take another. This is similar to how you might decide what to wear based on the weather: if it\u2019s raining, you wear a raincoat; otherwise, you wear a t-shirt. You\u2019ve likely encountered decision-making in everyday life, and If-Else statements bring that logic into programming, making your code dynamic and responsive to different situations.",
+        "applied_explanation": "In practice, If-Else statements work by evaluating a condition (like checking if a number is greater than another). If the condition is true, the code inside the first block executes; if it\u2019s false, the code in the else block runs. For example, consider a scenario where you want to check if a user is eligible to vote based on their age. You would write an If-Else statement to check if the age is 18 or older. Pay attention to the condition you set; it must be clear and logical. A common beginner mistake is to forget to use the correct comparison operators (like >, <, ==) or to misplace curly braces, which can lead to unexpected behavior in your code.",
+        "example": "Let's say we want to check if a person is eligible to vote. We can write the following code: \n\nint age = 20; \nif (age >= 18) { \n    System.out.println(\"You are eligible to vote.\"); \n} else { \n    System.out.println(\"You are not eligible to vote.\"); \n} \n\nIn this code, we first declare an integer variable 'age' and set it to 20. The If statement checks if 'age' is greater than or equal to 18. Since 20 is indeed greater than 18, the program executes the first block, printing \"You are eligible to vote.\" If we had set age to 16, the else block would execute instead, printing \"You are not eligible to vote.\" This demonstrates how If-Else statements allow for conditional execution based on the value of 'age.'",
         "practice_questions": [
           {
-            "question": "What is the Spanish word for 'sister'?",
+            "question": "What is the purpose of If-Else statements in Java?",
             "type": "short_answer"
           },
           {
-            "question": "Which of the following is the correct term for 'father' in Spanish?",
-            "type": "mcq",
-            "options": [
-              "madre",
-              "padre",
-              "hermano"
-            ],
-            "correct_answer": "padre",
-            "explanation": "The correct term for 'father' in Spanish is 'padre'. 'Madre' means 'mother' and 'hermano' means 'brother'."
+            "question": "Write an If-Else statement that checks if a number is even or odd.",
+            "type": "scenario",
+            "explanation": "This question tests your understanding of conditional logic and how to implement it in code."
           }
         ]
       },
       {
         "section_id": "2",
-        "title": "Descriptive Phrases",
-        "conceptual_explanation": "Descriptive phrases in Spanish are used to provide more information about family members and friends. These phrases exist to help us express our thoughts and feelings about the people we care about. For example, you might want to say 'My brother is tall' or 'My mother is kind.' In Spanish, this would be 'Mi hermano es alto' and 'Mi madre es amable.' Think of descriptive phrases as the way to paint a picture of your relationships. You already know how to describe people in English, and now you will learn how to do it in Spanish, which will enhance your ability to communicate effectively.",
-        "applied_explanation": "To use descriptive phrases, start by learning common adjectives in Spanish, such as 'alto' (tall), 'bajo' (short), 'amable' (kind), and 'inteligente' (smart). Combine these adjectives with the family vocabulary you learned earlier. For instance, you can say 'Mi hermana es inteligente' (My sister is smart). Pay attention to the agreement between the noun and the adjective; if the noun is feminine, the adjective must also be in its feminine form. A common mistake is forgetting to match the gender, so always check if the family member is male or female before choosing the adjective.",
-        "example": "For example, if you want to describe your mother, you could say: 'Mi madre es amable y trabajadora.' This means 'My mother is kind and hardworking.' Here, 'amable' describes her character, and 'trabajadora' means 'hardworking.' Notice how both adjectives follow the verb 'es' (is) and agree with 'madre' in being feminine. Practicing these phrases will help you express your thoughts about your family members clearly and confidently.",
+        "title": "For and While Loops",
+        "conceptual_explanation": "Loops are essential control flow statements in Java that allow you to execute a block of code multiple times without rewriting it. They exist to simplify repetitive tasks, making your code cleaner and more efficient. Imagine you are baking cookies and need to mix the dough for each batch. Instead of writing out the mixing instructions for every batch, you can use a loop to repeat the mixing process as many times as needed. You\u2019ve likely done repetitive tasks in your daily life, and loops in programming help automate those tasks, saving time and reducing errors.",
+        "applied_explanation": "In practice, a For loop is typically used when you know in advance how many times you want to execute a block of code, while a While loop is used when the number of iterations is not predetermined. For example, if you want to print numbers from 1 to 5, you would use a For loop. You need to pay attention to the loop's initialization, condition, and increment/decrement statements. A common beginner mistake is to create an infinite loop by not updating the loop variable correctly, which can cause your program to run indefinitely.",
+        "example": "Here\u2019s how you can use a For loop to print numbers from 1 to 5: \n\nfor (int i = 1; i <= 5; i++) { \n    System.out.println(i); \n} \n\nIn this code, we initialize 'i' to 1. The loop continues as long as 'i' is less than or equal to 5. After each iteration, 'i' is incremented by 1. This means the loop will print 1, then 2, and so on, until it reaches 5. If we were to use a While loop instead, it would look like this: \n\nint i = 1; \nwhile (i <= 5) { \n    System.out.println(i); \n    i++; \n} \n\nBoth loops achieve the same result, but the For loop is often more concise when the number of iterations is known.",
         "practice_questions": [
           {
-            "question": "Translate 'My brother is tall' into Spanish.",
+            "question": "What is the difference between a For loop and a While loop?",
             "type": "short_answer"
           },
           {
-            "question": "Which of the following describes a kind person in Spanish?",
-            "type": "mcq",
-            "options": [
-              "alto",
-              "amable",
-              "bajo"
-            ],
-            "correct_answer": "amable",
-            "explanation": "'Amable' means 'kind' in Spanish, while 'alto' means 'tall' and 'bajo' means 'short'."
+            "question": "Write a For loop that prints the first 10 even numbers.",
+            "type": "scenario",
+            "explanation": "This question challenges you to apply your understanding of loops and even number logic."
           }
         ]
       }

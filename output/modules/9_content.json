@@ -4,23 +4,43 @@
     "sections": [
       {
         "section_id": "1",
-        "title": "Expressing Likes and Dislikes",
-        "conceptual_explanation": "In Spanish, expressing likes and dislikes is essential for communicating your preferences and engaging in conversations. This concept exists because sharing what you enjoy or dislike helps others understand you better and fosters connections. Think of it like a bridge that connects your feelings to the people around you. You already know how to express likes and dislikes in English, such as saying 'I like pizza' or 'I don't like broccoli.' In Spanish, we use similar structures, but with different vocabulary and grammar. For example, the phrase 'Me gusta' means 'I like,' and 'No me gusta' means 'I don't like.' Understanding these phrases will allow you to share your interests and preferences in Spanish, making your conversations more meaningful.",
-        "applied_explanation": "To express likes and dislikes in Spanish, you will primarily use the phrases 'Me gusta' for likes and 'No me gusta' for dislikes. Start by identifying what you want to express. For example, if you want to say you like ice cream, you would say 'Me gusta el helado.' Notice that 'el helado' means 'the ice cream.' When expressing dislikes, simply add 'No' before 'me gusta,' like 'No me gusta el br\u00f3coli.' Pay attention to the subject of your sentence; if you are talking about multiple items, you will use 'gustan' instead of 'gusta.' A common beginner mistake is forgetting to match the verb with the subject, such as saying 'Me gusta los helados' instead of 'Me gustan los helados.' Remember, if you are talking about more than one thing, use 'gustan.'",
-        "example": "Let's say you want to express that you like pizza and dislike spinach. In Spanish, you would say: 'Me gusta la pizza' for 'I like pizza' and 'No me gusta la espinaca' for 'I don't like spinach.' Here\u2019s the breakdown: 'Me' means 'to me,' 'gusta' means 'is pleasing,' and 'la pizza' means 'the pizza.' So, together, it translates to 'Pizza is pleasing to me.' For the dislike, 'No' negates the statement, making it 'Not pleasing to me.' This structure is straightforward and allows you to express your preferences clearly.",
+        "title": "Understanding Inheritance in OOP",
+        "conceptual_explanation": "Inheritance is a fundamental concept in Object-Oriented Programming (OOP) that allows one class to inherit properties and behaviors (methods) from another class. This exists to promote code reusability and establish a natural hierarchy between classes. Think of it like a family tree: a child inherits traits from their parents. In programming, a 'superclass' (or parent class) provides common attributes and methods, while a 'subclass' (or child class) can extend or modify these inherited features. For example, if you have a superclass called 'Animal' with a method 'makeSound()', a subclass 'Dog' can inherit this method and also have its own method 'fetch()'. This builds on what you already know about classes and objects, making your code cleaner and easier to manage.",
+        "applied_explanation": "In practice, inheritance allows you to create a new class based on an existing class. To implement inheritance, you define a subclass that extends the superclass. For instance, if you have a superclass 'Vehicle' with properties like 'speed' and methods like 'drive()', you can create a subclass 'Car' that inherits these features. When you create an instance of 'Car', it automatically has access to 'speed' and 'drive()' without needing to redefine them. Pay attention to how you use the 'extends' keyword in Java to establish this relationship. A common beginner mistake is to forget to call the superclass constructor in the subclass, which can lead to errors when trying to access inherited properties.",
+        "example": "Let's look at a simple example in Java. We start with a superclass called 'Animal':\n\nclass Animal {\n    void makeSound() {\n        System.out.println(\"Animal makes a sound\");\n    }\n}\n\nNow, we create a subclass 'Dog' that inherits from 'Animal':\n\nclass Dog extends Animal {\n    void fetch() {\n        System.out.println(\"Dog fetches the ball\");\n    }\n}\n\nIn this code, 'Dog' inherits the 'makeSound()' method from 'Animal'. When we create a 'Dog' object and call 'makeSound()', it will output \"Animal makes a sound\". Additionally, we can call 'fetch()' on the 'Dog' object, which outputs \"Dog fetches the ball\". This shows how inheritance allows 'Dog' to use methods from 'Animal' while also having its own unique methods.",
         "practice_questions": [
           {
-            "question": "What does 'Me gusta' mean in English?",
+            "question": "What is inheritance in OOP?",
             "type": "short_answer"
           },
           {
-            "question": "Translate 'I don't like broccoli' into Spanish.",
+            "question": "How does a subclass inherit properties from a superclass?",
             "type": "short_answer"
           },
           {
-            "question": "You want to tell a friend that you like apples and dislike bananas. Write a sentence in Spanish for each.",
-            "type": "scenario",
-            "explanation": "This question tests your ability to apply what you've learned about expressing likes and dislikes in Spanish."
+            "question": "Imagine you have a superclass 'Shape' with a method 'draw()'. Create a subclass 'Circle' that adds a method 'calculateArea()'. Describe how you would implement this.",
+            "type": "scenario"
+          }
+        ]
+      },
+      {
+        "section_id": "2",
+        "title": "Creating Subclasses and Using Superclasses",
+        "conceptual_explanation": "Creating subclasses is a way to define a new class that builds upon an existing class, known as the superclass. This concept exists to allow developers to create specialized versions of a general class without rewriting code. For instance, if you have a superclass 'Employee', you can create subclasses like 'Manager' and 'Intern' that inherit common properties like 'name' and 'salary' but also have their own unique attributes. Think of it as customizing a base model: you have a standard car (the superclass) and you can create different models (subclasses) with specific features. This ties back to your understanding of classes, where subclasses can add or override methods from their superclasses.",
+        "applied_explanation": "To create a subclass in Java, you use the 'extends' keyword followed by the superclass name. For example, if you have a superclass 'Person', you can create a subclass 'Student' that inherits from 'Person'. When you create an instance of 'Student', it will have access to all the properties and methods of 'Person'. It's important to remember to use the 'super' keyword to call the constructor of the superclass if you need to initialize inherited properties. A common mistake is to forget this step, which can lead to incomplete object initialization and runtime errors.",
+        "example": "Consider the following Java code:\n\nclass Person {\n    String name;\n    Person(String name) {\n        this.name = name;\n    }\n    void display() {\n        System.out.println(\"Name: \" + name);\n    }\n}\n\nNow, we create a subclass 'Student':\n\nclass Student extends Person {\n    String major;\n    Student(String name, String major) {\n        super(name); // Calls the constructor of Person\n        this.major = major;\n    }\n    void display() {\n        super.display(); // Calls the display method of Person\n        System.out.println(\"Major: \" + major);\n    }\n}\n\nIn this example, 'Student' inherits from 'Person'. When we create a 'Student' object and call 'display()', it first calls the 'display()' method from 'Person' to show the name, then adds its own output for the major. This demonstrates how subclasses can extend the functionality of superclasses while maintaining a clear relationship.",
+        "practice_questions": [
+          {
+            "question": "What keyword is used to create a subclass in Java?",
+            "type": "short_answer"
+          },
+          {
+            "question": "Explain how you would create a subclass 'Cat' from a superclass 'Animal'. What unique method might 'Cat' have?",
+            "type": "short_answer"
+          },
+          {
+            "question": "You have a superclass 'Book' with a method 'read()'. Create a subclass 'EBook' that adds a method 'download()'. Describe the implementation.",
+            "type": "scenario"
           }
         ]
       }

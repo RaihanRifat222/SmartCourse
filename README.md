@@ -2,6 +2,11 @@
 
 SmartCourse is a full-stack project that generates structured course curricula and module content from a learning request. The backend uses AI agents to build and validate curricula, then saves each course as a JSON file. The frontend provides a colorful UI to generate new courses and browse all previously created courses.
 
+Live Demo:
+```
+https://smart-course-i378.vercel.app/
+```
+
 ## What This Project Does
 - Accepts a learning request (topic, audience, goals, constraints).
 - Generates and validates a curriculum with multiple modules.
